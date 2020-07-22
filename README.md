@@ -10,10 +10,16 @@ I highly suggest making your own site as a portfolio that shows off your own wor
 
 >Want to make your own site as a personal portfolio? Check out this How-To infographic I created. This will get your site up and running in less than half an hour! When you're ready to make your markdown files beautiful, check out the tutorial below.
 
-[Markdown Tutorial](https://faithkane3.github.io/)
+[Markdown Tutorial](https://dardenreviews.github.io/)
 
 >This tutorial will show you how to use lots of exciting markdown code in your README files as well as your Jupyter notebooks! Once you're ready to show off an exercise or project you are particularly proud of, check out the tutorial below on downloading your Jupyter notebooks as HTML.
 
-[HTML Notebook Tutorial](https://faithkane3.github.io/notebook_html_tutorial)
+[HTML Notebook Tutorial](https://dardenreviews.github.io/)
 
 >This tutorial will show you how to download and host your own notebooks as html on your site.
+
+[SQL Review Notebook](https://dardenreviews.github.io/)
+
+COMING SOON!
+
+>This notebook introduces SQL as a tool to interrogate databases and acquire data for use with python libraries like numpy and pandas. It will cover everything from basic queries using a single table to subqueries that involve joining tables and data filtering.
