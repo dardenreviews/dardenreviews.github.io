@@ -10,13 +10,9 @@ I highly suggest making your own site as a portfolio that shows off your own wor
 
 >Want to make your own site as a personal portfolio? Check out this How-To infographic I created. This will get your site up and running in less than half an hour! When you're ready to make your markdown files beautiful, check out the tutorial below.
 
-[Markdown Tutorial](https://dardenreviews.github.io/)
+[Markdown Tutorial](https://dardenreviews.github.io/notebook_html_tutorial)
 
->This tutorial will show you how to use lots of exciting markdown code in your README files as well as your Jupyter notebooks! Once you're ready to show off an exercise or project you are particularly proud of, check out the tutorial below on downloading your Jupyter notebooks as HTML.
-
-[HTML Notebook Tutorial](https://dardenreviews.github.io/)
-
->This tutorial will show you how to download and host your own notebooks as html on your site.
+>This tutorial will show you how to use lots of exciting markdown code in your README files as well as your Jupyter Notebooks! Once you're ready to show off an exercise or project you are particularly proud of, check out the tutorial below on downloading your Jupyter notebooks as HTML.
 
 SQL Review Notebooks
 
