@@ -14,7 +14,7 @@ This tutorial will go live Tuesday for my Github Page Lunch 'n' Learn!!
 
 [Markdown Tutorial](https://dardenreviews.github.io/notebook_html_tutorial)
 
->This tutorial will show you how to use lots of exciting markdown code in your README files as well as your Jupyter Notebooks! Once you're ready to show off an exercise or project you are particularly proud of, check out the tutorial below on downloading your Jupyter notebooks as HTML.
+>This tutorial will show you how to use lots of exciting markdown code in your README files as well as your Jupyter Notebooks!
 
 SQL Review Notebooks
 
