@@ -13100,7 +13100,7 @@ $( document ).ready(function(){
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h1>Table of Contents<span class="tocSkip"></span></h1></p>
-<div class="toc"><ul class="toc-item"><li><span><a href="#What-Makes-Tables-in-a-Database-Relational?" data-toc-modified-id="What-Makes-Tables-in-a-Database-Relational?-1"><span class="toc-item-num">1&nbsp;&nbsp;</span><font color="red">What Makes Tables in a Database Relational?</font></a></span></li><li><span><a href="#So-What-Kinds-of-Joins-Exist?" data-toc-modified-id="So-What-Kinds-of-Joins-Exist?-2"><span class="toc-item-num">2&nbsp;&nbsp;</span><font color="orange">So What Kinds of Joins Exist?</font></a></span><ul class="toc-item"><li><span><a href="#Quick-Reference-for-Joins" data-toc-modified-id="Quick-Reference-for-Joins-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Quick Reference for Joins</a></span></li></ul></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-3"><span class="toc-item-num">3&nbsp;&nbsp;</span><font color="green">Now What?</font></a></span></li><li><span><a href="#What-Is-a-Subquery?" data-toc-modified-id="What-Is-a-Subquery?-4"><span class="toc-item-num">4&nbsp;&nbsp;</span><font color="red">What Is a Subquery?</font></a></span></li><li><span><a href="#So-What-Are-They-Used-For?" data-toc-modified-id="So-What-Are-They-Used-For?-5"><span class="toc-item-num">5&nbsp;&nbsp;</span><font color="orange">So What Are They Used For?</font></a></span></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-6"><span class="toc-item-num">6&nbsp;&nbsp;</span><font color="green">Now What?</font></a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#What-Makes-Tables-in-a-Database-Relational?" data-toc-modified-id="What-Makes-Tables-in-a-Database-Relational?-1"><span class="toc-item-num">1&nbsp;&nbsp;</span><font color="red">What Makes Tables in a Database Relational?</font></a></span><ul class="toc-item"><li><span><a href="#Table-Keys" data-toc-modified-id="Table-Keys-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Table Keys</a></span></li><li><span><a href="#Table-Relationships" data-toc-modified-id="Table-Relationships-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Table Relationships</a></span></li></ul></li><li><span><a href="#So-What-Kinds-of-Joins-Exist?" data-toc-modified-id="So-What-Kinds-of-Joins-Exist?-2"><span class="toc-item-num">2&nbsp;&nbsp;</span><font color="orange">So What Kinds of Joins Exist?</font></a></span><ul class="toc-item"><li><span><a href="#Quick-Reference-for-Joins" data-toc-modified-id="Quick-Reference-for-Joins-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Quick Reference for Joins</a></span></li></ul></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-3"><span class="toc-item-num">3&nbsp;&nbsp;</span><font color="green">Now What?</font></a></span><ul class="toc-item"><li><span><a href="#JOIN-Examples" data-toc-modified-id="JOIN-Examples-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span><code>JOIN</code> Examples</a></span></li></ul></li><li><span><a href="#What-Is-a-Subquery?" data-toc-modified-id="What-Is-a-Subquery?-4"><span class="toc-item-num">4&nbsp;&nbsp;</span><font color="red">What Is a Subquery?</font></a></span></li><li><span><a href="#So-What-Are-They-Used-For?" data-toc-modified-id="So-What-Are-They-Used-For?-5"><span class="toc-item-num">5&nbsp;&nbsp;</span><font color="orange">So What Are They Used For?</font></a></span></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-6"><span class="toc-item-num">6&nbsp;&nbsp;</span><font color="green">Now What?</font></a></span><ul class="toc-item"><li><span><a href="#Subquery-Examples" data-toc-modified-id="Subquery-Examples-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>Subquery Examples</a></span></li></ul></li></ul></div>
 </div>
 </div>
 </div>
@@ -13109,14 +13109,14 @@ $( document ).ready(function(){
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="SQL-Tables-and-Joins">SQL Tables and Joins<a class="anchor-link" href="#SQL-Tables-and-Joins">&#182;</a></h1><h2><font color=red>What Makes Tables in a Database Relational?</font></h2>
 <p>Often times you will need to combine the information from two or more tables to answer your query. We need to understand the different ways tables relate to each other and how to join them to get at the data we want.</p>
-<p><strong>A Primary Key</strong> is the <strong>unique identifier</strong> for a record in a table. You cannot have a Null value in the primary key column, nor can any two records share the same value in this field. There can only be one primary key for a table, and it is common to add the <code>AUTO_INCREMENT</code> attribute to your primary key column, which by default starts counting forward from 1 and generates a unique identity for any new rows added to a table.</p>
+<h3 id="Table-Keys">Table Keys<a class="anchor-link" href="#Table-Keys">&#182;</a></h3><p><strong>A Primary Key</strong> is the <strong>unique identifier</strong> for a record in a table. You cannot have a Null value in the primary key column, nor can any two records share the same value in this field. There can only be one primary key for a table, and it is common to add the <code>AUTO_INCREMENT</code> attribute to your primary key column, which by default starts counting forward from 1 and generates a unique identity for any new rows added to a table.</p>
 <p><strong>A Foreign Key</strong> is a field in a table that serves as the primary key for another table. Although this field must contain unique values in the table for which it serves as a primary key, it <strong>does NOT have to contain unique values</strong> in the table for which it serves as a foreign key. Unlike the primary key, you can have more than one foreign key in a single table; a table that contains multiple foreign keys to relate other tables to each other is known as an associative table. More on these below.</p>
 <p><img src="https://miro.medium.com/max/2406/1*yW_ha3z8Mp6fUn9m6qWwNw.png" alt="keys"></p>
 <ul>
 <li><strong>A composite key</strong> is when a table has a primary key that's actually a unique combination of more than one column; it's a multiple-column index. The primary key is comprised of a unique combination of two or more fields and serves as the unique identifier for each record.</li>
 </ul>
 <p><img src="https://www.callicoder.com/assets/images/post/large/hibernate-composite-primary-key-example-table-structure.jpg" alt="composite"></p>
-<p><strong>A One-to-One Relationship</strong> is when each row in one table has only one related row in a second table.</p>
+<h3 id="Table-Relationships">Table Relationships<a class="anchor-link" href="#Table-Relationships">&#182;</a></h3><p><strong>A One-to-One Relationship</strong> is when each row in one table has only one related row in a second table.</p>
 <p><strong>A One-to-Many Relationship</strong> is when one record in a table can be associated with one or more records in another table.</p>
 <blockquote><p><strong>For Example:</strong> In the CUSTOMERS table above, the CustomerNo field is the primary key and must be unique (ONE). Each customer has a unique code in the CUSTOMERS table but that code can be used multiple times (MANY) in the ORDERS table with the uniqe id OrderNo, the primary key in the ORDERS table. The foreign key field in the ORDERS table, CustomerNo, can appear multiple times because a single customer from the CUSTOMERS table can have multiple orders, each with a unique OrderNo.</p>
 </blockquote>
@@ -13234,7 +13234,7 @@ $( document ).ready(function(){
 </tr>
 </tbody>
 </table>
-<p><font color='purple'>**Let's check out how to join the information in these different kinds of tables.**</font></p>
+<p><font color='purple'>Let's check out how to join the information in these different kinds of tables.</font></p>
 
 </div>
 </div>
@@ -13253,7 +13253,7 @@ $( document ).ready(function(){
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2><font color=green>Now What?</font></h2>
-<p><strong>Let's check out some code examples. These can serve as useful syntax references when you try to write a query down the road and haven't seen SQL in a few weeks!</strong></p>
+<h3 id="JOIN-Examples"><code>JOIN</code> Examples<a class="anchor-link" href="#JOIN-Examples">&#182;</a></h3><p>Let's check out some code examples. These can serve as useful syntax references when you try to write a query down the road and haven't seen SQL in a few weeks!</p>
 <div class="highlight"><pre><span></span><span class="c1">-- Query SELECTS all from simple joining of employees and salaries tables.</span>
 
 <span class="k">SELECT</span> <span class="o">*</span>
@@ -13325,11 +13325,12 @@ $( document ).ready(function(){
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2><font color=red>What Is a Subquery?</font></h2>
-<p><strong>A subquery</strong> is one that is nested inside of another query; they are most commonly used in <code>SELECT</code>, <code>FROM</code>, and <code>WHERE</code> clauses but can also be used in a <code>JOIN</code>.</p>
+<p>A subquery is when one query is nested inside of another; they are most commonly used in <code>SELECT</code>, <code>FROM</code>, and <code>WHERE</code> clauses but can also be used in a <code>JOIN</code> clause. When a subquery is in your <code>FROM</code> clause, it is called a derived table, and it <strong>MUST</strong> be given a table alias.</p>
 <h2><font color=orange>So What Are They Used For?</font></h2>
 <p>Using a subquery allows us to use a query result set from one table when querying another table without using a <code>JOIN</code>. Here we are using <code>WHERE</code> with <code>IN</code> in a subquery. This type of subquery is fast, but the rub is that we don't have all of the columns available in the inner query. Its usefulness depends on your data needs.</p>
 <h2><font color=green>Now What?</font></h2>
-<p><strong>Let's check out some code examples. These can serve as useful syntax references when you try to write a query down the road and haven't seen SQL in a few weeks!</strong></p>
+<h3 id="Subquery-Examples">Subquery Examples<a class="anchor-link" href="#Subquery-Examples">&#182;</a></h3><p>Let's check out some code examples. These can serve as useful syntax references when you try to write a query down the road and haven't seen SQL in a few weeks!</p>
+<p>Here is an example of using two subqueries in the <code>WHERE</code> clause with the operator <code>AND</code>.</p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span>
 <span class="k">FROM</span> <span class="n">employees</span>
 <span class="k">WHERE</span> <span class="n">emp_no</span> <span class="k">IN</span> <span class="p">(</span>
@@ -13341,6 +13342,17 @@ $( document ).ready(function(){
     <span class="k">SELECT</span> <span class="n">emp_no</span>
     <span class="k">FROM</span> <span class="n">dept_manager</span>
 <span class="p">);</span>
+</pre></div>
+<p>Here is an example of a derived table, which is simply a subquery in your <code>FROM</code> clause. Notice, this derived table has the alias 'sal'; remember that aliases are a must for derived tables, or an error will occur.</p>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">sal</span><span class="p">.</span><span class="n">emp_no</span><span class="p">,</span>
+       <span class="n">salary</span>
+<span class="k">FROM</span> <span class="p">(</span>
+    <span class="k">select</span> <span class="n">salary</span><span class="p">,</span> <span class="n">emp_no</span>
+    <span class="k">from</span> <span class="n">salaries</span> 
+    <span class="k">where</span> <span class="n">salary</span> <span class="k">between</span> <span class="mi">60000</span> <span class="k">and</span> <span class="mi">70000</span>
+<span class="p">)</span> <span class="k">as</span> <span class="n">sal</span>
+<span class="k">JOIN</span> <span class="n">dept_emp</span> <span class="k">ON</span> <span class="n">dept_emp</span><span class="p">.</span><span class="n">emp_no</span> <span class="o">=</span> <span class="n">sal</span><span class="p">.</span><span class="n">emp_no</span>
+<span class="k">JOIN</span> <span class="n">departments</span> <span class="k">USING</span><span class="p">(</span><span class="n">dept_no</span><span class="p">);</span>
 </pre></div>
 <p>However, you can also use a subquery in a <code>JOIN</code> clause. Here, we are selecting from a derived table. This method can be computationally expensive, but it gifts you with added flexibility.</p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">e</span><span class="p">.</span><span class="n">first_name</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="n">last_name</span><span class="p">,</span> <span class="n">monies</span><span class="p">.</span><span class="n">salary</span>

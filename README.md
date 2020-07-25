@@ -30,3 +30,6 @@ SQL Review Notebooks
 
 >This notebook starts out with an overview of table relationships and goes through explanation and examples of using the `JOIN` clause and subqueries.
 
+[Stats Review Notebook](https://https://dardenreviews.github.io/stats_review/stats_review)
+
+>This notebook covers Probability Distributions and Hypothesis Testing. I tried to make the concepts approachable and included lots of helpful examples and code snippets.
