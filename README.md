@@ -33,3 +33,16 @@ SQL Review Notebooks
 [Stats Review Notebook](https://dardenreviews.github.io/stats_review/stats_review)
 
 >This notebook covers Probability Distributions and Hypothesis Testing. I tried to make the concepts approachable and included lots of helpful examples and code snippets.
+
+[Classification Review Notebook](https://dardenreviews.github.io/classification_review/classification_review)
+
+Coming Soon!
+
+>This notebook covers the Classification data science pipeline from Acquire through Evaluate. Again, I hope that the concepts are approachable, and I've included plenty of helpful code snippets for each stage of the pipeline.
+
+[Linear Regression Review Notebook](https://dardenreviews.github.io/regression_review)
+
+Coming Soon!
+
+>This notebook covers the Linear Regression data science pipeline from Acquire through Evaluate. Again, I hope that the concepts are approachable, and I've included plenty of helpful code snippets for each stage of the pipeline.
+
