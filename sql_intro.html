@@ -13289,7 +13289,7 @@ $( document ).ready(function(){
 <span class="k">FROM</span> <span class="n">albums</span>
 <span class="k">WHERE</span> <span class="n">artist</span> <span class="o">=</span> <span class="s1">&#39;Fleetwood Mac&#39;</span><span class="p">;</span>
 </pre></div>
-<h4 id="DISTINCT,-BETWEEN"><code>DISTINCT</code>, <code>BETWEEN</code><a class="anchor-link" href="#DISTINCT,-BETWEEN">&#182;</a></h4><p>I can for unique values in a column by using the keyword <code>DISTINCT</code>, and I can get the values that fall within an inclusive range by using the keyword <code>BETWEEN</code>.</p>
+<h4 id="DISTINCT,-BETWEEN"><code>DISTINCT</code>, <code>BETWEEN</code><a class="anchor-link" href="#DISTINCT,-BETWEEN">&#182;</a></h4><p>I can filter for unique values in a column by using the keyword <code>DISTINCT</code>, and I can get the values that fall within an inclusive range by using the keyword <code>BETWEEN</code>.</p>
 <p><code style="background:yellow;color:black">I'm treating release_date below as a date data type; the single quotes can be dropped when it is an integer.</code></p>
 <div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm">I want to see a list of artists that released albums in the 90s; each artist only needs to be in the list one time, and I want them ordered in descending order by release_date.</span>
