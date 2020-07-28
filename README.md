@@ -28,6 +28,10 @@ SQL Review Notebooks
 
 >This notebook starts out with an overview of table relationships and goes through explanation and examples of using the `JOIN` clause and subqueries.
 
+- [SQL Case and Temporary Tables Review Notebook](https://dardenreviews.github.io/sql_extras)
+
+>This notebooks dives into the `CASE` statement and working with temporary tables.
+
 [Stats Review Notebook](https://dardenreviews.github.io/stats_review/stats_review)
 
 >This notebook covers Probability Distributions and Hypothesis Testing. I tried to make the concepts approachable and included lots of helpful examples and code snippets.
