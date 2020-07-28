@@ -13108,7 +13108,7 @@ $( document ).ready(function(){
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="SQL-Extras">SQL Extras<a class="anchor-link" href="#SQL-Extras">&#182;</a></h1><h2><font color=red>What Does the `CASE` Statement Do?</font></h2>
-<h3 id="Case-Statements">Case Statements<a class="anchor-link" href="#Case-Statements">&#182;</a></h3><p><strong>The SQL <code>CASE</code> Statement</strong> is a conditional expression, which allows me to create a new temporary column in my result set based on 'If this, then...' logic. A <code>CASE</code>statement is added to the <code>SELECT</code> statement, after all of the existing fields I have selected; it begins with <code>CASE</code> and ends with <code>END AS new_field_name</code>. <strong>Don't forget the comma after the last item in your <code>SELECT</code> list! This is a common error for me, so I want to point it out.</strong></p>
+<h3 id="Case-Statements">Case Statements<a class="anchor-link" href="#Case-Statements">&#182;</a></h3><p><strong>The SQL <code>CASE</code> Statement</strong> is a conditional expression that allows me to create a new temporary column in my result set based on 'If this, then...' logic. A <code>CASE</code>statement is added to the <code>SELECT</code> statement, after all of the existing fields I have selected; it begins with <code>CASE</code> and ends with <code>END AS new_field_name</code>. <strong>Don't forget the comma after the last item in your <code>SELECT</code> list! This is a common error for me, so I want to point it out.</strong></p>
 <div class="alert alert-block alert-warning">It's helpful to include an `ELSE` clause to catch any possible values that fall outside of your conditional clauses because otherwise, if those values exist, they will be returned as `NULL`.</div><h2><font color=orange>So What Can I Do with a Case Statement?</font></h2>
 <p>Using <code>CASE</code> statements comes in very handy when I want to create new fields from existing data in my dataset using conditionals, but I don't have database permissions to create a new table. Temporary tables are useful in this situation, as well. I'll dig into those next.</p>
 <h2><font color=green>Now What?</font></h2>
@@ -13132,7 +13132,7 @@ $( document ).ready(function(){
 <span class="k">SELECT</span> <span class="n">internet_service_type_id</span><span class="p">,</span>
         <span class="n">device_protection</span><span class="p">,</span>
         <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">number_customers</span><span class="p">,</span>
-    <span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;DSL_Protection&#39;</span>
+    <span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;DSL_Protected&#39;</span>
         <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;No&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;DSL_Unprotected&#39;</span>
         <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">2</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;Fiber_Optic_Protected&#39;</span>
         <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">2</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;No&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;Fiber_Optic_Unprotected&#39;</span>
@@ -13154,7 +13154,7 @@ $( document ).ready(function(){
         <span class="k">WHEN</span> <span class="s1">&#39;1&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;female&#39;</span>
         <span class="k">ELSE</span> <span class="s1">&#39;neither&#39;</span>
     <span class="k">END</span> <span class="k">AS</span> <span class="n">gender_norm</span>
-<span class="k">FROM</span> <span class="n">employees</span>
+<span class="k">FROM</span> <span class="n">employees</span><span class="p">;</span>
 </pre></div>
 <h4 id="Create-a-Boolean-Field">Create a Boolean Field<a class="anchor-link" href="#Create-a-Boolean-Field">&#182;</a></h4><p>Sometimes it's easier to work with a boolean value, and <code>CASE</code> can be helpful here, as well. Here I create a new column called <code>is_female</code> containing the value <code>1</code> if <code>female</code> and <code>0</code> if <code>male</code></p>
 <div class="highlight"><pre><span></span><span class="n">USE</span> <span class="n">titanic_db</span><span class="p">;</span>
@@ -13169,7 +13169,7 @@ $( document ).ready(function(){
    <span class="n">female</span>   <span class="mi">1</span>
    <span class="n">female</span>   <span class="mi">1</span>
    <span class="n">female</span>   <span class="mi">1</span>
-   <span class="n">male</span>   <span class="mi">0</span>
+   <span class="n">male</span>     <span class="mi">0</span>
 </pre></div>
 <p>I can also do this using the <code>IF(condition, val_if_true, val_if_false)</code> function in my query.</p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">sex</span><span class="p">,</span>
@@ -13180,7 +13180,7 @@ $( document ).ready(function(){
    <span class="n">female</span>   <span class="mi">1</span>
    <span class="n">female</span>   <span class="mi">1</span>
    <span class="n">female</span>   <span class="mi">1</span>
-   <span class="n">male</span>   <span class="mi">0</span>
+   <span class="n">male</span>     <span class="mi">0</span>
 </pre></div>
 
 </div>
@@ -13246,15 +13246,15 @@ $( document ).ready(function(){
 <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">temp_sakila</span> <span class="k">ADD</span> <span class="n">new_col_1</span> <span class="nb">INT</span> <span class="n">UNSIGNED</span><span class="p">;</span>
 <span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">temp_sakila</span> <span class="k">ADD</span> <span class="n">new_col_2</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">25</span><span class="p">);</span>
 
-<span class="c1">-- Insert records into a table.</span>
+<span class="c1">-- Insert records into a tamp table.</span>
 
 <span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">temp_sakila</span> <span class="p">(</span><span class="n">new_col_1</span><span class="p">,</span> <span class="n">new_col_2</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="n">val_1</span><span class="p">,</span> <span class="n">val_2</span><span class="p">);</span>
 
-<span class="c1">-- Update existing data in the table.</span>
+<span class="c1">-- Update existing data in the temp table.</span>
 
 <span class="k">UPDATE</span> <span class="n">temp_sakila</span> <span class="k">SET</span> <span class="n">new_col_1</span> <span class="o">=</span> <span class="n">amount</span> <span class="o">*</span> <span class="mi">100</span><span class="p">;</span>
 
-<span class="c1">-- I can update using a `WHERE` clause if I don&#39;t want to update all values in a field or fields.</span>
+<span class="c1">-- I can update my temptable using a `WHERE` clause if I don&#39;t want to update all values in a field or fields.</span>
 
 <span class="k">UPDATE</span> <span class="n">temp_sakila</span> <span class="k">SET</span> <span class="n">new_col_1</span> <span class="o">=</span> <span class="n">some_val</span><span class="p">,</span> <span class="n">new_col_2</span> <span class="o">=</span> <span class="n">other_val</span> <span class="k">WHERE</span> <span class="n">condition</span><span class="p">;</span>
 
