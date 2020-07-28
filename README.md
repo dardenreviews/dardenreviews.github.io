@@ -16,6 +16,10 @@ This tutorial will go live Tuesday for my Github Page Lunch 'n' Learn!!
 
 >This tutorial will show you how to use lots of exciting markdown code in your README files as well as your Jupyter Notebooks!
 
+[Video Tutorial Resources](https://dardenreviews.github.io/tutorial_videos)
+
+>This page houses the links to helpful video tutorials on a variety of topics.
+
 SQL Review Notebooks
 
 >These notebook introduce SQL as a tool to interrogate databases and acquire data for use with python libraries like numpy and pandas. They will cover everything from RDBMS terms and structure to subqueries that involve joining and filtering data from multiple tables.
