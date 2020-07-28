@@ -6,7 +6,7 @@ This site contains reviews I have created and resources I have gathered to suppo
 
 I highly suggest making your own site as a portfolio that shows off your own work throughout the program. It would be a great link to share on your LinkedIn and drop on your resume for potential employers!
 
-[Github Page Tutorial](https://dardenreviews.github.io/)
+[Github Page Tutorial](https://dardenreviews.github.io/create_your_portfolio.pdf)
 
 This tutorial will go live Tuesday for my Github Page Lunch 'n' Learn!!
 
