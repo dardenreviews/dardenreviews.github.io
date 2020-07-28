@@ -13128,20 +13128,23 @@ $( document ).ready(function(){
 <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">days</span> <span class="k">DESC</span><span class="p">;</span>
 </pre></div>
 <p>My query can have conditionals that use values from more than one field to create a new column. By throwing in a <code>COUNT(*) AS number_customers</code>, I have a useful result set for making comparisons.</p>
-<div class="highlight"><pre><span></span><span class="n">USE</span> <span class="n">telco_churn</span><span class="p">;</span>
-<span class="k">SELECT</span> <span class="n">internet_service_type_id</span><span class="p">,</span>
-        <span class="n">device_protection</span><span class="p">,</span>
-        <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">number_customers</span><span class="p">,</span>
-    <span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;DSL_Protected&#39;</span>
-        <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;No&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;DSL_Unprotected&#39;</span>
-        <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">2</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;Fiber_Optic_Protected&#39;</span>
-        <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">2</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;No&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;Fiber_Optic_Unprotected&#39;</span>
-        <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">3</span> <span class="k">THEN</span> <span class="s1">&#39;No_Internet_Service&#39;</span>
-        <span class="k">ELSE</span> <span class="n">internet_service_type_id</span>
-    <span class="k">END</span> <span class="k">AS</span> <span class="n">internet_types</span>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">number_customers</span><span class="p">,</span>
+        <span class="k">CASE</span> <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;DSL_Protected&#39;</span>
+            <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;No&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;DSL_Unprotected&#39;</span>
+            <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">2</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;Yes&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;Fiber_Optic_Protected&#39;</span>
+            <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">2</span> <span class="k">AND</span> <span class="n">device_protection</span> <span class="o">=</span> <span class="s1">&#39;No&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;Fiber_Optic_Unprotected&#39;</span>
+            <span class="k">WHEN</span> <span class="n">internet_service_type_id</span> <span class="o">=</span> <span class="mi">3</span> <span class="k">THEN</span> <span class="s1">&#39;No_Internet_Service&#39;</span>
+            <span class="k">ELSE</span> <span class="n">internet_service_type_id</span>
+        <span class="k">END</span> <span class="k">AS</span> <span class="n">internet_types</span>
 <span class="k">FROM</span> <span class="n">customers</span>
-<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">internet_service_type_id</span><span class="p">,</span> <span class="n">device_protection</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">internet_types</span>
 <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">number_customers</span><span class="p">;</span>
+
+<span class="o">-&gt;</span> <span class="mi">1065</span> <span class="n">DSL_Protected</span>
+   <span class="mi">1356</span> <span class="n">DSL_Unprotected</span>
+   <span class="mi">1357</span> <span class="n">Fiber_Optic_Protected</span>
+   <span class="mi">1526</span> <span class="n">No_Internet_Service</span>
+   <span class="mi">1739</span> <span class="n">Fiber_Optic_Unprotected</span>
 </pre></div>
 <h4 id="Normalize-Values-in-Your-Dataset">Normalize Values in Your Dataset<a class="anchor-link" href="#Normalize-Values-in-Your-Dataset">&#182;</a></h4><p>Sometimes my dataset may be messy (hahaha, sometimes), and I will need to normalize the values. <code>CASE</code> can come in handy here, as well.</p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">title</span><span class="p">,</span>
@@ -13154,7 +13157,7 @@ $( document ).ready(function(){
         <span class="k">WHEN</span> <span class="s1">&#39;1&#39;</span> <span class="k">THEN</span> <span class="s1">&#39;female&#39;</span>
         <span class="k">ELSE</span> <span class="s1">&#39;neither&#39;</span>
     <span class="k">END</span> <span class="k">AS</span> <span class="n">gender_norm</span>
-<span class="k">FROM</span> <span class="n">employees</span><span class="p">;</span>
+<span class="k">FROM</span> <span class="n">us_employees</span><span class="p">;</span>
 </pre></div>
 <h4 id="Create-a-Boolean-Field">Create a Boolean Field<a class="anchor-link" href="#Create-a-Boolean-Field">&#182;</a></h4><p>Sometimes it's easier to work with a boolean value, and <code>CASE</code> can be helpful here, as well. Here I create a new column called <code>is_female</code> containing the value <code>1</code> if <code>female</code> and <code>0</code> if <code>male</code></p>
 <div class="highlight"><pre><span></span><span class="n">USE</span> <span class="n">titanic_db</span><span class="p">;</span>
