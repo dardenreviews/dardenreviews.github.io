@@ -1,4 +1,4 @@
-# Video Tutorial Resources
+# <font color="red">Video Tutorial Resources</font>
 
 ### <font color="orange">How to Create a Github Page</font>
 
@@ -12,4 +12,4 @@ ____
 
 ___
 
-### <font color=orange>Who Will Be Next?</font>
+### <font color="orange">Who Will Be Next?</font>
