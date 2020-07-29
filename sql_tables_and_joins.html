@@ -13123,7 +13123,7 @@ $( document ).ready(function(){
 <ul>
 <li><strong>CustomerNo may appear only ONE time in the CUSTOMERS table but MANY times in its related ORDERS table. One-to-Many</strong></li>
 </ul>
-<p><strong>A Many-to-Many Relationship</strong> is when multiple records in one table are associated with multiple records in another table. To make this type of relationship work, we need a junction table that holds the primary keys of the two or more tables that have many-to-many relationships.</p>
+<p><strong>A Many-to-Many Relationship</strong> is when multiple records in one table are associated with multiple records in another table. To make this type of relationship work, we need a associative or joiner (also known as junction) table that holds the primary keys of the two or more tables that have many-to-many relationships.</p>
 <blockquote><p><strong>For Example:</strong> Say we had a table called Students that had a primary key called StudentID representing a student at UTSA and a table called Classes that had a primary key called ClassID representing the different classes offered in a given semester.</p>
 </blockquote>
 <table>
@@ -13194,7 +13194,7 @@ $( document ).ready(function(){
 </tr>
 </tbody>
 </table>
-<div class="alert alert-block alert-info"><b>This is where we need a Joining Table to play the middle person!</b></div><p><strong>An Associative or Joining Table</strong> maps two or more tables together by referencing the primary keys of each table. A joining table can be thought of as a base table that resolves many-to-many relationships; it contains the primary keys for each table it cross references or joins.</p>
+<div class="alert alert-block alert-info"><b>This is where we need a Joiner Table to play the middle person!</b></div><p><strong>An Associative or Joiner Table</strong> maps two or more tables together by referencing the primary keys of each table. A joiner table can be thought of as a base table that resolves many-to-many relationships; it contains the primary keys for each table it cross references or joins.</p>
 <blockquote><p><strong>For Example:</strong> We could have a joiner table called Enrollment, like you see below, that holds and connects the primary keys for both the Students and Classes tables.</p>
 </blockquote>
 <table>
@@ -13261,6 +13261,7 @@ $( document ).ready(function(){
 <span class="k">JOIN</span> <span class="n">salaries</span> <span class="k">USING</span><span class="p">(</span><span class="n">emp_no</span><span class="p">);</span>
 </pre></div>
 <div class="highlight"><pre><span></span><span class="c1">-- Query joins three tables, filters with a WHERE clause, and uses an ORDER BY clause.</span>
+
 <span class="k">SELECT</span> <span class="n">d</span><span class="p">.</span><span class="n">dept_name</span> <span class="k">AS</span> <span class="s1">&#39;Department Name&#39;</span><span class="p">,</span> 
        <span class="n">CONCAT</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">first_name</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="n">last_name</span><span class="p">)</span> <span class="k">AS</span> <span class="s1">&#39;Department Manager&#39;</span>
 <span class="k">FROM</span> <span class="n">employees</span> <span class="k">AS</span> <span class="n">e</span>
