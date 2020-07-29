@@ -13283,8 +13283,11 @@ $( document ).ready(function(){
 <p>Combine operators with clauses like the examples below.</p>
 <h4 id="WHERE"><code>WHERE</code><a class="anchor-link" href="#WHERE">&#182;</a></h4><p>I can add specific conditions to my queries using a <code>WHERE</code> clause paired with different operators to limit the resulting result set to records that satisfy my specific conditions. By using <code>WHERE</code> with the <code>=</code> sign, I am filtering for one specific value, in this case Fleetwood Mac as the artist.</p>
 <div class="highlight"><pre><span></span><span class="c1">--I&#39;m using the albums_db database</span>
+
 <span class="n">USE</span> <span class="n">albums_db</span><span class="p">;</span>
+
 <span class="c1">--I want to see all of the fields for records by the artist Fleetwood Mac in the albums table.</span>
+
 <span class="k">SELECT</span> <span class="o">*</span>
 <span class="k">FROM</span> <span class="n">albums</span>
 <span class="k">WHERE</span> <span class="n">artist</span> <span class="o">=</span> <span class="s1">&#39;Fleetwood Mac&#39;</span><span class="p">;</span>
@@ -13313,8 +13316,9 @@ $( document ).ready(function(){
 <span class="k">AND</span> <span class="n">release_date</span> <span class="k">BETWEEN</span> <span class="s1">&#39;1990&#39;</span> <span class="k">AND</span> <span class="s1">&#39;1999&#39;</span>
 <span class="k">ORDER</span> <span class="k">BY</span> <span class="nb">date</span> <span class="k">DESC</span><span class="p">;</span>
 </pre></div>
-<h4 id="AND,-OR"><code>AND</code>, <code>OR</code><a class="anchor-link" href="#AND,-OR">&#182;</a></h4><p>Here I combine operators <code>NOT</code> and <code>LIKE</code> with a wildcard symbol, <code>%</code>, to exclude artists whose names start with the letter 'm' followed by any number of unknown letters. We can use the <code>OR</code> operator to find values that match <strong>any</strong> of our criteria, while using the <code>AND</code> operator requires that a value match <strong>all</strong> of our criteria</p>
+<h4 id="AND,-OR"><code>AND</code>, <code>OR</code><a class="anchor-link" href="#AND,-OR">&#182;</a></h4><p>Here I combine operators <code>NOT</code> and <code>LIKE</code> with a wildcard symbol, <code>%</code>, to exclude artists whose names start with the letter 'm' followed by any number of unknown letters. We can use the <code>OR</code> operator to find values that match <strong>any</strong> of our criteria, while using the <code>AND</code> operator requires that a value match <strong>all</strong> of our criteria.</p>
 <div class="highlight"><pre><span></span><span class="c1">--I want to see the same list as above except without records for artists whose names start with the letter m.</span>
+
 <span class="k">SELECT</span> <span class="n">artist</span><span class="p">,</span> 
        <span class="n">name</span> <span class="k">AS</span> <span class="n">title</span><span class="p">,</span> 
        <span class="n">release_date</span> <span class="k">AS</span> <span class="nb">date</span>
@@ -13326,8 +13330,11 @@ $( document ).ready(function(){
 </pre></div>
 <h4 id="Grouping-and-Patterns">Grouping and Patterns<a class="anchor-link" href="#Grouping-and-Patterns">&#182;</a></h4><p>I can use the <code>_</code> character to represent one unknown character before or after a known character. Below, I am using <code>artist LIKE '_a%'</code> to represent an unknown starting character followed by the letter 'a' and any number of other characters. In other words, I am looking for any artist that has the letter 'a' as the second letter in their name.</p>
 <div class="highlight"><pre><span></span><span class="c1">--I&#39;m using the albums_db database</span>
+
 <span class="n">USE</span> <span class="n">albums_db</span><span class="p">;</span>
+
 <span class="c1">--I want to see all of the fields for records where artists have the letter &#39;a&#39; as the second letter in their name or end in the letter &#39;d&#39; and have a release_date before the year 1990.</span>
+
 <span class="k">SELECT</span> <span class="o">*</span>
 <span class="k">FROM</span> <span class="n">albums</span>
 <span class="k">WHERE</span> <span class="p">(</span><span class="n">artist</span> <span class="k">LIKE</span> <span class="s1">&#39;_a%&#39;</span>
