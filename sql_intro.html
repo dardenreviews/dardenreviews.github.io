@@ -13483,7 +13483,7 @@ $( document ).ready(function(){
    <span class="n">Chleq</span>        <span class="mi">189</span>
    <span class="n">Lindqvist</span>    <span class="mi">190</span>
 </pre></div>
-<p>Using the <code>GROUP BY</code> caluse with a subquery and a <code>WHERE</code> filter to get both a total and count of records in my subquery result set using both the <code>SUM()</code> and <code>COUNT()</code> functions. The <code>WHERE</code> clause is used for filtering non-aggregated data, so I'm using it outside of my subquery that's using a <code>GROUP BY</code> clause.</p>
+<p>Using the <code>GROUP BY</code> clause with a subquery and a <code>WHERE</code> filter to get both a total and count of records in my subquery result set using both the <code>SUM()</code> and <code>COUNT()</code> functions. The <code>WHERE</code> clause is used for filtering non-aggregated data, so I'm using it outside of my subquery that's using a <code>GROUP BY</code> clause.</p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="k">names</span><span class="p">.</span><span class="n">num</span><span class="p">)</span> <span class="k">as</span> <span class="n">dup_user_names</span><span class="p">,</span>
        <span class="k">COUNT</span><span class="p">(</span><span class="k">names</span><span class="p">.</span><span class="n">num</span><span class="p">)</span> <span class="k">as</span> <span class="n">unique_dup_user_names</span>
 <span class="k">FROM</span>
@@ -13504,7 +13504,7 @@ $( document ).ready(function(){
 <span class="o">-&gt;</span> <span class="n">dup_user_names</span>    <span class="n">unique_dup_user_names</span>
            <span class="mi">27403</span>                 <span class="mi">13251</span>
 </pre></div>
-<p>Using the <code>GROUP BY</code> caluse with a subquery and <code>HAVING</code> filter to get both a total and count of records in my subquery result set using both the <code>SUM()</code> and <code>COUNT()</code> functions. <code>HAVING</code> is used for filtering results with aggregates, so I can use it inside of my subquery that's performing a <code>GROUP BY</code> to aggregate.</p>
+<p>Using the <code>GROUP BY</code> clause with a subquery and <code>HAVING</code> filter to get both a total and count of records in my subquery result set using both the <code>SUM()</code> and <code>COUNT()</code> functions. <code>HAVING</code> is used for filtering results with aggregates, so I can use it inside of my subquery that's performing a <code>GROUP BY</code> to aggregate.</p>
 <div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="k">names</span><span class="p">.</span><span class="n">num</span><span class="p">)</span> <span class="k">as</span> <span class="n">dup_user_names</span><span class="p">,</span>
        <span class="k">COUNT</span><span class="p">(</span><span class="k">names</span><span class="p">.</span><span class="n">num</span><span class="p">)</span> <span class="k">as</span> <span class="n">unique_dup_user_names</span>
 <span class="k">FROM</span>
