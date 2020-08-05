@@ -36,6 +36,16 @@ SQL Review Notebooks
 
 >This notebooks dives into the `CASE` statement and working with temporary tables.
 
+Pandas Review Notebooks
+
+>These notebooks introduce the pandas library from Series objects to DataFrame objects including their common attributes, methods, and chaining techniques that employ both allowing for creative data manipulation.
+
+[Pandas Series Review Notebook](https://faithkane3.github.io/pandas_series_review/pandas_series_review)
+
+[Pandas DataFrame Review Notebook](https://faithkane3.github.io/)
+
+Coming Soon!
+
 [Stats Review Notebook](https://dardenreviews.github.io/stats_review/stats_review)
 
 >This notebook covers Probability Distributions and Hypothesis Testing. I tried to make the concepts approachable and included lots of helpful examples and code snippets.
