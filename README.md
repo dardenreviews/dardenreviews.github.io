@@ -40,9 +40,9 @@ Pandas Review Notebooks
 
 >These notebooks introduce the pandas library from Series objects to DataFrame objects including their common attributes, methods, and chaining techniques that employ both allowing for creative data manipulation.
 
-[Pandas Series Review Notebook](https://faithkane3.github.io/pandas_series_review/pandas_series_review)
+[Pandas Series Review Notebook](https://dardenreviews.github.io/pandas_series_review/pandas_series_review)
 
-[Pandas DataFrame Review Notebook](https://faithkane3.github.io/)
+[Pandas DataFrame Review Notebook](dardenreviews.github.io/)
 
 Coming Soon!
 
