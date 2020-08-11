@@ -13141,7 +13141,7 @@ $( document ).ready(function(){
 </ul>
 <p>By default, pandas will use a RangeIndex if you do not specify otherwise (I will demonstrate this below). You can think of a pandas Series like a single column from a table in Excel or Google Sheets. Pandas also has a structure like the Excel table, which is a DataFrame object.</p>
 <p>A pandas Series can be created in several ways, some of which I'll demonstrate below, but <strong>it will most often be created by pulling a single column from a pandas Dataframe in which case the Series has the same index as the Dataframe.</strong></p>
-<p>Check out even more ways to create a pandas Series <a href="https://www.tutorialspoint.com/python_pandas/python_pandas_series.htm#:~:text=Series%20is%20a%20one%2Ddimensional,labels%20are%20collectively%20called%20index.">here</a></p>
+<p>Check out even more ways to create a pandas Series <a href="https://www.tutorialspoint.com/python_pandas/python_pandas_series.htm#:~:text=Series%20is%20a%20one%2Ddimensional,labels%20are%20collectively%20called%20index.">here</a>.</p>
 
 </div>
 </div>
@@ -14300,7 +14300,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id=".nlargest()-and-nsmallest()"><code>.nlargest()</code> and <code>nsmallest()</code><a class="anchor-link" href="#.nlargest()-and-nsmallest()">&#182;</a></h4><p>These methods allow me to get n largest or n smallest values from either a pandas Series or DataFrame object. <strong>I can set the <code>keep</code> parameter to <code>'first'</code>, <code>'last'</code>, or <code>'all'</code> to deal with duplicate largest values;</strong> this is quite handy.</p>
+<h4 id=".nlargest()-and-.nsmallest()"><code>.nlargest()</code> and <code>.nsmallest()</code><a class="anchor-link" href="#.nlargest()-and-.nsmallest()">&#182;</a></h4><p>These methods allow me to get n largest or n smallest values from either a pandas Series or DataFrame object. <strong>I can set the <code>keep</code> parameter to <code>'first'</code>, <code>'last'</code>, or <code>'all'</code> to deal with duplicate largest values;</strong> this is quite handy.</p>
 <p>The default argument for <code>keep</code> is shown below.</p>
 <div class="highlight"><pre><span></span><span class="n">Series</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">keep</span><span class="o">=</span><span class="s1">&#39;first&#39;</span><span class="p">)</span>
 </pre></div>
