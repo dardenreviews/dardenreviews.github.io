@@ -13084,7 +13084,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {};
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": true, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -13096,6 +13096,14 @@ $( document ).ready(function(){
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h1>Table of Contents<span class="tocSkip"></span></h1></p>
+<div class="toc"><ul class="toc-item"><li><span><a href="#1.-Use-pandas-to-create-a-Series-from-the-following-data:" data-toc-modified-id="1.-Use-pandas-to-create-a-Series-from-the-following-data:-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>1. Use pandas to create a Series from the following data:</a></span><ul class="toc-item"><li><span><a href="#a.-Name-the-variable-that-holds-the-series-fruits." data-toc-modified-id="a.-Name-the-variable-that-holds-the-series-fruits.-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>a. Name the variable that holds the series fruits.</a></span></li><li><span><a href="#b.-Run-.describe()-method-on-the-Series-to-see-what-describe-returns-for-a-series-of-strings." data-toc-modified-id="b.-Run-.describe()-method-on-the-Series-to-see-what-describe-returns-for-a-series-of-strings.-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>b. Run <code>.describe()</code> method on the Series to see what describe returns for a series of strings.</a></span></li><li><span><a href="#c.-Run-the-code-necessary-to-produce-only-the-unique-fruit-names." data-toc-modified-id="c.-Run-the-code-necessary-to-produce-only-the-unique-fruit-names.-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>c. Run the code necessary to produce only the unique fruit names.</a></span></li><li><span><a href="#d.-Determine-how-many-times-each-value-occurs-in-the-series." data-toc-modified-id="d.-Determine-how-many-times-each-value-occurs-in-the-series.-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>d. Determine how many times each value occurs in the series.</a></span></li><li><span><a href="#e.-Determine-the-most-frequently-occurring-fruit-name-from-the-series." data-toc-modified-id="e.-Determine-the-most-frequently-occurring-fruit-name-from-the-series.-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>e. Determine the most frequently occurring fruit name from the series.</a></span></li><li><span><a href="#f.-Determine-the-least-frequently-occurring-fruit-name-from-the-series." data-toc-modified-id="f.-Determine-the-least-frequently-occurring-fruit-name-from-the-series.-1.6"><span class="toc-item-num">1.6&nbsp;&nbsp;</span>f. Determine the least frequently occurring fruit name from the series.</a></span></li><li><span><a href="#g.-Write-the-code-to-get-the-longest-string-from-the-fruits-series." data-toc-modified-id="g.-Write-the-code-to-get-the-longest-string-from-the-fruits-series.-1.7"><span class="toc-item-num">1.7&nbsp;&nbsp;</span>g. Write the code to get the longest string from the fruits series.</a></span></li><li><span><a href="#h.-Find-the-fruit(s)-with-5-or-more-letters-in-the-name." data-toc-modified-id="h.-Find-the-fruit(s)-with-5-or-more-letters-in-the-name.-1.8"><span class="toc-item-num">1.8&nbsp;&nbsp;</span>h. Find the fruit(s) with 5 or more letters in the name.</a></span></li><li><span><a href="#i.-Capitalize-all-the-fruit-strings-in-the-series." data-toc-modified-id="i.-Capitalize-all-the-fruit-strings-in-the-series.-1.9"><span class="toc-item-num">1.9&nbsp;&nbsp;</span>i. Capitalize all the fruit strings in the series.</a></span></li><li><span><a href="#j.-Count-the-letter-&quot;a&quot;-in-all-the-fruits-(use-string-vectorization)." data-toc-modified-id="j.-Count-the-letter-&quot;a&quot;-in-all-the-fruits-(use-string-vectorization).-1.10"><span class="toc-item-num">1.10&nbsp;&nbsp;</span>j. Count the letter "a" in all the fruits (use string vectorization).</a></span></li><li><span><a href="#k.-Output-the-number-of-vowels-in-each-and-every-fruit." data-toc-modified-id="k.-Output-the-number-of-vowels-in-each-and-every-fruit.-1.11"><span class="toc-item-num">1.11&nbsp;&nbsp;</span>k. Output the number of vowels in each and every fruit.</a></span></li><li><span><a href="#l.-Use-the-.apply()-method-and-a-lambda-function-to-find-the-fruit(s)-containing-two-or-more-&quot;o&quot;-letters-in-the-name." data-toc-modified-id="l.-Use-the-.apply()-method-and-a-lambda-function-to-find-the-fruit(s)-containing-two-or-more-&quot;o&quot;-letters-in-the-name.-1.12"><span class="toc-item-num">1.12&nbsp;&nbsp;</span>l. Use the <code>.apply()</code> method and a lambda function to find the fruit(s) containing two or more "o" letters in the name.</a></span></li><li><span><a href="#m.-Write-the-code-to-get-only-the-fruits-containing-&quot;berry&quot;-in-the-name." data-toc-modified-id="m.-Write-the-code-to-get-only-the-fruits-containing-&quot;berry&quot;-in-the-name.-1.13"><span class="toc-item-num">1.13&nbsp;&nbsp;</span>m. Write the code to get only the fruits containing "berry" in the name.</a></span></li><li><span><a href="#n.-Write-the-code-to-get-only-the-fruits-containing-&quot;apple&quot;-in-the-name." data-toc-modified-id="n.-Write-the-code-to-get-only-the-fruits-containing-&quot;apple&quot;-in-the-name.-1.14"><span class="toc-item-num">1.14&nbsp;&nbsp;</span>n. Write the code to get only the fruits containing "apple" in the name.</a></span></li><li><span><a href="#o.-Which-fruit-has-the-highest-amount-of-vowels?" data-toc-modified-id="o.-Which-fruit-has-the-highest-amount-of-vowels?-1.15"><span class="toc-item-num">1.15&nbsp;&nbsp;</span>o. Which fruit has the highest amount of vowels?</a></span></li></ul></li><li><span><a href="#2.-Use-pandas-to-create-a-Series-from-the-following-data:" data-toc-modified-id="2.-Use-pandas-to-create-a-Series-from-the-following-data:-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>2. Use pandas to create a Series from the following data:</a></span><ul class="toc-item"><li><span><a href="#a.-What-is-the-data-type-of-the-series?" data-toc-modified-id="a.-What-is-the-data-type-of-the-series?-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>a. What is the data type of the series?</a></span></li><li><span><a href="#b.-Use-series-operations-to-convert-the-series-to-a-numeric-data-type." data-toc-modified-id="b.-Use-series-operations-to-convert-the-series-to-a-numeric-data-type.-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>b. Use series operations to convert the series to a numeric data type.</a></span></li><li><span><a href="#c.-What-is-the-maximum-value?" data-toc-modified-id="c.-What-is-the-maximum-value?-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>c. What is the maximum value?</a></span></li><li><span><a href="#d.-Bin-the-data-into-4-equally-sized-intervals-and-show-how-many-values-fall-into-each-bin." data-toc-modified-id="d.-Bin-the-data-into-4-equally-sized-intervals-and-show-how-many-values-fall-into-each-bin.-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>d. Bin the data into 4 equally sized intervals and show how many values fall into each bin.</a></span></li><li><span><a href="#e.-Plot-a-histogram-of-the-data.-Be-sure-to-include-a-title-and-axis-labels." data-toc-modified-id="e.-Plot-a-histogram-of-the-data.-Be-sure-to-include-a-title-and-axis-labels.-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>e. Plot a histogram of the data. Be sure to include a title and axis labels.</a></span></li></ul></li><li><span><a href="#3.-Use-pandas-to-create-a-Series-from-the-following-exam-scores:" data-toc-modified-id="3.-Use-pandas-to-create-a-Series-from-the-following-exam-scores:-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>3. Use pandas to create a Series from the following exam scores:</a></span><ul class="toc-item"><li><span><a href="#a.-What-is-the-minimum-exam-score?-The-max,-mean,-median?" data-toc-modified-id="a.-What-is-the-minimum-exam-score?-The-max,-mean,-median?-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>a. What is the minimum exam score? The max, mean, median?</a></span></li><li><span><a href="#b.-Plot-a-histogram-of-the-scores." data-toc-modified-id="b.-Plot-a-histogram-of-the-scores.-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>b. Plot a histogram of the scores.</a></span></li><li><span><a href="#c.-Convert-each-of-the-numbers-above-into-a-letter-grade.-For-example,-86-should-be-a-'B'-and-95-should-be-an-'A'." data-toc-modified-id="c.-Convert-each-of-the-numbers-above-into-a-letter-grade.-For-example,-86-should-be-a-'B'-and-95-should-be-an-'A'.-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>c. Convert each of the numbers above into a letter grade. For example, 86 should be a 'B' and 95 should be an 'A'.</a></span></li><li><span><a href="#d.-Write-the-code-necessary-to-implement-a-curve." data-toc-modified-id="d.-Write-the-code-necessary-to-implement-a-curve.-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>d. Write the code necessary to implement a curve.</a></span></li></ul></li><li><span><a href="#4.-Use-pandas-to-create-a-Series-from-the-following-string:" data-toc-modified-id="4.-Use-pandas-to-create-a-Series-from-the-following-string:-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>4. Use pandas to create a Series from the following string:</a></span><ul class="toc-item"><li><span><a href="#a.-What-is-the-most-frequently-occuring-letter?-Least-frequently-occuring?" data-toc-modified-id="a.-What-is-the-most-frequently-occuring-letter?-Least-frequently-occuring?-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span>a. What is the most frequently occuring letter? Least frequently occuring?</a></span></li><li><span><a href="#b.-How-many-vowels-are-in-the-list?" data-toc-modified-id="b.-How-many-vowels-are-in-the-list?-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span>b. How many vowels are in the list?</a></span></li><li><span><a href="#c.-How-many-consonants-are-in-the-list?" data-toc-modified-id="c.-How-many-consonants-are-in-the-list?-4.3"><span class="toc-item-num">4.3&nbsp;&nbsp;</span>c. How many consonants are in the list?</a></span></li><li><span><a href="#d.-Create-a-series-that-has-all-of-the-same-letters,-but-uppercased." data-toc-modified-id="d.-Create-a-series-that-has-all-of-the-same-letters,-but-uppercased.-4.4"><span class="toc-item-num">4.4&nbsp;&nbsp;</span>d. Create a series that has all of the same letters, but uppercased.</a></span></li><li><span><a href="#e.-Create-a-bar-plot-of-the-frequencies-of-the-6-most-frequently-occuring-letters." data-toc-modified-id="e.-Create-a-bar-plot-of-the-frequencies-of-the-6-most-frequently-occuring-letters.-4.5"><span class="toc-item-num">4.5&nbsp;&nbsp;</span>e. Create a bar plot of the frequencies of the 6 most frequently occuring letters.</a></span></li></ul></li><li><span><a href="#5.-Student-Solution-Walkthroughs!!" data-toc-modified-id="5.-Student-Solution-Walkthroughs!!-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>5. Student Solution Walkthroughs!!</a></span></li></ul></div>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13459,16 +13467,16 @@ dtype: object</pre>
 <pre>kiwi                4
 mango               2
 tomato              1
-blueberry           1
-strawberry          1
-gala apple          1
-watermelon          1
-gooseberry          1
-papaya              1
-pineapple           1
 blackberry          1
-honeycrisp apple    1
+papaya              1
 honeydew            1
+watermelon          1
+gala apple          1
+strawberry          1
+blueberry           1
+honeycrisp apple    1
+pineapple           1
+gooseberry          1
 dtype: int64</pre>
 </div>
 
@@ -13676,16 +13684,16 @@ dtype: int64</pre>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>tomato              1
-blueberry           1
-strawberry          1
-gala apple          1
-watermelon          1
-gooseberry          1
-papaya              1
-pineapple           1
 blackberry          1
-honeycrisp apple    1
+papaya              1
 honeydew            1
+watermelon          1
+gala apple          1
+strawberry          1
+blueberry           1
+honeycrisp apple    1
+pineapple           1
+gooseberry          1
 dtype: int64</pre>
 </div>
 
@@ -13722,16 +13730,16 @@ dtype: int64</pre>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>tomato              1
-blueberry           1
-strawberry          1
-gala apple          1
-watermelon          1
-gooseberry          1
-papaya              1
-pineapple           1
 blackberry          1
-honeycrisp apple    1
+papaya              1
 honeydew            1
+watermelon          1
+gala apple          1
+strawberry          1
+blueberry           1
+honeycrisp apple    1
+pineapple           1
+gooseberry          1
 dtype: int64</pre>
 </div>
 
@@ -13768,16 +13776,16 @@ dtype: int64</pre>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>[&#39;tomato&#39;,
- &#39;blueberry&#39;,
- &#39;strawberry&#39;,
- &#39;gala apple&#39;,
- &#39;watermelon&#39;,
- &#39;gooseberry&#39;,
- &#39;papaya&#39;,
- &#39;pineapple&#39;,
  &#39;blackberry&#39;,
+ &#39;papaya&#39;,
+ &#39;honeydew&#39;,
+ &#39;watermelon&#39;,
+ &#39;gala apple&#39;,
+ &#39;strawberry&#39;,
+ &#39;blueberry&#39;,
  &#39;honeycrisp apple&#39;,
- &#39;honeydew&#39;]</pre>
+ &#39;pineapple&#39;,
+ &#39;gooseberry&#39;]</pre>
 </div>
 
 </div>
@@ -15687,7 +15695,7 @@ dtype: int64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_101_0.png"
+<img src="output_102_0.png"
 >
 </div>
 
@@ -16035,7 +16043,7 @@ dtype: float64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_117_0.png"
+<img src="output_118_0.png"
 >
 </div>
 
@@ -16124,10 +16132,12 @@ dtype: int64</pre>
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot and title the code above</span>
 
-<span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">scores</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">bin_edges</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">bin_labels</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">,</span> 
-                                                                                   <span class="n">color</span><span class="o">=</span><span class="s1">&#39;thistle&#39;</span><span class="p">,</span>
-                                                                                   <span class="n">ec</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
-                                                                                   <span class="n">width</span><span class="o">=.</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">scores</span><span class="p">,</span> 
+       <span class="n">bins</span><span class="o">=</span><span class="n">bin_edges</span><span class="p">,</span> 
+       <span class="n">labels</span><span class="o">=</span><span class="n">bin_labels</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;barh&#39;</span><span class="p">,</span> 
+                                                           <span class="n">color</span><span class="o">=</span><span class="s1">&#39;thistle&#39;</span><span class="p">,</span>
+                                                           <span class="n">ec</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+                                                           <span class="n">width</span><span class="o">=.</span><span class="mi">8</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Letter Grades&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Number of Students&#39;</span><span class="p">)</span>
@@ -16152,7 +16162,7 @@ dtype: int64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_121_0.png"
+<img src="output_122_0.png"
 >
 </div>
 
@@ -16346,7 +16356,7 @@ dtype: int64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_127_0.png"
+<img src="output_128_0.png"
 >
 </div>
 
@@ -16435,7 +16445,7 @@ dtype: int64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_129_0.png"
+<img src="output_130_0.png"
 >
 </div>
 
@@ -16449,7 +16459,7 @@ dtype: int64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_129_1.png"
+<img src="output_130_1.png"
 >
 </div>
 
@@ -16620,7 +16630,7 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="a.-What-is-the-most-frequently-occuring-letter?-Least-frequently-occuring?">a. What is the most frequently occuring letter? Least frequently occuring?<a class="anchor-link" href="#a.-What-is-the-most-frequently-occuring-letter?-Least-frequently-occuring?">&#182;</a></h3>
+<h4 id="a.-What-is-the-most-frequently-occuring-letter?-Least-frequently-occuring?">a. What is the most frequently occuring letter? Least frequently occuring?<a class="anchor-link" href="#a.-What-is-the-most-frequently-occuring-letter?-Least-frequently-occuring?">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -16651,25 +16661,25 @@ dtype: object</pre>
 <pre>y    13
 p    12
 w    10
-n     9
-b     9
-k     9
 m     9
-h     8
+k     9
+b     9
+n     9
 q     8
-x     8
-c     8
-o     8
 r     8
+h     8
+o     8
+c     8
+x     8
 a     8
 d     8
 v     7
 z     7
 t     7
 u     7
-j     6
 f     6
 e     6
+j     6
 i     5
 g     5
 s     5
@@ -16762,7 +16772,7 @@ dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="b.-How-many-vowels-are-in-the-list?">b. How many vowels are in the list?<a class="anchor-link" href="#b.-How-many-vowels-are-in-the-list?">&#182;</a></h3>
+<h4 id="b.-How-many-vowels-are-in-the-list?">b. How many vowels are in the list?<a class="anchor-link" href="#b.-How-many-vowels-are-in-the-list?">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -17005,7 +17015,7 @@ Length: 200, dtype: object</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_152_0.png"
+<img src="output_153_0.png"
 >
 </div>
 
