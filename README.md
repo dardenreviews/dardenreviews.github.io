@@ -38,9 +38,15 @@ SQL Review Notebooks
 
 Pandas Review Notebooks
 
->These notebooks introduce the pandas library from Series objects to DataFrame objects including their common attributes, methods, and chaining techniques that employ both allowing for creative data manipulation.
+>These notebooks introduce the pandas library from Series objects to DataFrame objects including their common attributes, methods, and chaining techniques.
 
 [Pandas Series Review Notebook](https://dardenreviews.github.io/pandas_series_review/pandas_series_review)
+
+>This notebook covers creating, indexing, and using methods and attributes with the pandas Series object.
+
+- [Pandas Series Exercises](https://dardenreviews.github.io/pandas_series_walkthrough/pandas_series/walkthrough)
+
+>Check out lots of great examples of code in action with the pandas Series.
 
 [Pandas DataFrame Review Notebook](dardenreviews.github.io/)
 
