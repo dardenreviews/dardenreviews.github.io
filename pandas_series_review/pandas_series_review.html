@@ -13100,7 +13100,7 @@ $( document ).ready(function(){
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h1>Table of Contents<span class="tocSkip"></span></h1></p>
-<div class="toc"><ul class="toc-item"><li><span><a href="#What-Is-a-Pandas-Series?" data-toc-modified-id="What-Is-a-Pandas-Series?-1"><span class="toc-item-num">1&nbsp;&nbsp;</span><font color="red">What Is a Pandas Series?</font></a></span><ul class="toc-item"><li><span><a href="#Create-a-Pandas-Series:" data-toc-modified-id="Create-a-Pandas-Series:-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Create a Pandas Series:</a></span><ul class="toc-item"><li><span><a href="#From-a-Python-List" data-toc-modified-id="From-a-Python-List-1.1.1"><span class="toc-item-num">1.1.1&nbsp;&nbsp;</span>From a Python List</a></span><ul class="toc-item"><li><span><a href="#The-Components-of-a-Pandas-Series---Index,-Data" data-toc-modified-id="The-Components-of-a-Pandas-Series---Index,-Data-1.1.1.1"><span class="toc-item-num">1.1.1.1&nbsp;&nbsp;</span>The Components of a Pandas Series - Index, Data</a></span></li></ul></li><li><span><a href="#From-a-NumPy-Array" data-toc-modified-id="From-a-NumPy-Array-1.1.2"><span class="toc-item-num">1.1.2&nbsp;&nbsp;</span>From a NumPy Array</a></span></li><li><span><a href="#From-a-Python-Dictionary." data-toc-modified-id="From-a-Python-Dictionary.-1.1.3"><span class="toc-item-num">1.1.3&nbsp;&nbsp;</span>From a Python Dictionary.</a></span></li><li><span><a href="#From-a-Pandas-DataFrame" data-toc-modified-id="From-a-Pandas-DataFrame-1.1.4"><span class="toc-item-num">1.1.4&nbsp;&nbsp;</span>From a Pandas DataFrame</a></span></li></ul></li></ul></li><li><span><a href="#So-What's-So-Great-About-a-Pandas-Series?" data-toc-modified-id="So-What's-So-Great-About-a-Pandas-Series?-2"><span class="toc-item-num">2&nbsp;&nbsp;</span><font color="orange">So What's So Great About a Pandas Series?</font></a></span></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-3"><span class="toc-item-num">3&nbsp;&nbsp;</span><font color="green">Now What?</font></a></span><ul class="toc-item"><li><span><a href="#Methods" data-toc-modified-id="Methods-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Methods</a></span><ul class="toc-item"><li><span><a href="#.head(),-.tail(),-and-.sample()" data-toc-modified-id=".head(),-.tail(),-and-.sample()-3.1.1"><span class="toc-item-num">3.1.1&nbsp;&nbsp;</span><code>.head()</code>, <code>.tail()</code>, and <code>.sample()</code></a></span></li><li><span><a href="#.astype()" data-toc-modified-id=".astype()-3.1.2"><span class="toc-item-num">3.1.2&nbsp;&nbsp;</span><code>.astype()</code></a></span></li><li><span><a href="#.describe()" data-toc-modified-id=".describe()-3.1.3"><span class="toc-item-num">3.1.3&nbsp;&nbsp;</span><code>.describe()</code></a></span></li><li><span><a href="#.value_counts()" data-toc-modified-id=".value_counts()-3.1.4"><span class="toc-item-num">3.1.4&nbsp;&nbsp;</span><code>.value_counts()</code></a></span></li><li><span><a href="#.nlargest()-and-.nsmallest()" data-toc-modified-id=".nlargest()-and-.nsmallest()-3.1.5"><span class="toc-item-num">3.1.5&nbsp;&nbsp;</span><code>.nlargest()</code> and <code>.nsmallest()</code></a></span></li><li><span><a href="#.sort_values()-and-.sort_index()" data-toc-modified-id=".sort_values()-and-.sort_index()-3.1.6"><span class="toc-item-num">3.1.6&nbsp;&nbsp;</span><code>.sort_values()</code> and <code>.sort_index()</code></a></span></li><li><span><a href="#.any()-and-.all()" data-toc-modified-id=".any()-and-.all()-3.1.7"><span class="toc-item-num">3.1.7&nbsp;&nbsp;</span><code>.any()</code> and <code>.all()</code></a></span></li><li><span><a href="#String-Methods" data-toc-modified-id="String-Methods-3.1.8"><span class="toc-item-num">3.1.8&nbsp;&nbsp;</span>String Methods</a></span></li><li><span><a href="#.isin()" data-toc-modified-id=".isin()-3.1.9"><span class="toc-item-num">3.1.9&nbsp;&nbsp;</span><code>.isin()</code></a></span></li></ul></li><li><span><a href="#The-Indexing-Operator-[]" data-toc-modified-id="The-Indexing-Operator-[]-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>The Indexing Operator <code>[]</code></a></span></li><li><span><a href="#Attributes" data-toc-modified-id="Attributes-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>Attributes</a></span></li><li><span><a href="#Indexing-with-Attributes-.loc-and-.iloc" data-toc-modified-id="Indexing-with-Attributes-.loc-and-.iloc-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>Indexing with Attributes <code>.loc</code> and <code>.iloc</code></a></span><ul class="toc-item"><li><span><a href="#.loc" data-toc-modified-id=".loc-3.4.1"><span class="toc-item-num">3.4.1&nbsp;&nbsp;</span><code>.loc</code></a></span></li><li><span><a href="#.iloc" data-toc-modified-id=".iloc-3.4.2"><span class="toc-item-num">3.4.2&nbsp;&nbsp;</span><code>.iloc</code></a></span></li></ul></li><li><span><a href="#Common-Attributes" data-toc-modified-id="Common-Attributes-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>Common Attributes</a></span><ul class="toc-item"><li><span><a href="#.dtype" data-toc-modified-id=".dtype-3.5.1"><span class="toc-item-num">3.5.1&nbsp;&nbsp;</span><code>.dtype</code></a></span></li><li><span><a href="#.size" data-toc-modified-id=".size-3.5.2"><span class="toc-item-num">3.5.2&nbsp;&nbsp;</span><code>.size</code></a></span></li><li><span><a href="#.shape" data-toc-modified-id=".shape-3.5.3"><span class="toc-item-num">3.5.3&nbsp;&nbsp;</span><code>.shape</code></a></span></li></ul></li><li><span><a href="#Method-Chaining" data-toc-modified-id="Method-Chaining-3.6"><span class="toc-item-num">3.6&nbsp;&nbsp;</span>Method Chaining</a></span></li><li><span><a href="#Using-Functions" data-toc-modified-id="Using-Functions-3.7"><span class="toc-item-num">3.7&nbsp;&nbsp;</span>Using Functions</a></span><ul class="toc-item"><li><span><a href="#.apply()" data-toc-modified-id=".apply()-3.7.1"><span class="toc-item-num">3.7.1&nbsp;&nbsp;</span><code>.apply()</code></a></span></li><li><span><a href="#.map()" data-toc-modified-id=".map()-3.7.2"><span class="toc-item-num">3.7.2&nbsp;&nbsp;</span><code>.map()</code></a></span></li></ul></li><li><span><a href="#.idxmax()-and-idxmin()" data-toc-modified-id=".idxmax()-and-idxmin()-3.8"><span class="toc-item-num">3.8&nbsp;&nbsp;</span><code>.idxmax()</code> and <code>idxmin()</code></a></span><ul class="toc-item"><li><span><a href="#.cut()" data-toc-modified-id=".cut()-3.8.1"><span class="toc-item-num">3.8.1&nbsp;&nbsp;</span><code>.cut()</code></a></span><ul class="toc-item"><li><span><a href="#Use-.cut()" data-toc-modified-id="Use-.cut()-3.8.1.1"><span class="toc-item-num">3.8.1.1&nbsp;&nbsp;</span>Use <code>.cut()</code></a></span></li><li><span><a href="#Plot-.cut().value_counts()" data-toc-modified-id="Plot-.cut().value_counts()-3.8.1.2"><span class="toc-item-num">3.8.1.2&nbsp;&nbsp;</span>Plot <code>.cut().value_counts()</code></a></span></li><li><span><a href="#Specify-Bin-Edges-and-Labels" data-toc-modified-id="Specify-Bin-Edges-and-Labels-3.8.1.3"><span class="toc-item-num">3.8.1.3&nbsp;&nbsp;</span>Specify Bin Edges and Labels</a></span></li></ul></li></ul></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#What-Is-a-Pandas-Series?" data-toc-modified-id="What-Is-a-Pandas-Series?-1"><span class="toc-item-num">1&nbsp;&nbsp;</span><font color="red">What Is a Pandas Series?</font></a></span><ul class="toc-item"><li><span><a href="#Create-a-Pandas-Series:" data-toc-modified-id="Create-a-Pandas-Series:-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Create a Pandas Series:</a></span><ul class="toc-item"><li><span><a href="#From-a-Python-List" data-toc-modified-id="From-a-Python-List-1.1.1"><span class="toc-item-num">1.1.1&nbsp;&nbsp;</span>From a Python List</a></span><ul class="toc-item"><li><span><a href="#The-Components-of-a-Pandas-Series---Index,-Data" data-toc-modified-id="The-Components-of-a-Pandas-Series---Index,-Data-1.1.1.1"><span class="toc-item-num">1.1.1.1&nbsp;&nbsp;</span>The Components of a Pandas Series - Index, Data</a></span></li></ul></li><li><span><a href="#From-a-NumPy-Array" data-toc-modified-id="From-a-NumPy-Array-1.1.2"><span class="toc-item-num">1.1.2&nbsp;&nbsp;</span>From a NumPy Array</a></span></li><li><span><a href="#From-a-Python-Dictionary." data-toc-modified-id="From-a-Python-Dictionary.-1.1.3"><span class="toc-item-num">1.1.3&nbsp;&nbsp;</span>From a Python Dictionary.</a></span></li><li><span><a href="#From-a-Pandas-DataFrame" data-toc-modified-id="From-a-Pandas-DataFrame-1.1.4"><span class="toc-item-num">1.1.4&nbsp;&nbsp;</span>From a Pandas DataFrame</a></span></li></ul></li></ul></li><li><span><a href="#So-What's-So-Great-About-a-Pandas-Series?" data-toc-modified-id="So-What's-So-Great-About-a-Pandas-Series?-2"><span class="toc-item-num">2&nbsp;&nbsp;</span><font color="orange">So What's So Great About a Pandas Series?</font></a></span></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-3"><span class="toc-item-num">3&nbsp;&nbsp;</span><font color="green">Now What?</font></a></span><ul class="toc-item"><li><span><a href="#Methods" data-toc-modified-id="Methods-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Methods</a></span><ul class="toc-item"><li><span><a href="#.head(),-.tail(),-and-.sample()" data-toc-modified-id=".head(),-.tail(),-and-.sample()-3.1.1"><span class="toc-item-num">3.1.1&nbsp;&nbsp;</span><code>.head()</code>, <code>.tail()</code>, and <code>.sample()</code></a></span></li><li><span><a href="#.astype()" data-toc-modified-id=".astype()-3.1.2"><span class="toc-item-num">3.1.2&nbsp;&nbsp;</span><code>.astype()</code></a></span></li><li><span><a href="#.describe()" data-toc-modified-id=".describe()-3.1.3"><span class="toc-item-num">3.1.3&nbsp;&nbsp;</span><code>.describe()</code></a></span></li><li><span><a href="#.value_counts()" data-toc-modified-id=".value_counts()-3.1.4"><span class="toc-item-num">3.1.4&nbsp;&nbsp;</span><code>.value_counts()</code></a></span></li><li><span><a href="#.nlargest()-and-.nsmallest()" data-toc-modified-id=".nlargest()-and-.nsmallest()-3.1.5"><span class="toc-item-num">3.1.5&nbsp;&nbsp;</span><code>.nlargest()</code> and <code>.nsmallest()</code></a></span></li><li><span><a href="#.sort_values()-and-.sort_index()" data-toc-modified-id=".sort_values()-and-.sort_index()-3.1.6"><span class="toc-item-num">3.1.6&nbsp;&nbsp;</span><code>.sort_values()</code> and <code>.sort_index()</code></a></span></li><li><span><a href="#.any()-and-.all()" data-toc-modified-id=".any()-and-.all()-3.1.7"><span class="toc-item-num">3.1.7&nbsp;&nbsp;</span><code>.any()</code> and <code>.all()</code></a></span></li><li><span><a href="#String-Methods" data-toc-modified-id="String-Methods-3.1.8"><span class="toc-item-num">3.1.8&nbsp;&nbsp;</span>String Methods</a></span></li><li><span><a href="#.apply()" data-toc-modified-id=".apply()-3.1.9"><span class="toc-item-num">3.1.9&nbsp;&nbsp;</span><code>.apply()</code></a></span></li><li><span><a href="#.map()" data-toc-modified-id=".map()-3.1.10"><span class="toc-item-num">3.1.10&nbsp;&nbsp;</span><code>.map()</code></a></span></li></ul></li><li><span><a href="#.idxmax()-and-idxmin()" data-toc-modified-id=".idxmax()-and-idxmin()-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span><code>.idxmax()</code> and <code>idxmin()</code></a></span><ul class="toc-item"><li><span><a href="#.isin()" data-toc-modified-id=".isin()-3.2.1"><span class="toc-item-num">3.2.1&nbsp;&nbsp;</span><code>.isin()</code></a></span></li></ul></li><li><span><a href="#The-Indexing-Operator-[]" data-toc-modified-id="The-Indexing-Operator-[]-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>The Indexing Operator <code>[]</code></a></span></li><li><span><a href="#Attributes" data-toc-modified-id="Attributes-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>Attributes</a></span></li><li><span><a href="#Indexing-with-Attributes-.loc-and-.iloc" data-toc-modified-id="Indexing-with-Attributes-.loc-and-.iloc-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>Indexing with Attributes <code>.loc</code> and <code>.iloc</code></a></span><ul class="toc-item"><li><span><a href="#.loc" data-toc-modified-id=".loc-3.5.1"><span class="toc-item-num">3.5.1&nbsp;&nbsp;</span><code>.loc</code></a></span></li><li><span><a href="#.iloc" data-toc-modified-id=".iloc-3.5.2"><span class="toc-item-num">3.5.2&nbsp;&nbsp;</span><code>.iloc</code></a></span></li></ul></li><li><span><a href="#Common-Attributes" data-toc-modified-id="Common-Attributes-3.6"><span class="toc-item-num">3.6&nbsp;&nbsp;</span>Common Attributes</a></span><ul class="toc-item"><li><span><a href="#.dtype" data-toc-modified-id=".dtype-3.6.1"><span class="toc-item-num">3.6.1&nbsp;&nbsp;</span><code>.dtype</code></a></span></li><li><span><a href="#.size" data-toc-modified-id=".size-3.6.2"><span class="toc-item-num">3.6.2&nbsp;&nbsp;</span><code>.size</code></a></span></li><li><span><a href="#.shape" data-toc-modified-id=".shape-3.6.3"><span class="toc-item-num">3.6.3&nbsp;&nbsp;</span><code>.shape</code></a></span></li></ul></li><li><span><a href="#Method-Chaining" data-toc-modified-id="Method-Chaining-3.7"><span class="toc-item-num">3.7&nbsp;&nbsp;</span>Method Chaining</a></span></li><li><span><a href="#Using-Functions" data-toc-modified-id="Using-Functions-3.8"><span class="toc-item-num">3.8&nbsp;&nbsp;</span>Using Functions</a></span><ul class="toc-item"><li><span><a href="#.cut()" data-toc-modified-id=".cut()-3.8.1"><span class="toc-item-num">3.8.1&nbsp;&nbsp;</span><code>.cut()</code></a></span><ul class="toc-item"><li><span><a href="#Use-.cut()" data-toc-modified-id="Use-.cut()-3.8.1.1"><span class="toc-item-num">3.8.1.1&nbsp;&nbsp;</span>Use <code>.cut()</code></a></span></li><li><span><a href="#Plot-.cut().value_counts()" data-toc-modified-id="Plot-.cut().value_counts()-3.8.1.2"><span class="toc-item-num">3.8.1.2&nbsp;&nbsp;</span>Plot <code>.cut().value_counts()</code></a></span></li><li><span><a href="#Specify-Bin-Edges-and-Labels" data-toc-modified-id="Specify-Bin-Edges-and-Labels-3.8.1.3"><span class="toc-item-num">3.8.1.3&nbsp;&nbsp;</span>Specify Bin Edges and Labels</a></span></li></ul></li></ul></li></ul></li></ul></div>
 </div>
 </div>
 </div>
@@ -13696,6 +13696,13 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2><font color=orange>So What's So Great About a Pandas Series?</font></h2>
 <p>A Series can be made up of any data type, it allows for indexing and subsetting of data, and comes with many useful attributes and methods adding an enormous array of functionality to this pandas object. One of the most impressive features of pandas is that it offers vectorized functions optimized to operate on Series (and DataFrame) objects; that means that I can call a function on an entire Series instead of a single string or scalar value.</p>
 <p><font color=purple>I'll explore all of these awesome features in depth throughout the rest of this notebook.</font></p>
@@ -13722,8 +13729,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
@@ -13840,7 +13846,7 @@ dtype: object</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>0    red
+<pre>1    yellow
 dtype: object</pre>
 </div>
 
@@ -13890,8 +13896,7 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
@@ -14005,8 +14010,7 @@ dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
@@ -14140,8 +14144,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
@@ -14190,12 +14193,12 @@ dtype: float64</pre>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>red       2
-violet    1
-green     1
-yellow    1
 blue      1
+yellow    1
 orange    1
 indigo    1
+green     1
+violet    1
 dtype: int64</pre>
 </div>
 
@@ -14232,12 +14235,12 @@ dtype: int64</pre>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>red       0.250
-violet    0.125
-green     0.125
-yellow    0.125
 blue      0.125
+yellow    0.125
 orange    0.125
 indigo    0.125
+green     0.125
+violet    0.125
 dtype: float64</pre>
 </div>
 
@@ -14273,12 +14276,12 @@ dtype: float64</pre>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>indigo    0.125
-orange    0.125
-blue      0.125
-yellow    0.125
+<pre>violet    0.125
 green     0.125
-violet    0.125
+indigo    0.125
+orange    0.125
+yellow    0.125
+blue      0.125
 red       0.250
 dtype: float64</pre>
 </div>
@@ -14292,8 +14295,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
@@ -14323,7 +14325,7 @@ dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This allows me to return all observations with the max value in a Series.</span>
@@ -14342,7 +14344,7 @@ dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -14361,7 +14363,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># What if I want the observations with the first, second, and third largest values returned?</span>
@@ -14380,7 +14382,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -14402,8 +14404,7 @@ dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
@@ -14417,7 +14418,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[135]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Using `.sort_values()` on a column with string values returns a Series in alphabetic order, ascending.</span>
@@ -14435,7 +14436,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[135]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -14460,7 +14461,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[136]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># It works as you would think with numerical values; setting ascending=False returns values in descending order.</span>
@@ -14478,13 +14479,14 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[136]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>7    40
+<pre>8    40
+7    40
 6    35
 5    30
 4    25
@@ -14503,7 +14505,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can reverse the order of my Series using the index order.</span>
@@ -14521,7 +14523,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[54]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -14547,8 +14549,7 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
@@ -14563,7 +14564,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[137]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I check to see if all of the values in my Series meet my condition.</span>
@@ -14581,7 +14582,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[137]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -14598,7 +14599,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[138]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I check to see if any of the values in my Series meet my condition.</span>
@@ -14616,7 +14617,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[138]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -14633,7 +14634,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[139]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I check to see if any of my values in `numeric_series` are less than 0.</span>
@@ -14651,7 +14652,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[139]:</div>
+    <div class="prompt output_prompt">Out[34]:</div>
 
 
 
@@ -14669,8 +14670,7 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
@@ -14820,7 +14820,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[140]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The string method .capitalize() is applied to each string value in the Series.</span>
@@ -14838,7 +14838,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[140]:</div>
+    <div class="prompt output_prompt">Out[35]:</div>
 
 
 
@@ -14863,7 +14863,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[141]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># What if my colors were hyphenated like this for some terrible reason?</span>
@@ -14882,7 +14882,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[141]:</div>
+    <div class="prompt output_prompt">Out[36]:</div>
 
 
 
@@ -14907,7 +14907,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[142]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I could replace those hyphens with an empty string to make my words pretty again! It could happen!</span>
@@ -14925,7 +14925,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[142]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -14959,1028 +14959,9 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id=".isin()"><code>.isin()</code><a class="anchor-link" href="#.isin()">&#182;</a></h4><p>The <code>.isin()</code> method returns a boolean Series with the same index as the original Series; <code>True</code> values indicate that the original Series value at that index position is in the sequence passed to the method and <code>False</code> values indicate that it is not present in the sequence.</p>
-<div class="highlight"><pre><span></span><span class="n">series</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[143]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a list of colors I want to check for in my `color_series`.</span>
-
-<span class="n">my_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[144]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I pass the `my_colors` list as an argument checking to see which of its values are in the `color_series`.</span>
-
-<span class="n">bools</span> <span class="o">=</span> <span class="n">color_series</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">my_colors</span><span class="p">)</span>
-<span class="n">bools</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[144]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0     True
-1    False
-2    False
-3    False
-4    False
-5     True
-6    False
-7    False
-dtype: bool</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[145]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Using the `isin()` method returns a new boolean Series; I assigned it to `bools` above.</span>
-
-<span class="nb">type</span><span class="p">(</span><span class="n">bools</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[145]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>pandas.core.series.Series</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>This is handy, but what if I want to access the actual observations or rows where the condition is True for being in the <code>my_colors</code> list, not just the bool values?</strong></p>
-<p>This is where the pandas index shines; we can select subsets of our data (from a pandas Series or DataFrame) using index labels, index position, or boolean sequences (list, array, Series). I'll demonstrate this below using the indexing operator <code>[]</code> as well as the <code>.loc</code> and <code>.iloc</code> attributes.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="The-Indexing-Operator-[]">The Indexing Operator <code>[]</code><a class="anchor-link" href="#The-Indexing-Operator-[]">&#182;</a></h3><p>Earlier, I demonstrated that the bracket notation, <code>df['series']</code>, aka the indexing operator <code>[]</code>, can be used to pull a Series from a pandas DataFrame when a string column name is passed in. I'll dig deeper into this in the DataFrames notebook, but using the indexing operator can do more than just return a column or range of columns from a DataFrame.</p>
-<p>I can also pass a sequence of boolean values to the indexing operator; that sequence could be a list or array, but it can also be another pandas Series if the index of the boolean Series matches the original Series. Let's look at some examples.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Example:</strong> Here I pass the Series <code>bools</code> that I created above as the selector in the indexing operator for <code>color_series</code>. This returns only the rows that are <code>True</code> in our bool Series. Since I created my boolean Series from my original Series, they share the same index. That's what makes this operation possible.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[146]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can pass the boolean Series into the indexing operator to return the observations that are True.</span>
-
-<span class="n">color_series</span><span class="p">[</span><span class="n">bools</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[146]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0    red
-5    red
-dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[147]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can skip the middle woman and pass a conditional directly into the indexing operator to return only even values.</span>
-
-<span class="n">numeric_series</span><span class="p">[</span><span class="n">numeric_series</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[147]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>1    10
-3    20
-5    30
-7    40
-dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Attributes">Attributes<a class="anchor-link" href="#Attributes">&#182;</a></h3><p><strong>Attributes</strong> are like methods but instead of transforming the variable or data they are called on, they return useful information about the object's properties. Jupyter Notebooks allow you to quickly access a list of available attributes by pressing the tab key after the series name followed by a period or dot; this is called dot notation or attribute access.</p>
-<p>Here, I will first look at indexing with the attributes <code>.loc</code> and <code>.iloc</code> and then run through some of the most commonly used Series attributes.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='indexing'></a></p>
-<h3 id="Indexing-with-Attributes-.loc-and-.iloc">Indexing with Attributes <code>.loc</code> and <code>.iloc</code><a class="anchor-link" href="#Indexing-with-Attributes-.loc-and-.iloc">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id=".loc"><code>.loc</code><a class="anchor-link" href="#.loc">&#182;</a></h4><p>The <code>.loc[row_indexer, column_index]</code> attribute allows me to select a subset of observations using boolean indexing, but it also allows me to select subsets of my data using both row and column indexing with labels. Bonus, I can combine all of these at once, but I'll dive deeper into that in the DataFrames notebook when we have more than one column to work with.</p>
-<p>I'll demonstrate some uses below, but you can read the documentation <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.loc.html">here</a> to find more ways to utilize <code>.loc</code> with a pandas Series.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Example of Boolean Indexing Using <code>.loc</code></strong></p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Here I am passing a boolean Series as a selector to the .loc attribute called on my original <code>color_series</code> from above. As you can see below, where the boolean Series has a <code>True</code> value, the observation from the original Series is returned.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[148]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_series</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">bools</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[148]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0    red
-5    red
-dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Here, I'm demonstrating that I can pass a conditional that returns a boolean Series directly as a selector into <code>.loc</code>. I don't have to assign the boolean Series to a variable first like I did above. </li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[149]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numeric_series</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">numeric_series</span> <span class="o">&gt;</span> <span class="mi">15</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[149]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>3    20
-4    25
-5    30
-6    35
-7    40
-dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>Example of Indexing with Labels Using <code>.loc</code></strong></p>
-</blockquote>
-<ul>
-<li>Ok, one more using a Series that has an index with non-numeric labels. Recall that our <code>diction_series</code> has an index of letters. The <code>.loc</code> attribute can perform slicing with labels. <strong>Notice that the indexing of <code>.loc</code> is inclusive.</strong></li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[150]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Slicing with labels in the index to return a range of observations.</span>
-
-<span class="n">diction_series</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[150]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>a    0.0
-b    1.0
-c    2.0
-dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[151]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Passing a list with labels in the index returns only the observations in the list.</span>
-
-<span class="n">diction_series</span><span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">]]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[151]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>a    0.0
-d    3.0
-f    5.0
-dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id=".iloc"><code>.iloc</code><a class="anchor-link" href="#.iloc">&#182;</a></h4><p>The <code>.iloc[row_indexer, column index]</code> attribute allows me to access a group of rows and columns by their integer location or position. Notice below that the observations returned match the integer index location passed to <code>.iloc</code>, and <strong>the indexing is NOT inclusive.</strong> <code>.iloc</code> does not accept a boolean Series as a selector like <code>.loc</code> does.</p>
-<p>Want more <code>.iloc</code> with a Series? Check out the doc <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.iloc.html">here</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[152]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_series</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[152]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0       red
-1    yellow
-2     green
-3      blue
-4    orange
-5       red
-6    violet
-7    indigo
-dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[153]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The row selector starts at the 0 position of the index and is not inclusive.</span>
-
-<span class="n">color_series</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[153]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0       red
-1    yellow
-2     green
-3      blue
-4    orange
-dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[154]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can also pass a list of integer positions to `.iloc` to pick and choose rows even if the index is labels.</span>
-
-<span class="n">diction_series</span><span class="o">.</span><span class="n">iloc</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[154]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>a    0.0
-c    2.0
-e    4.0
-dtype: float64</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Common-Attributes">Common Attributes<a class="anchor-link" href="#Common-Attributes">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id=".dtype"><code>.dtype</code><a class="anchor-link" href="#.dtype">&#182;</a></h4><ul>
-<li>The <code>.dtype</code> attribute returns the pandas data type for the Series. </li>
-</ul>
-<div class="alert alert-block alert-warning"><b>Be aware</b> that pandas uses NaN to represent most missing values, which it recognizes as a float data type. This can get interesting when you are dealing with a Series with missing values. We will also get lots of practice with this in the future, but for now just be aware.</div><p><strong>Below is a helpful overview of pandas data types and their relation to python and NumPy data types.</strong></p>
-<p><img src="https://pbpython.com/images/pandas_dtypes.png" alt="pandas data types"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[155]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Our Series of color name strings has the object data type</span>
-
-<span class="n">color_series</span><span class="o">.</span><span class="n">dtype</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[155]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dtype(&#39;O&#39;)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[156]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Our Series of numbers has the int64 data type</span>
-
-<span class="n">numeric_series</span><span class="o">.</span><span class="n">dtype</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[156]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dtype(&#39;int64&#39;)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[157]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Our Series of bool values; this is actually the NumPy bool dtype which does not support missing values.</span>
-<span class="c1"># (None becomes False, np.nan becomes True)</span>
-
-<span class="n">bools</span><span class="o">.</span><span class="n">dtype</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[157]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dtype(&#39;bool&#39;)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[158]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diction_series</span><span class="o">.</span><span class="n">dtype</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[158]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dtype(&#39;float64&#39;)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id=".size"><code>.size</code><a class="anchor-link" href="#.size">&#182;</a></h4><p>The <code>.size</code> attribute returns an int representing the number of rows in the Series.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[159]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_series</span><span class="o">.</span><span class="n">size</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[159]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>8</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id=".shape"><code>.shape</code><a class="anchor-link" href="#.shape">&#182;</a></h4><p>The <code>.shape</code> attribute returns a tuple representing the rows and columns in a DataFrame, but it can also be used on a Series to return the rows.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[160]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_series</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[160]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(8,)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[161]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_series</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[161]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0       red
-1    yellow
-2     green
-3      blue
-4    orange
-5       red
-6    violet
-7    indigo
-dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='chaining'></a></p>
-<h3 id="Method-Chaining">Method Chaining<a class="anchor-link" href="#Method-Chaining">&#182;</a></h3><p>Since many pandas Series methods return a new Series object, I can call one method after another using dot notation to chain them together.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[162]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I use a string method that returns a boolean Series to identify strings ending with the letter `d`.</span>
-
-<span class="n">color_series</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[162]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0     True
-1    False
-2    False
-3    False
-4    False
-5     True
-6    False
-7    False
-dtype: bool</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[163]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I use boolean indexing using the `.loc` attribute to return the actual observations that are True.</span>
-
-<span class="n">color_series</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">color_series</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[163]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0    red
-5    red
-dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[164]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I put it all together and append the `.upper()` string onto the Series being returned. All in one step.</span>
-
-<span class="n">color_series</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">color_series</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[164]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0    RED
-5    RED
-dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -15992,7 +14973,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[165]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pydataset</span> <span class="kn">import</span> <span class="n">data</span>
@@ -16006,7 +14987,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[166]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use the .head() method to peek at my pandas DataFrame.</span>
@@ -16024,7 +15005,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[166]:</div>
+    <div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -16129,7 +15110,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[167]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create Series `day`.</span>
@@ -16144,7 +15125,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[168]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This returns a boolean Series.</span>
@@ -16162,7 +15143,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[168]:</div>
+    <div class="prompt output_prompt">Out[41]:</div>
 
 
 
@@ -16190,7 +15171,7 @@ Name: day, Length: 244, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[169]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can sum the True (1) values in my bool Series from above by chaining the `.sum()` method; I have 0 Null values.</span>
@@ -16208,7 +15189,7 @@ Name: day, Length: 244, dtype: bool</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[169]:</div>
+    <div class="prompt output_prompt">Out[42]:</div>
 
 
 
@@ -16225,7 +15206,7 @@ Name: day, Length: 244, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[170]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I can see the unique values and their frequency of occurence in the `day` Series.</span>
@@ -16243,7 +15224,7 @@ Name: day, Length: 244, dtype: bool</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[170]:</div>
+    <div class="prompt output_prompt">Out[43]:</div>
 
 
 
@@ -16264,7 +15245,7 @@ Name: day, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[171]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can chain the `value_counts()` and `.head()` methods to return the most freq value with its count.</span>
@@ -16282,7 +15263,7 @@ Name: day, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[171]:</div>
+    <div class="prompt output_prompt">Out[44]:</div>
 
 
 
@@ -16300,7 +15281,7 @@ Name: day, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[172]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can chain the `value_counts()` and `.tail()` methods to return the least freq value with its count.</span>
@@ -16318,7 +15299,7 @@ Name: day, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[172]:</div>
+    <div class="prompt output_prompt">Out[45]:</div>
 
 
 
@@ -16344,14 +15325,7 @@ Name: day, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Using-Functions">Using Functions<a class="anchor-link" href="#Using-Functions">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id=".apply()"><code>.apply()</code><a class="anchor-link" href="#.apply()">&#182;</a></h4><p>The <code>.apply()</code> function accepts a python or NumPy function as an argument and applies that function on each element in my Series. <code>.apply()</code> does not only accept a built-in function as an argument; you can pass custom and even lambda functions as arguments.</p>
+<h4 id=".apply()"><code>.apply()</code><a class="anchor-link" href="#.apply()">&#182;</a></h4><p>The <code>.apply()</code> method accepts a python or NumPy function as an argument and applies that function on each element in my Series. <code>.apply()</code> does not only accept a built-in function as an argument; you can pass custom and even lambda functions as arguments.</p>
 <blockquote><p><strong>Example:</strong> What if I want to know the length of each element in my <code>day</code> Series? What if I then want to see the frequency of the unique values in the Series returned?</p>
 </blockquote>
 
@@ -16360,7 +15334,7 @@ Name: day, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[173]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This returns a new Series of element lengths; the indexes of the `day` Series and this new Series align.</span>
@@ -16378,7 +15352,7 @@ Name: day, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[173]:</div>
+    <div class="prompt output_prompt">Out[46]:</div>
 
 
 
@@ -16406,7 +15380,7 @@ Name: day, Length: 244, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[174]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I see that 182 of the values in `day` have a length of 3, and 62 have a length of 4. Hello chaining.</span>
@@ -16424,7 +15398,7 @@ Name: day, Length: 244, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[174]:</div>
+    <div class="prompt output_prompt">Out[47]:</div>
 
 
 
@@ -16443,7 +15417,7 @@ Name: day, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[175]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create custom function that takes in a string argument to use with `.apply()` on an each element in a Series.</span>
@@ -16462,7 +15436,7 @@ Name: day, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[176]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I pass my `day_cat` function as an argument to the `.apply()` function to return a new Series.</span>
@@ -16480,22 +15454,22 @@ Name: day, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[176]:</div>
+    <div class="prompt output_prompt">Out[49]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>43     weekend
+<pre>186    weekend
+184    weekend
+180    weekend
+50     weekend
 59     weekend
-135    weekday
-32     weekend
-91     weekday
-2      weekend
-217    weekend
-54     weekend
-179    weekend
-172    weekend
+81     weekday
+154    weekend
+239    weekend
+146    weekday
+26     weekend
 Name: day, dtype: object</pre>
 </div>
 
@@ -16507,7 +15481,7 @@ Name: day, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[177]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can employ method chaining to return the `.value_counts()` of the new Series.</span>
@@ -16525,7 +15499,7 @@ Name: day, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[177]:</div>
+    <div class="prompt output_prompt">Out[50]:</div>
 
 
 
@@ -16551,7 +15525,7 @@ Name: day, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[178]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># My `day` Series still has its original values.</span>
@@ -16569,17 +15543,17 @@ Name: day, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[178]:</div>
+    <div class="prompt output_prompt">Out[51]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>170     Sat
-9       Sun
-140    Thur
-233     Sat
-190     Sun
+<pre>167     Sun
+16      Sun
+172     Sat
+120    Thur
+75      Sat
 Name: day, dtype: object</pre>
 </div>
 
@@ -16592,15 +15566,14 @@ Name: day, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id=".map()"><code>.map()</code><a class="anchor-link" href="#.map()">&#182;</a></h4><p>The <code>.map()</code> function is used for substituting each value in a Series with another value; I can pass <code>.map()</code> a function, a dictionary, or a Series.</p>
+<h4 id=".map()"><code>.map()</code><a class="anchor-link" href="#.map()">&#182;</a></h4><p>The <code>.map()</code> method is used for substituting each value in a Series with another value; I can pass <code>.map()</code> a function, a dictionary, or a Series.</p>
 <p><code>.map()</code> has been a personal favorite of mine ever since we shared a special moment together during the regression project during Bayes, so it has to be included here. I can do the same thing I did above with my <code>day_cat()</code> function and <code>.apply()</code> without writing the function first.</p>
 <p><strong>Values in your original Series that are not found in the dictionary as keys are converted to NaN values.</strong></p>
 
@@ -16609,7 +15582,7 @@ Name: day, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[179]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can map values from a dictionary to values in my original Series and assign it to a variable, `day_cats`.</span>
@@ -16629,17 +15602,17 @@ Name: day, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[179]:</div>
+    <div class="prompt output_prompt">Out[52]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>192    weekday
-236    weekend
-128    weekday
-5      weekend
-85     weekday
+<pre>61     weekend
+106    weekend
+119    weekday
+40     weekend
+10     weekend
 Name: day, dtype: object</pre>
 </div>
 
@@ -16651,7 +15624,7 @@ Name: day, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[180]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can map a function to each element in my original Series and assign it to a variable.</span>
@@ -16670,17 +15643,17 @@ Name: day, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[180]:</div>
+    <div class="prompt output_prompt">Out[53]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>42     I am a weekend
-27     I am a weekend
-76     I am a weekend
-113    I am a weekend
-168    I am a weekend
+<pre>83     I am a weekday
+219    I am a weekend
+229    I am a weekend
+47     I am a weekend
+59     I am a weekend
 Name: day, dtype: object</pre>
 </div>
 
@@ -16692,7 +15665,7 @@ Name: day, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[181]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># A peek at combining multiple pandas Series into a single DataFrame; the keys are the column labels.</span>
@@ -16727,7 +15700,7 @@ Name: day, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[181]:</div>
+    <div class="prompt output_prompt">Out[54]:</div>
 
 
 
@@ -16757,32 +15730,32 @@ Name: day, dtype: object</pre>
   </thead>
   <tbody>
     <tr>
-      <th>100</th>
-      <td>Fri</td>
-      <td>weekday</td>
-      <td>I am a weekday</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>Sun</td>
-      <td>weekend</td>
-      <td>I am a weekend</td>
-    </tr>
-    <tr>
-      <th>229</th>
-      <td>Sat</td>
-      <td>weekend</td>
-      <td>I am a weekend</td>
-    </tr>
-    <tr>
-      <th>88</th>
+      <th>147</th>
       <td>Thur</td>
       <td>weekday</td>
       <td>I am a weekday</td>
     </tr>
     <tr>
-      <th>76</th>
+      <th>60</th>
       <td>Sat</td>
+      <td>weekend</td>
+      <td>I am a weekend</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>Fri</td>
+      <td>weekday</td>
+      <td>I am a weekday</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Sat</td>
+      <td>weekend</td>
+      <td>I am a weekend</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Sun</td>
       <td>weekend</td>
       <td>I am a weekend</td>
     </tr>
@@ -16800,15 +15773,14 @@ Name: day, dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<hr>
-
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id=".idxmax()-and-idxmin()"><code>.idxmax()</code> and <code>idxmin()</code><a class="anchor-link" href="#.idxmax()-and-idxmin()">&#182;</a></h3><p>These functions return the row label of the maximum or minimum numeric values in a Series. <strong>Be aware that if there are multiple values equal to the maximum or minimum value, only the first observation label will be returned.</strong> This can also be used on DataFrames and returns a Series with the maximum value in each column!</p>
+<h3 id=".idxmax()-and-idxmin()"><code>.idxmax()</code> and <code>idxmin()</code><a class="anchor-link" href="#.idxmax()-and-idxmin()">&#182;</a></h3><p>These methods return the row label of the maximum or minimum numeric values in a Series. <strong>Be aware that if there are multiple values equal to the maximum or minimum value, only the first observation label will be returned.</strong> This can also be used on DataFrames and returns a Series with the maximum value in each column!</p>
 <div class="highlight"><pre><span></span><span class="n">Series</span><span class="o">.</span><span class="n">idxmax</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">skipna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 <div class="highlight"><pre><span></span><span class="n">Series</span><span class="o">.</span><span class="n">idxmin</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">skipna</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -16823,7 +15795,7 @@ Name: day, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This returns the index label of the minimum value in `numeric_series`. So what?</span>
@@ -16841,7 +15813,7 @@ Name: day, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[49]:</div>
+    <div class="prompt output_prompt">Out[55]:</div>
 
 
 
@@ -16858,7 +15830,7 @@ Name: day, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can pass the index label to my original `numeric_series` to return the value at that label.</span>
@@ -16876,7 +15848,7 @@ Name: day, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[51]:</div>
+    <div class="prompt output_prompt">Out[56]:</div>
 
 
 
@@ -16890,6 +15862,1043 @@ Name: day, dtype: object</pre>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id=".isin()"><code>.isin()</code><a class="anchor-link" href="#.isin()">&#182;</a></h4><p>The <code>.isin()</code> method returns a boolean Series with the same index as the original Series; <code>True</code> values indicate that the original Series value at that index position is in the sequence passed to the method and <code>False</code> values indicate that it is not present in the sequence.</p>
+<div class="highlight"><pre><span></span><span class="n">series</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a list of colors I want to check for in my `color_series`.</span>
+
+<span class="n">my_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I pass the `my_colors` list as an argument checking to see which of its values are in the `color_series`.</span>
+
+<span class="n">bools</span> <span class="o">=</span> <span class="n">color_series</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">my_colors</span><span class="p">)</span>
+<span class="n">bools</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[58]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0     True
+1    False
+2    False
+3    False
+4    False
+5     True
+6    False
+7    False
+dtype: bool</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Using the `isin()` method returns a new boolean Series; I assigned it to `bools` above.</span>
+
+<span class="nb">type</span><span class="p">(</span><span class="n">bools</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[59]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>pandas.core.series.Series</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>This is handy, but what if I want to access the actual observations or rows where the condition is True for being in the <code>my_colors</code> list, not just the bool values?</strong></p>
+<p>This is where the pandas index shines; we can select subsets of our data (from a pandas Series or DataFrame) using index labels, index position, or boolean sequences (list, array, Series). I'll demonstrate this below using the indexing operator <code>[]</code> as well as the <code>.loc</code> and <code>.iloc</code> attributes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="The-Indexing-Operator-[]">The Indexing Operator <code>[]</code><a class="anchor-link" href="#The-Indexing-Operator-[]">&#182;</a></h3><p>Earlier, I demonstrated that the bracket notation, <code>df['series']</code>, aka the indexing operator <code>[]</code>, can be used to pull a Series from a pandas DataFrame when a string column name is passed in. I'll dig deeper into this in the DataFrames notebook, but using the indexing operator can do more than just return a column or range of columns from a DataFrame.</p>
+<p>I can also pass a sequence of boolean values to the indexing operator; that sequence could be a list or array, but it can also be another pandas Series if the index of the boolean Series matches the original Series. Let's look at some examples.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><strong>Example:</strong> Here I pass the Series <code>bools</code> that I created above as the selector in the indexing operator for <code>color_series</code>. This returns only the rows that are <code>True</code> in our bool Series. Since I created my boolean Series from my original Series, they share the same index. That's what makes this operation possible.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can pass the boolean Series into the indexing operator to return the observations that are True.</span>
+
+<span class="n">color_series</span><span class="p">[</span><span class="n">bools</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[60]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0    red
+5    red
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can skip the middle woman and pass a conditional directly into the indexing operator to return only even values.</span>
+
+<span class="n">numeric_series</span><span class="p">[</span><span class="n">numeric_series</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[61]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1    10
+3    20
+5    30
+7    40
+8    40
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Attributes">Attributes<a class="anchor-link" href="#Attributes">&#182;</a></h3><p><strong>Attributes</strong> are like methods but instead of transforming the variable or data they are called on, they return useful information about the object's properties. Jupyter Notebooks allow you to quickly access a list of available attributes by pressing the tab key after the series name followed by a period or dot; this is called dot notation or attribute access.</p>
+<p>Here, I will first look at indexing with the attributes <code>.loc</code> and <code>.iloc</code> and then run through some of the most commonly used Series attributes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='indexing'></a></p>
+<h3 id="Indexing-with-Attributes-.loc-and-.iloc">Indexing with Attributes <code>.loc</code> and <code>.iloc</code><a class="anchor-link" href="#Indexing-with-Attributes-.loc-and-.iloc">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id=".loc"><code>.loc</code><a class="anchor-link" href="#.loc">&#182;</a></h4><p>The <code>.loc[row_indexer, column_index]</code> attribute allows me to select a subset of observations using boolean indexing, but it also allows me to select subsets of my data using both row and column indexing with labels. Bonus, I can combine all of these at once, but I'll dive deeper into that in the DataFrames notebook when we have more than one column to work with.</p>
+<p>I'll demonstrate some uses below, but you can read the documentation <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.loc.html">here</a> to find more ways to utilize <code>.loc</code> with a pandas Series.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><strong>Example of Boolean Indexing Using <code>.loc</code></strong></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Here I am passing a boolean Series as a selector to the .loc attribute called on my original <code>color_series</code> from above. As you can see below, where the boolean Series has a <code>True</code> value, the observation from the original Series is returned.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_series</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">bools</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[62]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0    red
+5    red
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Here, I'm demonstrating that I can pass a conditional that returns a boolean Series directly as a selector into <code>.loc</code>. I don't have to assign the boolean Series to a variable first like I did above. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numeric_series</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">numeric_series</span> <span class="o">&gt;</span> <span class="mi">15</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[63]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>3    20
+4    25
+5    30
+6    35
+7    40
+8    40
+dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><strong>Example of Indexing with Labels Using <code>.loc</code></strong></p>
+</blockquote>
+<ul>
+<li>Ok, one more using a Series that has an index with non-numeric labels. Recall that our <code>diction_series</code> has an index of letters. The <code>.loc</code> attribute can perform slicing with labels. <strong>Notice that the indexing of <code>.loc</code> is inclusive.</strong></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Slicing with labels in the index to return a range of observations.</span>
+
+<span class="n">diction_series</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[64]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>a    0.0
+b    1.0
+c    2.0
+dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Passing a list with labels in the index returns only the observations in the list.</span>
+
+<span class="n">diction_series</span><span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">]]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[65]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>a    0.0
+d    3.0
+f    5.0
+dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id=".iloc"><code>.iloc</code><a class="anchor-link" href="#.iloc">&#182;</a></h4><p>The <code>.iloc[row_indexer, column index]</code> attribute allows me to access a group of rows and columns by their integer location or position. Notice below that the observations returned match the integer index location passed to <code>.iloc</code>, and <strong>the indexing is NOT inclusive.</strong> <code>.iloc</code> does not accept a boolean Series as a selector like <code>.loc</code> does.</p>
+<p>Want more <code>.iloc</code> with a Series? Check out the doc <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.iloc.html">here</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_series</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[66]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0       red
+1    yellow
+2     green
+3      blue
+4    orange
+5       red
+6    violet
+7    indigo
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The row selector starts at the 0 position of the index and is not inclusive.</span>
+
+<span class="n">color_series</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[67]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0       red
+1    yellow
+2     green
+3      blue
+4    orange
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can also pass a list of integer positions to `.iloc` to pick and choose rows even if the index is labels.</span>
+
+<span class="n">diction_series</span><span class="o">.</span><span class="n">iloc</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[68]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>a    0.0
+c    2.0
+e    4.0
+dtype: float64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Common-Attributes">Common Attributes<a class="anchor-link" href="#Common-Attributes">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id=".dtype"><code>.dtype</code><a class="anchor-link" href="#.dtype">&#182;</a></h4><ul>
+<li>The <code>.dtype</code> attribute returns the pandas data type for the Series. </li>
+</ul>
+<div class="alert alert-block alert-warning"><b>Be aware</b> that pandas uses NaN to represent most missing values, which it recognizes as a float data type. This can get interesting when you are dealing with a Series with missing values. We will also get lots of practice with this in the future, but for now just be aware.</div><p><strong>Below is a helpful overview of pandas data types and their relation to python and NumPy data types.</strong></p>
+<p><img src="https://pbpython.com/images/pandas_dtypes.png" alt="pandas data types"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Our Series of color name strings has the object data type</span>
+
+<span class="n">color_series</span><span class="o">.</span><span class="n">dtype</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[69]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>dtype(&#39;O&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Our Series of numbers has the int64 data type</span>
+
+<span class="n">numeric_series</span><span class="o">.</span><span class="n">dtype</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[70]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>dtype(&#39;int64&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Our Series of bool values; this is actually the NumPy bool dtype which does not support missing values.</span>
+<span class="c1"># (None becomes False, np.nan becomes True)</span>
+
+<span class="n">bools</span><span class="o">.</span><span class="n">dtype</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[71]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>dtype(&#39;bool&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">diction_series</span><span class="o">.</span><span class="n">dtype</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[72]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>dtype(&#39;float64&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id=".size"><code>.size</code><a class="anchor-link" href="#.size">&#182;</a></h4><p>The <code>.size</code> attribute returns an int representing the number of rows in the Series.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_series</span><span class="o">.</span><span class="n">size</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[73]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>8</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id=".shape"><code>.shape</code><a class="anchor-link" href="#.shape">&#182;</a></h4><p>The <code>.shape</code> attribute returns a tuple representing the rows and columns in a DataFrame, but it can also be used on a Series to return the rows.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_series</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[74]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(8,)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">color_series</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[75]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0       red
+1    yellow
+2     green
+3      blue
+4    orange
+5       red
+6    violet
+7    indigo
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='chaining'></a></p>
+<h3 id="Method-Chaining">Method Chaining<a class="anchor-link" href="#Method-Chaining">&#182;</a></h3><p>Since many pandas Series methods return a new Series object, I can call one method after another using dot notation to chain them together.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I use a string method that returns a boolean Series to identify strings ending with the letter `d`.</span>
+
+<span class="n">color_series</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[76]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0     True
+1    False
+2    False
+3    False
+4    False
+5     True
+6    False
+7    False
+dtype: bool</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I use boolean indexing using the `.loc` attribute to return the actual observations that are True.</span>
+
+<span class="n">color_series</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">color_series</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[77]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0    red
+5    red
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here I put it all together and append the `.upper()` string onto the Series being returned. All in one step.</span>
+
+<span class="n">color_series</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">color_series</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[78]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0    RED
+5    RED
+dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove skyblue; margin-top: 1px; margin-bottom: 1px"></hr>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Using-Functions">Using Functions<a class="anchor-link" href="#Using-Functions">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -16919,7 +16928,7 @@ Name: day, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[182]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a Series named `tip` from our tips DataFrame above.</span>
@@ -16938,17 +16947,17 @@ Name: day, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[182]:</div>
+    <div class="prompt output_prompt">Out[79]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>46     3.00
-76     1.25
-119    1.80
-209    2.03
-242    2.00
+<pre>192    4.19
+236    1.25
+151    2.50
+163    2.00
+140    2.75
 Name: tip, dtype: float64</pre>
 </div>
 
@@ -16960,7 +16969,7 @@ Name: tip, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[183]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># My max tip is == $10, min tip == $1, IQR == $1.56, range == $9</span>
@@ -16978,7 +16987,7 @@ Name: tip, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[183]:</div>
+    <div class="prompt output_prompt">Out[80]:</div>
 
 
 
@@ -17010,7 +17019,7 @@ Name: tip, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[184]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use `.cut()` to create 5 bins of equal size. Notice the dtype is now `category`.</span>
@@ -17028,7 +17037,7 @@ Name: tip, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[184]:</div>
+    <div class="prompt output_prompt">Out[81]:</div>
 
 
 
@@ -17057,7 +17066,7 @@ Categories (5, interval[float64]): [(0.991, 2.8] &lt; (2.8, 4.6] &lt; (4.6, 6.4]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[185]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Return a Series with the frequency of each bin as the value and categories for the index.</span>
@@ -17075,7 +17084,7 @@ Categories (5, interval[float64]): [(0.991, 2.8] &lt; (2.8, 4.6] &lt; (4.6, 6.4]
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[185]:</div>
+    <div class="prompt output_prompt">Out[82]:</div>
 
 
 
@@ -17104,7 +17113,7 @@ Name: tip, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[196]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can plot my Series returned from `.value_counts()`</span>
@@ -17136,7 +17145,7 @@ Name: tip, dtype: int64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_166_0.png"
+<img src="output_169_0.png"
 >
 </div>
 
@@ -17156,7 +17165,7 @@ Name: tip, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[198]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define bin edges.</span>
@@ -17179,7 +17188,7 @@ Name: tip, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[198]:</div>
+    <div class="prompt output_prompt">Out[84]:</div>
 
 
 
@@ -17201,7 +17210,7 @@ Name: tip, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[199]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define bin edges</span>
@@ -17241,7 +17250,7 @@ Name: tip, dtype: int64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_169_0.png"
+<img src="output_172_0.png"
 >
 </div>
 
