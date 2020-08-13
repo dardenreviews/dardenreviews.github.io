@@ -44,7 +44,7 @@ Pandas Review Notebooks
 
 >This notebook covers creating, indexing, and using methods and attributes with the pandas Series object.
 
-- [Pandas Series Exercises](https://dardenreviews.github.io/pandas_series_walkthrough/pandas_series/walkthrough)
+- [Pandas Series Exercises](https://dardenreviews.github.io/pandas_series_walkthrough/pandas_series_walkthrough)
 
 >Check out lots of great examples of code in action with the pandas Series.
 
