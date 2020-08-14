@@ -52,6 +52,10 @@ Pandas Review Notebooks
 
 Coming Soon!
 
+- [Pandas DataFrames Exercises](https://dardenreviews.github.io/dataframes_exercise_walkthrough/dataframes_exercise_walkthrough)
+
+>More code in action, but this time with DataFrames.
+
 [Stats Review Notebook](https://dardenreviews.github.io/stats_review/stats_review)
 
 >This notebook covers Probability Distributions and Hypothesis Testing. I tried to make the concepts approachable and included lots of helpful examples and code snippets.
