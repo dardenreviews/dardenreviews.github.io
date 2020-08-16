@@ -48,13 +48,17 @@ Pandas Review Notebooks
 
 >Check out lots of great examples of code in action with the pandas Series.
 
-[Pandas DataFrame Review Notebook](dardenreviews.github.io/)
+[Pandas DataFrame Review Notebook](dardenreviews.github.io/pandas_dataframes_review)
 
-Coming Soon!
+>This notebook covers creating, indexing, aggregating, joining, manipulating, sorting, reshaping, and styling pandas DataFrames.
 
 - [Pandas DataFrames Exercises](https://dardenreviews.github.io/dataframes_exercise_walkthrough/dataframes_exercise_walkthrough)
 
 >More code in action, but this time with DataFrames.
+
+- [Pandas Advanced DataFrames Exercises](https://dardenreviews.github.io/advanced_dataframes_walkthrough/advanced_dataframes_walkthrough)
+
+>Advanced DataFrames exercise walkthrough solutions.
 
 [Stats Review Notebook](https://dardenreviews.github.io/stats_review/stats_review)
 
