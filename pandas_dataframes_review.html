@@ -13145,14 +13145,14 @@ $( document ).ready(function(){
 <p>We saw that the pandas Series object is a one-dimensional, labeled array; the pandas DataFrame object is a two-dimensional labled data structure with columns of the same or different data types. A DataFrame is like a sequence of Series objects aligned by the same index. <strong>There are three main components that make up a pandas DataFrame: the index, the columns, and the data.</strong></p>
 <p><img src="https://www.w3resource.com/w3r_images/pandas-data-structure.svg" alt="dataframe diagram"></p>
 <p><font color=purple>Let's create a DataFrame, so we can examine these components below.</font></p>
-<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Create-a-Pandas-DataFrame:">Create a Pandas DataFrame:<a class="anchor-link" href="#Create-a-Pandas-DataFrame:">&#182;</a></h3><p>There are multiple ways to create pandas DataFrame objects, and I will demonstrate some of these below.</p>
+<hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr><h3 id="Create-a-Pandas-DataFrame:">Create a Pandas DataFrame:<a class="anchor-link" href="#Create-a-Pandas-DataFrame:">&#182;</a></h3><p>There are multiple ways to create pandas DataFrame objects, and I will demonstrate some of these below.</p>
 <p>If you want more, see the official doc on the pandas DataFrame <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html">here</a>.</p>
 
 </div>
@@ -20551,7 +20551,7 @@ memory usage: 448.0+ bytes
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr style="border-top: 10px groove blueviolet; margin-top: 1px; margin-bottom: 1px"></hr><h4 id=".pivot_table()"><code>.pivot_table()</code><a class="anchor-link" href="#.pivot_table()">&#182;</a></h4><p>This pandas function allows me to create a spreadsheet-style pivot table as a DataFrame. I'll demonstrate a very simple pivot here, but as we deal with more complex data, pivots can do a lot more.</p>
-<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="err">’</span><span class="n">mean</span><span class="err">’</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">margins</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">margins_name</span><span class="o">=</span><span class="err">’</span><span class="n">All</span><span class="err">’</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">margins</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">dropna</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">margins_name</span><span class="o">=</span><span class="s1">&#39;All&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
