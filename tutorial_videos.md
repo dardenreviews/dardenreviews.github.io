@@ -1,4 +1,4 @@
-# <font color="red">Video Tutorial Resources</font>
+# Video Tutorial Resources
 
 ### <font color="orange">How to Create a Github Page with Faith Kane</font>
 
@@ -15,6 +15,8 @@ ___
 ### <font color="orange">Confessions and Interview Tips from a Data Scientist with Jada Shipp</font>
 
 [![Jada Shipp's Lunch 'n' Learn - Confessions and Interview Tips from a Data Scientist](https://res.cloudinary.com/marcomontalbano/image/upload/v1598383026/video_to_markdown/images/youtube--h6Uf_YaaX7E-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/h6Uf_YaaX7E "Jada Shipp's Lunch 'n' Learn - Confessions and Interview Tips from a Data Scientist")
+
+___
 
 ### <font color="orange">Tableau Showcase with Sean Oslin</font>
 

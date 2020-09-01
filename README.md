@@ -20,6 +20,10 @@ This tutorial will go live Tuesday for my Github Page Lunch 'n' Learn!!
 
 >This page houses the links to helpful video tutorials on a variety of topics.
 
+[Interviewing Resources](https://dardenreviews.github.io/interviewing_resources)
+
+>This page houses helpful resources for you to use when preparing yourself for interviewing.
+
 SQL Review Notebooks
 
 >These notebook introduce SQL as a tool to interrogate databases and acquire data for use with python libraries like numpy and pandas. They will cover everything from RDBMS terms and structure to subqueries that involve joining and filtering data from multiple tables.
