@@ -13108,17 +13108,17 @@ $( document ).ready(function(){
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
-<span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">sqrt</span>
-<span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
 
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
 
-<span class="kn">from</span> <span class="nn">pydataset</span> <span class="k">import</span> <span class="n">data</span>
+<span class="kn">from</span> <span class="nn">pydataset</span> <span class="kn">import</span> <span class="n">data</span>
 
-<span class="kn">from</span> <span class="nn">env</span> <span class="k">import</span> <span class="n">host</span><span class="p">,</span> <span class="n">user</span><span class="p">,</span> <span class="n">password</span>
+<span class="kn">from</span> <span class="nn">env</span> <span class="kn">import</span> <span class="n">host</span><span class="p">,</span> <span class="n">user</span><span class="p">,</span> <span class="n">password</span>
 
-<span class="kn">from</span> <span class="nn">wrangle_telco</span> <span class="k">import</span> <span class="n">wrangle_telco</span>
-<span class="kn">from</span> <span class="nn">explore</span> <span class="k">import</span> <span class="n">correlation_exploration</span>
+<span class="kn">from</span> <span class="nn">wrangle_telco</span> <span class="kn">import</span> <span class="n">wrangle_telco</span>
+<span class="kn">from</span> <span class="nn">explore</span> <span class="kn">import</span> <span class="n">correlation_exploration</span>
 </pre></div>
 
     </div>
@@ -13302,9 +13302,9 @@ $( document ).ready(function(){
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Visualize the distribution of 100 observations of 10 dice rolls</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">calculated_averages</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Average of </span><span class="si">{n_dice_per_experiment}</span><span class="s1"> dice rolls&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Average of </span><span class="si">{</span><span class="n">n_dice_per_experiment</span><span class="si">}</span><span class="s1"> dice rolls&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;# of Occurances&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Outcome of averaging </span><span class="si">{n_dice_per_experiment}</span><span class="s1"> dice rolls </span><span class="si">{n_experiments}</span><span class="s1"> times&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Outcome of averaging </span><span class="si">{</span><span class="n">n_dice_per_experiment</span><span class="si">}</span><span class="s1"> dice rolls </span><span class="si">{</span><span class="n">n_experiments</span><span class="si">}</span><span class="s1"> times&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -13465,7 +13465,7 @@ $( document ).ready(function(){
 <ul>
 <li><strong>alpha</strong> --&gt; $a$ = 1 - confidence level. If your p-value is less than your $a$, which you set before you begin your test, then your test findings are significant. If it is close, it is at your discretion. Your results still may be significant even though slightly above your chosen cutoff. Also, alpha is the maximum probability that you have a Type I Error. </li>
 </ul>
-<blockquote><p>For a 95% confidence level, the value of alpha is .5 which means there is a 5% probability that you will reject a True Null hypothesis or have a False Positive.</p>
+<blockquote><p>For a 95% confidence level, the value of alpha is .05 which means there is a 5% probability that you will reject a True Null hypothesis or have a False Positive.</p>
 </blockquote>
 <ul>
 <li><strong>t-statistic</strong> is simply the calculated difference represented in units of standard error. The greater the magnitude of t, the greater the evidence against the null hypothesis. Why does it matter? <strong>Short Answer:</strong> It allows us to calculate our p-value!</li>
@@ -13546,7 +13546,7 @@ $( document ).ready(function(){
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
+      <th>1</th>
       <td>16.99</td>
       <td>1.01</td>
       <td>Female</td>
@@ -13556,7 +13556,7 @@ $( document ).ready(function(){
       <td>2</td>
     </tr>
     <tr>
-      <td>2</td>
+      <th>2</th>
       <td>10.34</td>
       <td>1.66</td>
       <td>Male</td>
@@ -13566,7 +13566,7 @@ $( document ).ready(function(){
       <td>3</td>
     </tr>
     <tr>
-      <td>3</td>
+      <th>3</th>
       <td>21.01</td>
       <td>3.50</td>
       <td>Male</td>
@@ -13576,7 +13576,7 @@ $( document ).ready(function(){
       <td>3</td>
     </tr>
     <tr>
-      <td>4</td>
+      <th>4</th>
       <td>23.68</td>
       <td>3.31</td>
       <td>Male</td>
@@ -13586,7 +13586,7 @@ $( document ).ready(function(){
       <td>2</td>
     </tr>
     <tr>
-      <td>5</td>
+      <th>5</th>
       <td>24.59</td>
       <td>3.61</td>
       <td>Female</td>
@@ -13660,7 +13660,7 @@ $( document ).ready(function(){
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;The mean is: {df.tip.mean()}, and the median is {df.tip.median()}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The mean is: </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">tip</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s1">, and the median is </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">tip</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This is close enough to normal to continue.&#39;</span><span class="p">)</span>
 </pre></div>
 
@@ -13705,7 +13705,7 @@ This is close enough to normal to continue.
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">confidence_interval</span> <span class="o">=</span> <span class="o">.</span><span class="mi">95</span>
 <span class="n">alpha</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">confidence_interval</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;alpha = </span><span class="si">{alpha}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;alpha = </span><span class="si">{</span><span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13840,7 +13840,7 @@ This is close enough to normal to continue.
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Our t-statistic for smokers&#39; tips is </span><span class="si">{t}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Our t-statistic for smokers&#39; tips is </span><span class="si">{</span><span class="n">t</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13884,8 +13884,8 @@ This is close enough to normal to continue.
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Our p-value for smokers&#39; tips is </span><span class="si">{p}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;This means there is about a {round(p * 100,2)}</span><span class="si">% c</span><span class="s1">hance that we observe the data we have.&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Our p-value for smokers&#39; tips is </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;This means there is about a </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">p</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">% chance that we observe the data we have.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13917,8 +13917,8 @@ This means there is about a 94.29% chance that we observe the data we have.
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;t = </span><span class="si">{t:.3f}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;p = </span><span class="si">{p:.3f}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;t = </span><span class="si">{</span><span class="n">t</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;p = </span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13950,7 +13950,7 @@ p = 0.943
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is less than our alpha: {p &lt; alpha}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14000,8 +14000,8 @@ p = 0.943
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_1samp</span><span class="p">(</span><span class="n">smokers</span><span class="o">.</span><span class="n">tip</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">tip</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;t = </span><span class="si">{t:.3f}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;p = </span><span class="si">{p:.3f}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;t = </span><span class="si">{</span><span class="n">t</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;p = </span><span class="si">{</span><span class="n">p</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14033,7 +14033,7 @@ p = 0.943
 <div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is less than our alpha: {p &lt; alpha}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14086,7 +14086,7 @@ p = 0.943
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">confidence_interval</span> <span class="o">=</span> <span class="o">.</span><span class="mi">95</span>
 <span class="n">alpha</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">confidence_interval</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;alpha = </span><span class="si">{alpha}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;alpha = </span><span class="si">{</span><span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14213,8 +14213,8 @@ p = 0.943
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">n_males</span> <span class="o">=</span> <span class="n">males</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">n_females</span> <span class="o">=</span> <span class="n">females</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;There are </span><span class="si">{n_males}</span><span class="s1"> males in data.&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;There are </span><span class="si">{n_females}</span><span class="s1"> females in our data.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;There are </span><span class="si">{</span><span class="n">n_males</span><span class="si">}</span><span class="s1"> males in data.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;There are </span><span class="si">{</span><span class="n">n_females</span><span class="si">}</span><span class="s1"> females in our data.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14321,7 +14321,7 @@ There are 87 females in our data.
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">males_xbar</span> <span class="o">-</span> <span class="n">females_xbar</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">s_p</span> <span class="o">*</span> <span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">n_males</span> <span class="o">+</span> <span class="mi">1</span><span class="o">/</span><span class="n">n_females</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;The t-statistic for the two sample t-test comparing male to female tips is {round(t,3)}.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The t-statistic for the two sample t-test comparing male to female tips is </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14353,8 +14353,8 @@ There are 87 females in our data.
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">t</span><span class="p">(</span><span class="n">degrees_freedom</span><span class="p">)</span><span class="o">.</span><span class="n">sf</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is {round(p, 3)}.&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;This means there is about a {round(p * 100, 2)}</span><span class="si">% c</span><span class="s1">hance that we observe the data we have.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;This means there is about a </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">p</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">% chance that we observe the data we have.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14386,7 +14386,7 @@ This means there is about a 16.65% chance that we observe the data we have.
 <div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is less than our alpha: {p &lt; alpha}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14447,7 +14447,7 @@ This means there is about a 16.65% chance that we observe the data we have.
 <div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;The t-statistic for the two sample t-test comparing male to female tips is {round(t,3)}.&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The t-statistic for the two sample t-test comparing male to female tips is </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14478,8 +14478,8 @@ This means there is about a 16.65% chance that we observe the data we have.
 <div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is {round(p, 3)}.&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;This means there is about a {round(p * 100, 2)}</span><span class="si">% c</span><span class="s1">hance that we observe the data we have.&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;This means there is about a </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">p</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">% chance that we observe the data we have.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14511,7 +14511,7 @@ This means there is about a 16.65% chance that we observe the data we have.
 <div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is less than our alpha: {p &lt; alpha}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14628,7 +14628,7 @@ This means there is about a 16.65% chance that we observe the data we have.
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
+      <th>1</th>
       <td>audi</td>
       <td>a4</td>
       <td>1.8</td>
@@ -14642,7 +14642,7 @@ This means there is about a 16.65% chance that we observe the data we have.
       <td>compact</td>
     </tr>
     <tr>
-      <td>2</td>
+      <th>2</th>
       <td>audi</td>
       <td>a4</td>
       <td>1.8</td>
@@ -14656,7 +14656,7 @@ This means there is about a 16.65% chance that we observe the data we have.
       <td>compact</td>
     </tr>
     <tr>
-      <td>3</td>
+      <th>3</th>
       <td>audi</td>
       <td>a4</td>
       <td>2.0</td>
@@ -14670,7 +14670,7 @@ This means there is about a 16.65% chance that we observe the data we have.
       <td>compact</td>
     </tr>
     <tr>
-      <td>4</td>
+      <th>4</th>
       <td>audi</td>
       <td>a4</td>
       <td>2.0</td>
@@ -14684,7 +14684,7 @@ This means there is about a 16.65% chance that we observe the data we have.
       <td>compact</td>
     </tr>
     <tr>
-      <td>5</td>
+      <th>5</th>
       <td>audi</td>
       <td>a4</td>
       <td>2.8</td>
@@ -14733,17 +14733,19 @@ This means there is about a 16.65% chance that we observe the data we have.
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 Int64Index: 234 entries, 1 to 234
 Data columns (total 11 columns):
-manufacturer    234 non-null object
-model           234 non-null object
-displ           234 non-null float64
-year            234 non-null int64
-cyl             234 non-null int64
-trans           234 non-null object
-drv             234 non-null object
-cty             234 non-null int64
-hwy             234 non-null int64
-fl              234 non-null object
-class           234 non-null object
+ #   Column        Non-Null Count  Dtype  
+---  ------        --------------  -----  
+ 0   manufacturer  234 non-null    object 
+ 1   model         234 non-null    object 
+ 2   displ         234 non-null    float64
+ 3   year          234 non-null    int64  
+ 4   cyl           234 non-null    int64  
+ 5   trans         234 non-null    object 
+ 6   drv           234 non-null    object 
+ 7   cty           234 non-null    int64  
+ 8   hwy           234 non-null    int64  
+ 9   fl            234 non-null    object 
+ 10  class         234 non-null    object 
 dtypes: float64(1), int64(4), object(6)
 memory usage: 21.9+ KB
 </pre>
@@ -14758,7 +14760,7 @@ memory usage: 21.9+ KB
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Is-there-a-difference-in-fuel-efficiency-in-cars-from-2008-vs-1999?">Is there a difference in fuel efficiency in cars from 2008 vs 1999?<a class="anchor-link" href="#Is-there-a-difference-in-fuel-efficiency-in-cars-from-2008-vs-1999?">&#182;</a></h4><blockquote><p>$H_0$: There is no difference between the fuel efficiency in cars from 2008 and 1999.</p>
-<p>$H_a$: There is a difference between is a difference between the fuel efficiency in cars from 2008 and 1999.</p>
+<p>$H_a$: There is a difference between the fuel efficiency in cars from 2008 and 1999.</p>
 </blockquote>
 
 </div>
@@ -14834,7 +14836,7 @@ memory usage: 21.9+ KB
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
+      <th>1</th>
       <td>audi</td>
       <td>a4</td>
       <td>1.8</td>
@@ -15016,7 +15018,7 @@ p_value:  0.8263744040323578
 <div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is less than our alpha: {p &lt; alpha}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15176,7 +15178,7 @@ Name: avg_mileage, dtype: float64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">t</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ttest_1samp</span><span class="p">(</span><span class="n">compact</span><span class="p">,</span> <span class="n">all_cars_mean</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;t-statistic: {round(t, 3)} and p-value is: {round(p,3)}.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;t-statistic: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s1"> and p-value is: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15207,7 +15209,7 @@ Name: avg_mileage, dtype: float64</pre>
 <div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is less than our alpha: {p &lt; alpha}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15311,7 +15313,7 @@ Name: avg_mileage, dtype: float64</pre>
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
+      <th>1</th>
       <td>audi</td>
       <td>a4</td>
       <td>1.8</td>
@@ -15394,7 +15396,7 @@ Name: avg_mileage, dtype: float64</pre>
   </thead>
   <tbody>
     <tr>
-      <td>2</td>
+      <th>2</th>
       <td>audi</td>
       <td>a4</td>
       <td>1.8</td>
@@ -15437,7 +15439,7 @@ Name: avg_mileage, dtype: float64</pre>
 <div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;t-statistic: {round(t, 3)} and p-value is: {round(p,3)}.&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;t-statistic: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s1"> and p-value is: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15468,7 +15470,7 @@ Name: avg_mileage, dtype: float64</pre>
 <div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is less than our alpha: {p &lt; alpha}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15722,7 +15724,7 @@ r = -0.79
   </thead>
   <tbody>
     <tr>
-      <td>0</td>
+      <th>0</th>
       <td>0002-ORFBO</td>
       <td>65.6</td>
       <td>9</td>
@@ -15731,7 +15733,7 @@ r = -0.79
       <td>1</td>
     </tr>
     <tr>
-      <td>1</td>
+      <th>1</th>
       <td>0003-MKNFE</td>
       <td>59.9</td>
       <td>9</td>
@@ -15740,7 +15742,7 @@ r = -0.79
       <td>1</td>
     </tr>
     <tr>
-      <td>2</td>
+      <th>2</th>
       <td>0004-TLHLJ</td>
       <td>73.9</td>
       <td>4</td>
@@ -15749,7 +15751,7 @@ r = -0.79
       <td>2</td>
     </tr>
     <tr>
-      <td>3</td>
+      <th>3</th>
       <td>0011-IGKFF</td>
       <td>98.0</td>
       <td>13</td>
@@ -15758,7 +15760,7 @@ r = -0.79
       <td>2</td>
     </tr>
     <tr>
-      <td>4</td>
+      <th>4</th>
       <td>0013-EXCHZ</td>
       <td>83.9</td>
       <td>3</td>
@@ -15960,7 +15962,7 @@ r = 0.83
   </thead>
   <tbody>
     <tr>
-      <td>10</td>
+      <th>10</th>
       <td>0017-DINOC</td>
       <td>45.20</td>
       <td>54</td>
@@ -15969,7 +15971,7 @@ r = 0.83
       <td>1</td>
     </tr>
     <tr>
-      <td>14</td>
+      <th>14</th>
       <td>0019-GFNTW</td>
       <td>45.05</td>
       <td>56</td>
@@ -15978,7 +15980,7 @@ r = 0.83
       <td>1</td>
     </tr>
     <tr>
-      <td>16</td>
+      <th>16</th>
       <td>0020-JDNXP</td>
       <td>61.25</td>
       <td>34</td>
@@ -15987,7 +15989,7 @@ r = 0.83
       <td>1</td>
     </tr>
     <tr>
-      <td>19</td>
+      <th>19</th>
       <td>0023-HGHWL</td>
       <td>25.10</td>
       <td>1</td>
@@ -15996,7 +15998,7 @@ r = 0.83
       <td>1</td>
     </tr>
     <tr>
-      <td>25</td>
+      <th>25</th>
       <td>0032-PGELS</td>
       <td>30.50</td>
       <td>1</td>
@@ -16005,7 +16007,7 @@ r = 0.83
       <td>1</td>
     </tr>
     <tr>
-      <td>...</td>
+      <th>...</th>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -16014,7 +16016,7 @@ r = 0.83
       <td>...</td>
     </tr>
     <tr>
-      <td>6979</td>
+      <th>6979</th>
       <td>9906-NHHVC</td>
       <td>53.50</td>
       <td>65</td>
@@ -16023,7 +16025,7 @@ r = 0.83
       <td>1</td>
     </tr>
     <tr>
-      <td>6980</td>
+      <th>6980</th>
       <td>9907-SWKKF</td>
       <td>25.05</td>
       <td>1</td>
@@ -16032,7 +16034,7 @@ r = 0.83
       <td>1</td>
     </tr>
     <tr>
-      <td>6996</td>
+      <th>6996</th>
       <td>9928-BZVLZ</td>
       <td>49.85</td>
       <td>12</td>
@@ -16041,7 +16043,7 @@ r = 0.83
       <td>1</td>
     </tr>
     <tr>
-      <td>7016</td>
+      <th>7016</th>
       <td>9955-QOPOY</td>
       <td>60.80</td>
       <td>69</td>
@@ -16050,7 +16052,7 @@ r = 0.83
       <td>1</td>
     </tr>
     <tr>
-      <td>7042</td>
+      <th>7042</th>
       <td>9995-HOTOH</td>
       <td>59.00</td>
       <td>63</td>
@@ -16258,7 +16260,7 @@ r = 0.95
   </thead>
   <tbody>
     <tr>
-      <td>2</td>
+      <th>2</th>
       <td>0004-TLHLJ</td>
       <td>73.90</td>
       <td>4</td>
@@ -16267,7 +16269,7 @@ r = 0.95
       <td>2</td>
     </tr>
     <tr>
-      <td>3</td>
+      <th>3</th>
       <td>0011-IGKFF</td>
       <td>98.00</td>
       <td>13</td>
@@ -16276,7 +16278,7 @@ r = 0.95
       <td>2</td>
     </tr>
     <tr>
-      <td>4</td>
+      <th>4</th>
       <td>0013-EXCHZ</td>
       <td>83.90</td>
       <td>3</td>
@@ -16285,7 +16287,7 @@ r = 0.95
       <td>2</td>
     </tr>
     <tr>
-      <td>6</td>
+      <th>6</th>
       <td>0013-SMEOE</td>
       <td>109.70</td>
       <td>71</td>
@@ -16294,7 +16296,7 @@ r = 0.95
       <td>2</td>
     </tr>
     <tr>
-      <td>7</td>
+      <th>7</th>
       <td>0014-BMAQU</td>
       <td>84.65</td>
       <td>63</td>
@@ -16596,31 +16598,31 @@ Research_ **12**, 1–12.
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
+      <th>1</th>
       <td>249.5600</td>
       <td>0</td>
       <td>308</td>
     </tr>
     <tr>
-      <td>2</td>
+      <th>2</th>
       <td>258.7047</td>
       <td>1</td>
       <td>308</td>
     </tr>
     <tr>
-      <td>3</td>
+      <th>3</th>
       <td>250.8006</td>
       <td>2</td>
       <td>308</td>
     </tr>
     <tr>
-      <td>4</td>
+      <th>4</th>
       <td>321.4398</td>
       <td>3</td>
       <td>308</td>
     </tr>
     <tr>
-      <td>5</td>
+      <th>5</th>
       <td>356.8519</td>
       <td>4</td>
       <td>308</td>
@@ -16661,9 +16663,11 @@ Research_ **12**, 1–12.
 <pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 Int64Index: 180 entries, 1 to 180
 Data columns (total 3 columns):
-Reaction    180 non-null float64
-Days        180 non-null int64
-Subject     180 non-null int64
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   Reaction  180 non-null    float64
+ 1   Days      180 non-null    int64  
+ 2   Subject   180 non-null    int64  
 dtypes: float64(1), int64(2)
 memory usage: 5.6 KB
 </pre>
@@ -16907,7 +16911,7 @@ r = 0.54
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
+      <th>1</th>
       <td>16.99</td>
       <td>1.01</td>
       <td>Female</td>
@@ -16917,7 +16921,7 @@ r = 0.54
       <td>2</td>
     </tr>
     <tr>
-      <td>2</td>
+      <th>2</th>
       <td>10.34</td>
       <td>1.66</td>
       <td>Male</td>
@@ -16927,7 +16931,7 @@ r = 0.54
       <td>3</td>
     </tr>
     <tr>
-      <td>3</td>
+      <th>3</th>
       <td>21.01</td>
       <td>3.50</td>
       <td>Male</td>
@@ -16937,7 +16941,7 @@ r = 0.54
       <td>3</td>
     </tr>
     <tr>
-      <td>4</td>
+      <th>4</th>
       <td>23.68</td>
       <td>3.31</td>
       <td>Male</td>
@@ -16947,7 +16951,7 @@ r = 0.54
       <td>2</td>
     </tr>
     <tr>
-      <td>5</td>
+      <th>5</th>
       <td>24.59</td>
       <td>3.61</td>
       <td>Female</td>
@@ -17067,19 +17071,19 @@ r = 0.54
   </thead>
   <tbody>
     <tr>
-      <td>No</td>
+      <th>No</th>
       <td>54</td>
       <td>97</td>
       <td>151</td>
     </tr>
     <tr>
-      <td>Yes</td>
+      <th>Yes</th>
       <td>33</td>
       <td>60</td>
       <td>93</td>
     </tr>
     <tr>
-      <td>All</td>
+      <th>All</th>
       <td>87</td>
       <td>157</td>
       <td>244</td>
@@ -17113,7 +17117,7 @@ r = 0.54
 <div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is </span><span class="si">{p}</span><span class="s1">.&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -17144,7 +17148,7 @@ r = 0.54
 <div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is less than our alpha: {p &lt; alpha}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -17239,12 +17243,12 @@ r = 0.54
   </thead>
   <tbody>
     <tr>
-      <td>Churn</td>
+      <th>Churn</th>
       <td>100</td>
       <td>50</td>
     </tr>
     <tr>
-      <td>No Churn</td>
+      <th>No Churn</th>
       <td>120</td>
       <td>28</td>
     </tr>
@@ -17265,7 +17269,7 @@ r = 0.54
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Chi2</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">degf</span><span class="p">,</span> <span class="n">expected</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">chi2_contingency</span><span class="p">(</span><span class="n">observed</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is </span><span class="si">{p}</span><span class="s1">.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -17296,7 +17300,7 @@ r = 0.54
 <div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Our p-value is less than our alpha: {p &lt; alpha}&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -17333,14 +17337,7 @@ r = 0.54
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="I-hope-this-notebook-is-useful-for-you-in-your-studies.-Even-more,-I-hope-it-inspires-you-to-make-your-own-review-notebooks-because-you-will-learn-so-much-by-making-them.-I-know-I-did!">I hope this notebook is useful for you in your studies. Even more, I hope it inspires you to make your own review notebooks because you will learn so much by making them. I know I did!<a class="anchor-link" href="#I-hope-this-notebook-is-useful-for-you-in-your-studies.-Even-more,-I-hope-it-inspires-you-to-make-your-own-review-notebooks-because-you-will-learn-so-much-by-making-them.-I-know-I-did!">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="-Faith-Kane">-Faith Kane<a class="anchor-link" href="#-Faith-Kane">&#182;</a></h1>
+<h3 id="I-hope-this-notebook-is-useful-for-you-in-your-studies.-Even-more,-I-hope-it-inspires-you-to-make-your-own-review-notebooks-because-you-will-learn-so-much-by-making-them.-I-know-I-did!---------Faith-Kane">I hope this notebook is useful for you in your studies. Even more, I hope it inspires you to make your own review notebooks because you will learn so much by making them. I know I did!        -Faith Kane<a class="anchor-link" href="#I-hope-this-notebook-is-useful-for-you-in-your-studies.-Even-more,-I-hope-it-inspires-you-to-make-your-own-review-notebooks-because-you-will-learn-so-much-by-making-them.-I-know-I-did!---------Faith-Kane">&#182;</a></h3>
 </div>
 </div>
 </div>
