@@ -13142,7 +13142,7 @@ $( document ).ready(function(){
 <p>n = trials</p>
 <p>p = p(success)</p>
 <p><strong><font color=orange>So what?</font></strong></p>
-<p>Returns the likelihood of successes</p>
+<p>returns the likelihood of successes</p>
 <p><strong><font color=green>Now What?</font></strong></p>
 <p><code>stats.binom(n, p)</code></p>
 <p><strong>Normal Distribution -</strong> allows us to model a continuous random variable where the further away from the mean you are, the less likely the outcome.</p>
@@ -16485,7 +16485,7 @@ r = 0.99
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong><font color=purple>We reject the Null hypothesis that there is no correlation between tenure and total charges based on our p-value being below our alpha of 0.5 and our r of 0.99. There is an almost perfect positive correlation between tenure and total charges for customers with Fiber and phone service.</font></strong></p>
+<p><strong><font color=purple>We reject the Null hypothesis that there is no correlation between tenure and total charges based on our p-value being below our alpha of 0.05 and our r of 0.99. There is an almost perfect positive correlation between tenure and total charges for customers with Fiber and phone service.</font></strong></p>
 
 </div>
 </div>
@@ -16848,7 +16848,7 @@ r = 0.54
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong><font color=purple>We reject the Null hypothesis that there is no correlation between the number of days a subject has been in the sleep study and their reaction time based on our p-value being below our alpha of 0.5 and our r of 0.54. There is a medium-ish positive correlation between days in the study and reaction time.</font></strong></p>
+<p><strong><font color=purple>We reject the Null hypothesis that there is no correlation between the number of days a subject has been in the sleep study and their reaction time based on our p-value being below our alpha of 0.05 and our r of 0.54. There is a medium-ish positive correlation between days in the study and reaction time.</font></strong></p>
 
 </div>
 </div>
@@ -16864,21 +16864,19 @@ r = 0.54
 <ul>
 <li>The chi square test works by comparing the observed/actual contingency table against the expected/predicted contingency table that would be the case if group membership in the variables were independent.</li>
 </ul>
-<p><strong>Were people with a higher ticket class on the Titanic more likely to survive?</strong></p>
+<p>Were people with a higher ticket class on the Titanic more likely to survive?</p>
 <blockquote><p>$H_0$ = Survival rate is independent of ticket class.</p>
 <p>$H_a$ = Survival rate is not independent of ticket class.</p>
 </blockquote>
-<p><strong>Does the type of service package a customer has affect the likelihood that she will churn?</strong></p>
+<p>Does the type of service package a customer has affect the likelihood that she will churn?</p>
 <blockquote><p>$H_0$ = Churn is independent of type of service package.</p>
 <p>$H_a$ = Churn is not independent of type of service package.</p>
 </blockquote>
 <p><strong><font color=green>Now What?</font></strong></p>
-<div class="highlight"><pre><span></span><span class="n">ctab</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Series</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">Series</span><span class="p">)</span>
-</pre></div>
-<p><strong>ctab == observed values</strong></p>
-<div class="highlight"><pre><span></span><span class="n">chi2</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">degf</span><span class="p">,</span> <span class="n">expected</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">chi2_contingency</span><span class="p">(</span><span class="n">ctab</span><span class="p">)</span>
-</pre></div>
-<p><strong>expected == the values we would expect to see if the variables were independent of each other</strong></p>
+<p><code>ctab = pd.crosstab(df.Series, df.Series)</code></p>
+<p>ctab == observed values</p>
+<p><code>chi2, p, degf, expected = stats.chi2_contingency(ctab)</code></p>
+<p>expected == the values we would expect to see if the variables were independent of each other</p>
 
 </div>
 </div>
@@ -17063,10 +17061,10 @@ r = 0.54
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ctab</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">tips</span><span class="o">.</span><span class="n">smoker</span><span class="p">,</span> <span class="n">tips</span><span class="o">.</span><span class="n">sex</span><span class="p">,</span> <span class="n">margins</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ctab</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">tips</span><span class="o">.</span><span class="n">smoker</span><span class="p">,</span> <span class="n">tips</span><span class="o">.</span><span class="n">sex</span><span class="p">)</span>
 <span class="n">ctab</span>
 </pre></div>
 
@@ -17080,7 +17078,7 @@ r = 0.54
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[83]:</div>
+    <div class="prompt output_prompt">Out[95]:</div>
 
 
 
@@ -17105,11 +17103,9 @@ r = 0.54
       <th>sex</th>
       <th>Female</th>
       <th>Male</th>
-      <th>All</th>
     </tr>
     <tr>
       <th>smoker</th>
-      <th></th>
       <th></th>
       <th></th>
     </tr>
@@ -17119,19 +17115,11 @@ r = 0.54
       <th>No</th>
       <td>54</td>
       <td>97</td>
-      <td>151</td>
     </tr>
     <tr>
       <th>Yes</th>
       <td>33</td>
       <td>60</td>
-      <td>93</td>
-    </tr>
-    <tr>
-      <th>All</th>
-      <td>87</td>
-      <td>157</td>
-      <td>244</td>
     </tr>
   </tbody>
 </table>
@@ -17146,7 +17134,7 @@ r = 0.54
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Chi2</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">degf</span><span class="p">,</span> <span class="n">expected</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">chi2_contingency</span><span class="p">(</span><span class="n">ctab</span><span class="p">)</span>
@@ -17159,7 +17147,7 @@ r = 0.54
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is </span><span class="si">{</span><span class="n">p</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
@@ -17179,7 +17167,7 @@ r = 0.54
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Our p-value is 0.9999995323613375.
+<pre>Our p-value is 0.925417020494423.
 </pre>
 </div>
 </div>
@@ -17190,7 +17178,7 @@ r = 0.54
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -17239,7 +17227,7 @@ r = 0.54
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Churn&#39;</span><span class="p">,</span> <span class="s1">&#39;No Churn&#39;</span><span class="p">]</span>
@@ -17259,7 +17247,7 @@ r = 0.54
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[87]:</div>
+    <div class="prompt output_prompt">Out[89]:</div>
 
 
 
@@ -17310,7 +17298,7 @@ r = 0.54
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Chi2</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">degf</span><span class="p">,</span> <span class="n">expected</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">chi2_contingency</span><span class="p">(</span><span class="n">observed</span><span class="p">)</span>
@@ -17342,7 +17330,7 @@ r = 0.54
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Our p-value is less than our alpha: </span><span class="si">{</span><span class="n">p</span> <span class="o">&lt;</span> <span class="n">alpha</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
