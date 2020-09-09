@@ -68,11 +68,15 @@ Pandas Review Notebooks
 
 >This notebook covers Probability Distributions and Hypothesis Testing. I tried to make the concepts approachable and included lots of helpful examples and code snippets.
 
-[Classification Review Notebook](https://dardenreviews.github.io/)
+[Classification Review Notebooks](https://dardenreviews.github.io/)
 
 Coming Soon!
 
 >This notebook covers the Classification data science pipeline from Acquire through Evaluate. Again, I hope that the concepts are approachable, and I've included plenty of helpful code snippets for each stage of the pipeline.
+
+- [Classification Acquire Exercises](https://dardenreviews.github.io/classification_acquire)
+
+>This notebook covers reading data into DataFrames using a variety of methods, a look at writing functions with data caching options, and creating an acquire module for future use.
 
 [Linear Regression Review Notebook](https://dardenreviews.github.io/)
 
