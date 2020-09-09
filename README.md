@@ -74,7 +74,7 @@ Coming Soon!
 
 >This notebook covers the Classification data science pipeline from Acquire through Evaluate. Again, I hope that the concepts are approachable, and I've included plenty of helpful code snippets for each stage of the pipeline.
 
-- [Classification Acquire Exercises](https://dardenreviews.github.io/classification_acquire)
+- [Classification Acquire Exercises](https://dardenreviews.github.io/classification_acquire/classification_acquire)
 
 >This notebook covers reading data into DataFrames using a variety of methods, a look at writing functions with data caching options, and creating an acquire module for future use.
 

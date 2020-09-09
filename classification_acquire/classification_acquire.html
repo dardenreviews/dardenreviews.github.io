@@ -13084,7 +13084,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": true, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": true, "toc_position": {}, "toc_section_display": true, "toc_window_display": false};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -13100,7 +13100,7 @@ $( document ).ready(function(){
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h1>Table of Contents<span class="tocSkip"></span></h1></p>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Create-a-pandas-dataframe,-df_iris,-from-this-data." data-toc-modified-id="Create-a-pandas-dataframe,-df_iris,-from-this-data.-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Create a pandas dataframe, df_iris, from this data.</a></span><ul class="toc-item"><li><span><a href="#Print-the-first-3-rows." data-toc-modified-id="Print-the-first-3-rows.-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>Print the first 3 rows.</a></span></li><li><span><a href="#Print-the-number-of-rows-and-columns-(shape)." data-toc-modified-id="Print-the-number-of-rows-and-columns-(shape).-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>Print the number of rows and columns (shape).</a></span></li><li><span><a href="#Print-the-column-names." data-toc-modified-id="Print-the-column-names.-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>Print the column names.</a></span></li><li><span><a href="#Print-the-data-type-of-each-column." data-toc-modified-id="Print-the-data-type-of-each-column.-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>Print the data type of each column.</a></span></li><li><span><a href="#Print-the-summary-statistics-for-each-of-the-numeric-variables." data-toc-modified-id="Print-the-summary-statistics-for-each-of-the-numeric-variables.-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>Print the summary statistics for each of the numeric variables.</a></span></li></ul></li><li><span><a href="#Read-Table1_CustDetails-the-excel-module-dataset,-Excel_Exercises.xlsx,-into-a-dataframe,-df_excel." data-toc-modified-id="Read-Table1_CustDetails-the-excel-module-dataset,-Excel_Exercises.xlsx,-into-a-dataframe,-df_excel.-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Read <code>Table1_CustDetails</code> the excel module dataset, <code>Excel_Exercises.xlsx</code>, into a dataframe, <code>df_excel</code>.</a></span><ul class="toc-item"><li><span><a href="#Assign-the-first-100-rows-to-a-new-dataframe,-df_excel_sample." data-toc-modified-id="Assign-the-first-100-rows-to-a-new-dataframe,-df_excel_sample.-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Assign the first 100 rows to a new dataframe, <code>df_excel_sample</code>.</a></span></li><li><span><a href="#Print-the-number-of-rows-of-your-original-dataframe." data-toc-modified-id="Print-the-number-of-rows-of-your-original-dataframe.-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Print the number of rows of your original dataframe.</a></span></li><li><span><a href="#Print-the-first-5-column-names." data-toc-modified-id="Print-the-first-5-column-names.-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>Print the first 5 column names.</a></span></li><li><span><a href="#Print-the-column-names-that-have-a-data-type-of-object." data-toc-modified-id="Print-the-column-names-that-have-a-data-type-of-object.-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>Print the column names that have a data type of object.</a></span></li><li><span><a href="#Compute-the-range-for-each-of-the-numeric-variables." data-toc-modified-id="Compute-the-range-for-each-of-the-numeric-variables.-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>Compute the range for each of the numeric variables.</a></span></li></ul></li><li><span><a href="#Read-the-data-from-a-Google-sheet-into-a-dataframe,-df_google." data-toc-modified-id="Read-the-data-from-a-Google-sheet-into-a-dataframe,-df_google.-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Read the data from a Google sheet into a dataframe, df_google.</a></span><ul class="toc-item"><li><span><a href="#Print-the-first-3-rows." data-toc-modified-id="Print-the-first-3-rows.-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>Print the first 3 rows.</a></span></li><li><span><a href="#Print-the-number-of-rows-and-columns." data-toc-modified-id="Print-the-number-of-rows-and-columns.-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>Print the number of rows and columns.</a></span></li><li><span><a href="#Print-the-column-names." data-toc-modified-id="Print-the-column-names.-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>Print the column names.</a></span></li><li><span><a href="#Print-the-data-type-of-each-column." data-toc-modified-id="Print-the-data-type-of-each-column.-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>Print the data type of each column.</a></span></li><li><span><a href="#Print-the-summary-statistics-for-each-of-the-numeric-variables." data-toc-modified-id="Print-the-summary-statistics-for-each-of-the-numeric-variables.-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>Print the summary statistics for each of the numeric variables.</a></span></li><li><span><a href="#Print-the-unique-values-for-each-of-your-categorical-variables." data-toc-modified-id="Print-the-unique-values-for-each-of-your-categorical-variables.-3.6"><span class="toc-item-num">3.6&nbsp;&nbsp;</span>Print the unique values for each of your categorical variables.</a></span></li></ul></li><li><span><a href="#acquire.py-Functions" data-toc-modified-id="acquire.py-Functions-4"><span class="toc-item-num">4&nbsp;&nbsp;</span><code>acquire.py</code> Functions</a></span></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#1.-Create-a-pandas-dataframe,-df_iris,-from-this-data." data-toc-modified-id="1.-Create-a-pandas-dataframe,-df_iris,-from-this-data.-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>1. Create a pandas dataframe, df_iris, from this data.</a></span><ul class="toc-item"><li><span><a href="#a.-Print-the-first-3-rows." data-toc-modified-id="a.-Print-the-first-3-rows.-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>a. Print the first 3 rows.</a></span></li><li><span><a href="#b.-Print-the-number-of-rows-and-columns-(shape)." data-toc-modified-id="b.-Print-the-number-of-rows-and-columns-(shape).-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span>b. Print the number of rows and columns (shape).</a></span></li><li><span><a href="#c.-Print-the-column-names." data-toc-modified-id="c.-Print-the-column-names.-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span>c. Print the column names.</a></span></li><li><span><a href="#d.-Print-the-data-type-of-each-column." data-toc-modified-id="d.-Print-the-data-type-of-each-column.-1.4"><span class="toc-item-num">1.4&nbsp;&nbsp;</span>d. Print the data type of each column.</a></span></li><li><span><a href="#e.-Print-the-summary-statistics-for-each-of-the-numeric-variables." data-toc-modified-id="e.-Print-the-summary-statistics-for-each-of-the-numeric-variables.-1.5"><span class="toc-item-num">1.5&nbsp;&nbsp;</span>e. Print the summary statistics for each of the numeric variables.</a></span></li></ul></li><li><span><a href="#2.-Read-Table1_CustDetails-the-excel-module-dataset,-Excel_Exercises.xlsx,-into-a-dataframe,-df_excel." data-toc-modified-id="2.-Read-Table1_CustDetails-the-excel-module-dataset,-Excel_Exercises.xlsx,-into-a-dataframe,-df_excel.-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>2. Read <code>Table1_CustDetails</code> the excel module dataset, <code>Excel_Exercises.xlsx</code>, into a dataframe, <code>df_excel</code>.</a></span><ul class="toc-item"><li><span><a href="#a.-Assign-the-first-100-rows-to-a-new-dataframe,-df_excel_sample." data-toc-modified-id="a.-Assign-the-first-100-rows-to-a-new-dataframe,-df_excel_sample.-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>a. Assign the first 100 rows to a new dataframe, <code>df_excel_sample</code>.</a></span></li><li><span><a href="#b.-Print-the-number-of-rows-of-your-original-dataframe." data-toc-modified-id="b.-Print-the-number-of-rows-of-your-original-dataframe.-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>b. Print the number of rows of your original dataframe.</a></span></li><li><span><a href="#c.-Print-the-first-5-column-names." data-toc-modified-id="c.-Print-the-first-5-column-names.-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span>c. Print the first 5 column names.</a></span></li><li><span><a href="#d.-Print-the-column-names-that-have-a-data-type-of-object." data-toc-modified-id="d.-Print-the-column-names-that-have-a-data-type-of-object.-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span>d. Print the column names that have a data type of object.</a></span></li><li><span><a href="#e.-Compute-the-range-for-each-of-the-numeric-variables." data-toc-modified-id="e.-Compute-the-range-for-each-of-the-numeric-variables.-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>e. Compute the range for each of the numeric variables.</a></span></li></ul></li><li><span><a href="#3.-Read-the-data-from-a-Google-sheet-into-a-dataframe,-df_google." data-toc-modified-id="3.-Read-the-data-from-a-Google-sheet-into-a-dataframe,-df_google.-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>3. Read the data from a Google sheet into a dataframe, df_google.</a></span><ul class="toc-item"><li><span><a href="#a.-Print-the-first-3-rows." data-toc-modified-id="a.-Print-the-first-3-rows.-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span>a. Print the first 3 rows.</a></span></li><li><span><a href="#b.-Print-the-number-of-rows-and-columns." data-toc-modified-id="b.-Print-the-number-of-rows-and-columns.-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span>b. Print the number of rows and columns.</a></span></li><li><span><a href="#c.-Print-the-column-names." data-toc-modified-id="c.-Print-the-column-names.-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span>c. Print the column names.</a></span></li><li><span><a href="#d.-Print-the-data-type-of-each-column." data-toc-modified-id="d.-Print-the-data-type-of-each-column.-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>d. Print the data type of each column.</a></span></li><li><span><a href="#e.-Print-the-summary-statistics-for-each-of-the-numeric-variables." data-toc-modified-id="e.-Print-the-summary-statistics-for-each-of-the-numeric-variables.-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>e. Print the summary statistics for each of the numeric variables.</a></span></li><li><span><a href="#f.-Print-the-unique-values-for-each-of-your-categorical-variables." data-toc-modified-id="f.-Print-the-unique-values-for-each-of-your-categorical-variables.-3.6"><span class="toc-item-num">3.6&nbsp;&nbsp;</span>f. Print the unique values for each of your categorical variables.</a></span></li></ul></li><li><span><a href="#acquire.py-Functions" data-toc-modified-id="acquire.py-Functions-4"><span class="toc-item-num">4&nbsp;&nbsp;</span><code>acquire.py</code> Functions</a></span></li></ul></div>
 </div>
 </div>
 </div>
@@ -13116,6 +13116,13 @@ $( document ).ready(function(){
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1><font color=limegreen>Acquire Data for Classification</font></h1>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr style="border-top: 10px groove limegreen; margin-top: 1px; margin-bottom: 1px"></hr>
 </div>
 </div>
 </div>
@@ -13223,7 +13230,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Create-a-pandas-dataframe,-df_iris,-from-this-data.">Create a pandas dataframe, df_iris, from this data.<a class="anchor-link" href="#Create-a-pandas-dataframe,-df_iris,-from-this-data.">&#182;</a></h2><ul>
+<h2 id="1.-Create-a-pandas-dataframe,-df_iris,-from-this-data.">1. Create a pandas dataframe, df_iris, from this data.<a class="anchor-link" href="#1.-Create-a-pandas-dataframe,-df_iris,-from-this-data.">&#182;</a></h2><ul>
 <li>Use a python module (pydata or seaborn datasets) containing datasets as a source for the iris data.</li>
 </ul>
 <p><strong>Other Seaborn Datasets you can use are linked <a href="https://github.com/mwaskom/seaborn-data">here</a></strong></p>
@@ -13340,7 +13347,7 @@ Wadsworth &amp; Brooks/Cole. (has `iris3` as `iris`.)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-first-3-rows.">Print the first 3 rows.<a class="anchor-link" href="#Print-the-first-3-rows.">&#182;</a></h3>
+<h3 id="a.-Print-the-first-3-rows.">a. Print the first 3 rows.<a class="anchor-link" href="#a.-Print-the-first-3-rows.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13439,7 +13446,7 @@ Wadsworth &amp; Brooks/Cole. (has `iris3` as `iris`.)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-number-of-rows-and-columns-(shape).">Print the number of rows and columns (shape).<a class="anchor-link" href="#Print-the-number-of-rows-and-columns-(shape).">&#182;</a></h3>
+<h3 id="b.-Print-the-number-of-rows-and-columns-(shape).">b. Print the number of rows and columns (shape).<a class="anchor-link" href="#b.-Print-the-number-of-rows-and-columns-(shape).">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13487,7 +13494,7 @@ Wadsworth &amp; Brooks/Cole. (has `iris3` as `iris`.)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-column-names.">Print the column names.<a class="anchor-link" href="#Print-the-column-names.">&#182;</a></h3>
+<h3 id="c.-Print-the-column-names.">c. Print the column names.<a class="anchor-link" href="#c.-Print-the-column-names.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13572,7 +13579,7 @@ Wadsworth &amp; Brooks/Cole. (has `iris3` as `iris`.)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-data-type-of-each-column.">Print the data type of each column.<a class="anchor-link" href="#Print-the-data-type-of-each-column.">&#182;</a></h3>
+<h3 id="d.-Print-the-data-type-of-each-column.">d. Print the data type of each column.<a class="anchor-link" href="#d.-Print-the-data-type-of-each-column.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13671,7 +13678,7 @@ memory usage: 7.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-summary-statistics-for-each-of-the-numeric-variables.">Print the summary statistics for each of the numeric variables.<a class="anchor-link" href="#Print-the-summary-statistics-for-each-of-the-numeric-variables.">&#182;</a></h3><ul>
+<h3 id="e.-Print-the-summary-statistics-for-each-of-the-numeric-variables.">e. Print the summary statistics for each of the numeric variables.<a class="anchor-link" href="#e.-Print-the-summary-statistics-for-each-of-the-numeric-variables.">&#182;</a></h3><ul>
 <li>Would you recommend rescaling the data based on these statistics?</li>
 </ul>
 <blockquote><p>All of the numeric variables in the iris dataset are in the same unit of measure, cm, so I don't see a need to scale them.</p>
@@ -13885,6 +13892,44 @@ memory usage: 7.0+ KB
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I can do a quick visual of the variable distributions if I want.</span>
+
+<span class="n">df_iris</span><span class="p">[</span><span class="s1">&#39;Petal.Length&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;thistle&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="output_30_0.png"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13895,13 +13940,13 @@ memory usage: 7.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Read-Table1_CustDetails-the-excel-module-dataset,-Excel_Exercises.xlsx,-into-a-dataframe,-df_excel.">Read <code>Table1_CustDetails</code> the excel module dataset, <code>Excel_Exercises.xlsx</code>, into a dataframe, <code>df_excel</code>.<a class="anchor-link" href="#Read-Table1_CustDetails-the-excel-module-dataset,-Excel_Exercises.xlsx,-into-a-dataframe,-df_excel.">&#182;</a></h2>
+<h2 id="2.-Read-Table1_CustDetails-the-excel-module-dataset,-Excel_Exercises.xlsx,-into-a-dataframe,-df_excel.">2. Read <code>Table1_CustDetails</code> the excel module dataset, <code>Excel_Exercises.xlsx</code>, into a dataframe, <code>df_excel</code>.<a class="anchor-link" href="#2.-Read-Table1_CustDetails-the-excel-module-dataset,-Excel_Exercises.xlsx,-into-a-dataframe,-df_excel.">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_excel</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;Spreadsheets_Exercises.xlsx&#39;</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;Table1_CustDetails&#39;</span><span class="p">)</span>
@@ -13914,7 +13959,7 @@ memory usage: 7.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_excel</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -13971,7 +14016,7 @@ memory usage: 661.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_excel</span> <span class="o">=</span> <span class="n">df_excel</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="s2">&quot;is_senior_citizen&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span> <span class="s2">&quot;phone_service&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span> 
@@ -14032,13 +14077,13 @@ memory usage: 661.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Assign-the-first-100-rows-to-a-new-dataframe,-df_excel_sample.">Assign the first 100 rows to a new dataframe, <code>df_excel_sample</code>.<a class="anchor-link" href="#Assign-the-first-100-rows-to-a-new-dataframe,-df_excel_sample.">&#182;</a></h3>
+<h3 id="a.-Assign-the-first-100-rows-to-a-new-dataframe,-df_excel_sample.">a. Assign the first 100 rows to a new dataframe, <code>df_excel_sample</code>.<a class="anchor-link" href="#a.-Assign-the-first-100-rows-to-a-new-dataframe,-df_excel_sample.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_excel_sample</span> <span class="o">=</span> <span class="n">df_excel</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
@@ -14051,7 +14096,7 @@ memory usage: 661.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_excel_sample</span><span class="o">.</span><span class="n">shape</span>
@@ -14067,7 +14112,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[16]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -14093,13 +14138,13 @@ memory usage: 661.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-number-of-rows-of-your-original-dataframe.">Print the number of rows of your original dataframe.<a class="anchor-link" href="#Print-the-number-of-rows-of-your-original-dataframe.">&#182;</a></h3>
+<h3 id="b.-Print-the-number-of-rows-of-your-original-dataframe.">b. Print the number of rows of your original dataframe.<a class="anchor-link" href="#b.-Print-the-number-of-rows-of-your-original-dataframe.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_excel</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -14115,7 +14160,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14141,13 +14186,13 @@ memory usage: 661.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-first-5-column-names.">Print the first 5 column names.<a class="anchor-link" href="#Print-the-first-5-column-names.">&#182;</a></h3>
+<h3 id="c.-Print-the-first-5-column-names.">c. Print the first 5 column names.<a class="anchor-link" href="#c.-Print-the-first-5-column-names.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_excel</span><span class="o">.</span><span class="n">columns</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
@@ -14163,7 +14208,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -14189,13 +14234,13 @@ memory usage: 661.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-column-names-that-have-a-data-type-of-object.">Print the column names that have a data type of object.<a class="anchor-link" href="#Print-the-column-names-that-have-a-data-type-of-object.">&#182;</a></h3>
+<h3 id="d.-Print-the-column-names-that-have-a-data-type-of-object.">d. Print the column names that have a data type of object.<a class="anchor-link" href="#d.-Print-the-column-names-that-have-a-data-type-of-object.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_excel</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14211,7 +14256,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -14325,7 +14370,7 @@ memory usage: 661.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_excel</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span>
@@ -14341,7 +14386,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14370,7 +14415,7 @@ memory usage: 661.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Compute-the-range-for-each-of-the-numeric-variables.">Compute the range for each of the numeric variables.<a class="anchor-link" href="#Compute-the-range-for-each-of-the-numeric-variables.">&#182;</a></h3><ul>
+<h3 id="e.-Compute-the-range-for-each-of-the-numeric-variables.">e. Compute the range for each of the numeric variables.<a class="anchor-link" href="#e.-Compute-the-range-for-each-of-the-numeric-variables.">&#182;</a></h3><ul>
 <li>I can choose to look just at the numeric variables quickly like this. If I was going forward with this DataFrame, I would change the data types of numeric categoricals to object data types. I'll wait and do this below with the DataFrames I will use going forward.</li>
 </ul>
 
@@ -14379,7 +14424,7 @@ memory usage: 661.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">telco_stats</span> <span class="o">=</span> <span class="n">df_excel</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
@@ -14396,7 +14441,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14465,7 +14510,7 @@ memory usage: 661.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">telco_stats</span><span class="p">[</span><span class="s1">&#39;range&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">telco_stats</span><span class="p">[</span><span class="s1">&#39;max&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">telco_stats</span><span class="p">[</span><span class="s1">&#39;min&#39;</span><span class="p">]</span>
@@ -14482,7 +14527,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -14562,14 +14607,14 @@ memory usage: 661.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Read-the-data-from-a-Google-sheet-into-a-dataframe,-df_google.">Read the data from a Google sheet into a dataframe, df_google.<a class="anchor-link" href="#Read-the-data-from-a-Google-sheet-into-a-dataframe,-df_google.">&#182;</a></h2><p><a href="https://docs.google.com/spreadsheets/d/1Uhtml8KY19LILuZsrDtlsHHDC9wuDGUSe8LTEwvdI5g/edit#gid=341089357">use this google sheet</a></p>
+<h2 id="3.-Read-the-data-from-a-Google-sheet-into-a-dataframe,-df_google.">3. Read the data from a Google sheet into a dataframe, df_google.<a class="anchor-link" href="#3.-Read-the-data-from-a-Google-sheet-into-a-dataframe,-df_google.">&#182;</a></h2><p><a href="https://docs.google.com/spreadsheets/d/1Uhtml8KY19LILuZsrDtlsHHDC9wuDGUSe8LTEwvdI5g/edit#gid=341089357">use this google sheet</a></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Grab the Google sheet url.</span>
@@ -14584,7 +14629,7 @@ memory usage: 661.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Turn Google sheet address into a CSV export URL.</span>
@@ -14599,7 +14644,7 @@ memory usage: 661.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Read in the data using the pandas `pd.read_csv()` function.</span>
@@ -14615,13 +14660,13 @@ memory usage: 661.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-first-3-rows.">Print the first 3 rows.<a class="anchor-link" href="#Print-the-first-3-rows.">&#182;</a></h3>
+<h3 id="a.-Print-the-first-3-rows.">a. Print the first 3 rows.<a class="anchor-link" href="#a.-Print-the-first-3-rows.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -14637,7 +14682,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -14742,13 +14787,13 @@ memory usage: 661.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-number-of-rows-and-columns.">Print the number of rows and columns.<a class="anchor-link" href="#Print-the-number-of-rows-and-columns.">&#182;</a></h3>
+<h3 id="b.-Print-the-number-of-rows-and-columns.">b. Print the number of rows and columns.<a class="anchor-link" href="#b.-Print-the-number-of-rows-and-columns.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span><span class="o">.</span><span class="n">shape</span>
@@ -14764,7 +14809,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -14790,13 +14835,13 @@ memory usage: 661.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-column-names.">Print the column names.<a class="anchor-link" href="#Print-the-column-names.">&#182;</a></h3>
+<h3 id="c.-Print-the-column-names.">c. Print the column names.<a class="anchor-link" href="#c.-Print-the-column-names.">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
@@ -14812,7 +14857,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -14849,7 +14894,7 @@ memory usage: 661.0+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-data-type-of-each-column.">Print the data type of each column.<a class="anchor-link" href="#Print-the-data-type-of-each-column.">&#182;</a></h3><ul>
+<h3 id="d.-Print-the-data-type-of-each-column.">d. Print the data type of each column.<a class="anchor-link" href="#d.-Print-the-data-type-of-each-column.">&#182;</a></h3><ul>
 <li>Again, there are numeric data types here that are really categorical variables, so I'll take care of them right here.</li>
 </ul>
 
@@ -14858,7 +14903,7 @@ memory usage: 661.0+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span><span class="o">.</span><span class="n">dtypes</span>
@@ -14874,7 +14919,7 @@ memory usage: 661.0+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -14903,7 +14948,7 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -14952,7 +14997,7 @@ memory usage: 83.7+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span> <span class="o">=</span> <span class="n">df_google</span><span class="o">.</span><span class="n">astype</span><span class="p">({</span><span class="s1">&#39;PassengerId&#39;</span><span class="p">:</span> <span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="s1">&#39;Survived&#39;</span><span class="p">:</span> <span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="s1">&#39;Pclass&#39;</span><span class="p">:</span> <span class="s1">&#39;object&#39;</span><span class="p">})</span>
@@ -15011,7 +15056,7 @@ memory usage: 83.7+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-summary-statistics-for-each-of-the-numeric-variables.">Print the summary statistics for each of the numeric variables.<a class="anchor-link" href="#Print-the-summary-statistics-for-each-of-the-numeric-variables.">&#182;</a></h3><ul>
+<h3 id="e.-Print-the-summary-statistics-for-each-of-the-numeric-variables.">e. Print the summary statistics for each of the numeric variables.<a class="anchor-link" href="#e.-Print-the-summary-statistics-for-each-of-the-numeric-variables.">&#182;</a></h3><ul>
 <li>Some of these numeric columns are really categorical values, and I can make that change here if I want. I could also just note this observation and take care of this when I prepare my data.</li>
 </ul>
 
@@ -15020,7 +15065,7 @@ memory usage: 83.7+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
@@ -15036,7 +15081,7 @@ memory usage: 83.7+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[34]:</div>
 
 
 
@@ -15136,7 +15181,7 @@ memory usage: 83.7+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Print-the-unique-values-for-each-of-your-categorical-variables.">Print the unique values for each of your categorical variables.<a class="anchor-link" href="#Print-the-unique-values-for-each-of-your-categorical-variables.">&#182;</a></h3><ul>
+<h3 id="f.-Print-the-unique-values-for-each-of-your-categorical-variables.">f. Print the unique values for each of your categorical variables.<a class="anchor-link" href="#f.-Print-the-unique-values-for-each-of-your-categorical-variables.">&#182;</a></h3><ul>
 <li>Some of these categorical variable columns have a ton of unique values, so I'll check the number first. If I want to see the unique values, I can do a <code>.value_counts()</code> on individual columns.</li>
 </ul>
 
@@ -15145,7 +15190,7 @@ memory usage: 83.7+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df_google</span><span class="p">:</span>
@@ -15185,7 +15230,7 @@ Embarked has 3 unique values.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span><span class="o">.</span><span class="n">Survived</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -15201,7 +15246,7 @@ Embarked has 3 unique values.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[36]:</div>
 
 
 
@@ -15220,7 +15265,7 @@ Name: Survived, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span><span class="o">.</span><span class="n">Pclass</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -15236,7 +15281,7 @@ Name: Survived, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -15256,7 +15301,7 @@ Name: Pclass, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span><span class="o">.</span><span class="n">Sex</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -15272,7 +15317,7 @@ Name: Pclass, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[38]:</div>
 
 
 
@@ -15291,7 +15336,7 @@ Name: Sex, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_google</span><span class="o">.</span><span class="n">Embarked</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">dropna</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -15307,7 +15352,7 @@ Name: Sex, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -15345,7 +15390,7 @@ Name: Embarked, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_connection</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="n">user</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="n">host</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">):</span>
@@ -15359,7 +15404,7 @@ Name: Embarked, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">new_titanic_data</span><span class="p">():</span>
@@ -15376,7 +15421,7 @@ Name: Embarked, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_titanic_data</span><span class="p">(</span><span class="n">cached</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
@@ -15398,7 +15443,7 @@ Name: Embarked, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">titanic_df</span> <span class="o">=</span> <span class="n">get_titanic_data</span><span class="p">(</span><span class="n">cached</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -15411,7 +15456,7 @@ Name: Embarked, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">titanic_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15427,7 +15472,7 @@ Name: Embarked, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[42]:</div>
+    <div class="prompt output_prompt">Out[47]:</div>
 
 
 
@@ -15478,7 +15523,7 @@ Name: Embarked, dtype: int64</pre>
       <td>7.2500</td>
       <td>S</td>
       <td>Third</td>
-      <td>NaN</td>
+      <td>None</td>
       <td>Southampton</td>
       <td>0</td>
     </tr>
@@ -15510,7 +15555,7 @@ Name: Embarked, dtype: int64</pre>
       <td>7.9250</td>
       <td>S</td>
       <td>Third</td>
-      <td>NaN</td>
+      <td>None</td>
       <td>Southampton</td>
       <td>1</td>
     </tr>
@@ -15542,7 +15587,7 @@ Name: Embarked, dtype: int64</pre>
       <td>8.0500</td>
       <td>S</td>
       <td>Third</td>
-      <td>NaN</td>
+      <td>None</td>
       <td>Southampton</td>
       <td>1</td>
     </tr>
@@ -15576,7 +15621,7 @@ Name: Embarked, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">new_iris_data</span><span class="p">():</span>
@@ -15607,7 +15652,7 @@ Name: Embarked, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_iris_data</span><span class="p">(</span><span class="n">cached</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
@@ -15629,7 +15674,7 @@ Name: Embarked, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris_df</span> <span class="o">=</span> <span class="n">get_iris_data</span><span class="p">(</span><span class="n">cached</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -15642,7 +15687,7 @@ Name: Embarked, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">iris_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15658,7 +15703,7 @@ Name: Embarked, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[46]:</div>
+    <div class="prompt output_prompt">Out[51]:</div>
 
 
 
