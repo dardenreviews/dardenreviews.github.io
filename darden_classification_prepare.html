@@ -13156,11 +13156,11 @@ $( document ).ready(function(){
 </ul>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
 
-<span class="n">imputer</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span> <span class="o">=</span> <span class="s1">&#39;strategy&#39;</span><span class="p">)</span>
+<span class="n">imputer</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span> <span class="o">=</span> <span class="s1">&#39;desired_strategy&#39;</span><span class="p">)</span>
 
-<span class="n">train</span><span class="p">[</span><span class="s1">&#39;column&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">imputer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">train</span><span class="p">[[</span><span class="s1">&#39;column&#39;</span><span class="p">]])</span>
-<span class="n">validate</span><span class="p">[</span><span class="s1">&#39;column&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">imputer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">validate</span><span class="p">[[</span><span class="s1">&#39;column&#39;</span><span class="p">]])</span>
-<span class="n">test</span><span class="p">[</span><span class="s1">&#39;column&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">imputer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">test</span><span class="p">[[</span><span class="s1">&#39;column&#39;</span><span class="p">]])</span>
+<span class="n">train</span><span class="p">[</span><span class="s1">&#39;column_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">imputer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">train</span><span class="p">[[</span><span class="s1">&#39;column_name&#39;</span><span class="p">]])</span>
+<span class="n">validate</span><span class="p">[</span><span class="s1">&#39;column_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">imputer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">validate</span><span class="p">[[</span><span class="s1">&#39;column_name&#39;</span><span class="p">]])</span>
+<span class="n">test</span><span class="p">[</span><span class="s1">&#39;column_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">imputer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">test</span><span class="p">[[</span><span class="s1">&#39;column_name&#39;</span><span class="p">]])</span>
 </pre></div>
 <ul>
 <li><strong>perform a simple encoding on a categorical variable:</strong></li>
@@ -13832,73 +13832,73 @@ $( document ).ready(function(){
   </thead>
   <tbody>
     <tr>
-      <th>78</th>
+      <th>13</th>
+      <td>setosa</td>
+      <td>4.3</td>
+      <td>3.0</td>
+      <td>1.1</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>60</th>
       <td>versicolor</td>
-      <td>6.0</td>
-      <td>2.9</td>
-      <td>4.5</td>
-      <td>1.5</td>
+      <td>5.0</td>
+      <td>2.0</td>
+      <td>3.5</td>
+      <td>1.0</td>
       <td>1</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>48</th>
-      <td>setosa</td>
-      <td>5.3</td>
-      <td>3.7</td>
-      <td>1.5</td>
-      <td>0.2</td>
-      <td>0</td>
+      <th>75</th>
+      <td>versicolor</td>
+      <td>6.6</td>
+      <td>3.0</td>
+      <td>4.4</td>
+      <td>1.4</td>
+      <td>1</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>66</th>
+      <th>69</th>
       <td>versicolor</td>
       <td>5.6</td>
+      <td>2.5</td>
+      <td>3.9</td>
+      <td>1.1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>versicolor</td>
+      <td>5.7</td>
       <td>3.0</td>
-      <td>4.5</td>
-      <td>1.5</td>
+      <td>4.2</td>
+      <td>1.2</td>
       <td>1</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>141</th>
+      <th>131</th>
       <td>virginica</td>
-      <td>6.9</td>
-      <td>3.1</td>
-      <td>5.1</td>
-      <td>2.3</td>
+      <td>7.9</td>
+      <td>3.8</td>
+      <td>6.4</td>
+      <td>2.0</td>
       <td>0</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>17</th>
-      <td>setosa</td>
-      <td>5.1</td>
-      <td>3.5</td>
-      <td>1.4</td>
-      <td>0.3</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>setosa</td>
+      <th>77</th>
+      <td>versicolor</td>
+      <td>6.7</td>
+      <td>3.0</td>
       <td>5.0</td>
-      <td>3.6</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>setosa</td>
-      <td>5.1</td>
-      <td>3.8</td>
-      <td>1.9</td>
-      <td>0.4</td>
-      <td>0</td>
+      <td>1.7</td>
+      <td>1</td>
       <td>0</td>
     </tr>
   </tbody>
@@ -14313,7 +14313,9 @@ $( document ).ready(function(){
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">titanic</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="o">~</span><span class="n">titanic</span><span class="o">.</span><span class="n">embarked</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># using the complement operator, ~, to return the inverse of our instance above. Return everything but the null values.</span>
+
+<span class="n">titanic</span> <span class="o">=</span> <span class="n">titanic</span><span class="p">[</span><span class="o">~</span><span class="n">titanic</span><span class="o">.</span><span class="n">embarked</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span>
 <span class="n">titanic</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
@@ -14487,54 +14489,54 @@ memory usage: 90.3+ KB
   </thead>
   <tbody>
     <tr>
-      <th>534</th>
+      <th>854</th>
       <td>0</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>816</th>
+      <th>18</th>
       <td>0</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>852</th>
+      <th>620</th>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>259</th>
+      <th>633</th>
       <td>0</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>51</th>
+      <th>47</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>256</th>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>663</th>
       <td>0</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>146</th>
+      <th>648</th>
       <td>0</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>397</th>
+      <th>295</th>
       <td>0</td>
-      <td>1</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>345</th>
+      <th>641</th>
       <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>836</th>
       <td>0</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>371</th>
-      <td>0</td>
-      <td>1</td>
     </tr>
   </tbody>
 </table>
