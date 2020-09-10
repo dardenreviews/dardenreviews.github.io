@@ -78,6 +78,10 @@ Coming Soon!
 
 >This notebook covers reading data into DataFrames using a variety of methods, a look at writing functions with data caching options, and creating an acquire module for future use.
 
+- [Classification Prepare Exercises](https://dardenreviews.github.io/classification_prepare)
+
+>This notebook covers preparing data by encoding with `pd.get_dummies()`, by imputing using `SimpleImputer`, by splitting using `train_test_split`, and creating a prepare module for future use.
+
 [Linear Regression Review Notebook](https://dardenreviews.github.io/)
 
 Coming Soon!
