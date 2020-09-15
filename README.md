@@ -8,9 +8,7 @@ I highly suggest making your own site as a portfolio that shows off your own wor
 
 [Github Page Tutorial](https://dardenreviews.github.io/create_your_portfolio.pdf)
 
-This tutorial will go live Tuesday for my Github Page Lunch 'n' Learn!!
-
->Want to make your own site as a personal portfolio? Check out this How-To infographic I created. This will get your site up and running in less than half an hour! When you're ready to make your markdown files beautiful, check out the tutorial below.
+>Want to make your own site as a personal portfolio? Check out this How-To infographic I created. The recorded demo of this process is available [here.](https://www.youtube.com/watch?v=4oRjeOtcoXE) This will get your site up and running in less than half an hour! When you're ready to make your markdown files beautiful, check out the tutorial below.
 
 [Markdown Tutorial](https://dardenreviews.github.io/notebook_html_tutorial)
 
