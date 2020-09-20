@@ -6,10 +6,10 @@
 
 This structure can be followed whether your presentation is five minutes or fifty and can be as obvious or subtle as your audience dictates. This is where it fits in your overall presentation:
 
-<b>Intro: </b>Tell your audience what your going to tell them and why (Goals).
+**Intro:** Tell your audience what your going to tell them and why (Goals).
 
-<b>Core Content: </b>Tell your story; this is where Message Mapping fits in.
+**Core Content:** Tell your story; this is where Message Mapping fits in.
 
-<b>Wrap: </b>Summarize what you just told your audience. Help them walk away with your important and inspiring message.
+**Wrap:** Summarize what you just told your audience. Help them walk away with your important and inspiring message.
 
 ___
