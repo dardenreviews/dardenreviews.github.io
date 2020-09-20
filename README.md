@@ -5,6 +5,8 @@
 This site contains reviews I have created and resources I have gathered to support you on your journey through Codeup's Data Science program and beyond. 
 
 I highly suggest making your own site as a portfolio that shows off your own work throughout the program. It would be a great link to share on your LinkedIn and drop on your resume for potential employers!
+___
+## Resources
 
 [Github Page Tutorial](https://dardenreviews.github.io/create_your_portfolio.pdf)
 
@@ -21,6 +23,13 @@ I highly suggest making your own site as a portfolio that shows off your own wor
 [Interviewing Resources](https://dardenreviews.github.io/interviewing_resources)
 
 >This page houses helpful resources for you to use when preparing yourself for interviewing.
+
+[Storytelling Resources](https://dardenreviews.github.io/storytelling)
+
+>This page is a collection of resources for putting together and giving great presentations.
+
+___
+## Data Science Tools
 
 SQL Review Notebooks
 
@@ -65,6 +74,9 @@ Pandas Review Notebooks
 [Stats Review Notebook](https://dardenreviews.github.io/stats_review/stats_review)
 
 >This notebook covers Probability Distributions and Hypothesis Testing. I tried to make the concepts approachable and included lots of helpful examples and code snippets.
+
+___
+## Machine Learning
 
 [Classification Review Notebook](https://dardenreviews.github.io/classification_review/classification_review)
 
