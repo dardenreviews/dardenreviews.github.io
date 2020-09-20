@@ -6,7 +6,7 @@
 
 This structure can be followed whether your presentation is five minutes or fifty and can be as obvious or subtle as your audience dictates. This is where it fits in your overall presentation:
 
-**Intro:** Tell your audience what your going to tell them and why (Goals).
+**Intro:** Tell your audience what you're going to tell them and why (Goals).
 
 **Core Content:** Tell your story; this is where Message Mapping fits in.
 
