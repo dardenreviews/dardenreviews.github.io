@@ -90,9 +90,7 @@ ___
 
 >This notebook covers preparing data by encoding with `pd.get_dummies()`, by imputing using `SimpleImputer`, by splitting using `train_test_split`, and creating a prepare module for future use.
 
-[Linear Regression Review Notebook](https://dardenreviews.github.io/)
+[Linear Regression Review Notebook](https://dardenreviews.github.io/regression_review)
 
-Coming Soon!
-
->This notebook covers the Linear Regression data science pipeline from Acquire through Evaluate. Again, I hope that the concepts are approachable, and I've included plenty of helpful code snippets for each stage of the pipeline.
+>This notebook covers the Linear Regression data science pipeline from Acquire through Evaluate. Again, I hope that the concepts are approachable through expanded notes, and I've included plenty of helpful code snippets for each stage of the pipeline. There are lots of great resources linked for future study, as well. 
 
