@@ -35,3 +35,9 @@ ___
 [![Chase Thompson's Lunch 'n' Learn - How to Create Content for Your Projects](https://res.cloudinary.com/marcomontalbano/image/upload/v1599216437/video_to_markdown/images/youtube--6QPJOYxas4Q-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/6QPJOYxas4Q "Chase Thompson's Lunch 'n' Learn - How to Create Content for Your Projects")
 
 [Chase's Canva Presentation](https://www.canva.com/design/DAEGtEHpNcw/4grL_n0d2rv6_XuWeRUP_A/view?utm_content=DAEGtEHpNcw&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+
+### <font color="orange">Faster Project Setup with Ryan McCall</font>
+
+[![Ryan McCall's Lunch 'n' Learn - Faster Project Setup with Cookiecutter](https://res.cloudinary.com/marcomontalbano/image/upload/v1602006825/video_to_markdown/images/youtube--TdFysz043zk-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/TdFysz043zk "Ryan McCall's Lunch 'n' Learn - Faster Project Setup with Cookiecutter")
+
+[Ryan's Data Science MVP Github Repo](https://github.com/RyanMcCall/ryans_codeup_data_science_mvp)
