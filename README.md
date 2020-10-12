@@ -51,7 +51,9 @@ Python Review Notebooks
 
 >These notebooks explore python basics and move into more complicated concepts like using list comprehensions instead of loops and creating your own functions.
 
-[Python Data Types and Basic Functionality](https://dardenreviews.github.io/python_dt_review_notebook)
+- [Python Data Types and Basic Functionality](https://dardenreviews.github.io/python_dt_review_notebook)
+
+>This notebook is a work in progress but will cover Python data types and objects along with their functionality.
 
 Pandas Review Notebooks
 
