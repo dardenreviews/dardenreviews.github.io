@@ -47,6 +47,12 @@ SQL Review Notebooks
 
 >This notebooks dives into the `CASE` statement and working with temporary tables.
 
+Python Review Notebooks
+
+>These notebooks explore python basics and move into more complicated concepts like using list comprehensions instead of loops and creating your own functions.
+
+[Python Data Types and Basic Functionality](https://dardenreviews.github.io/python_dt_review_notebook)
+
 Pandas Review Notebooks
 
 >These notebooks introduce the pandas library from Series objects to DataFrame objects including their common attributes, methods, and chaining techniques.
