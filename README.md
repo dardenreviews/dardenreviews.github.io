@@ -106,3 +106,17 @@ ___
 
 >This notebook covers the Linear Regression data science pipeline from Acquire through Evaluate. Again, I hope that the concepts are approachable through expanded notes, and I've included plenty of helpful code snippets for each stage of the pipeline. There are lots of great resources linked for future study, as well. 
 
+Time Series Review Notebooks
+
+
+- [Acquire Data for Time Series](https://dardenreviews.github.io/)
+
+Coming Soon!
+
+>This notebook acquires data using an API for further use in the Time Series module.
+
+- [Prepare Data for Time Series](https://dardenreviews.github.io/)
+
+Coming Soon!
+
+>This notebook prepares data with a DateTimeIndex.
