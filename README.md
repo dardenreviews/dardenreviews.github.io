@@ -83,6 +83,9 @@ Pandas Review Notebooks
 
 >This notebook covers Probability Distributions and Hypothesis Testing. I tried to make the concepts approachable and included lots of helpful examples and code snippets.
 
+- [REST API Review Notebook](https://dardenreviews.github.io/api_review)
+
+>This notebook is a very crash course in using a REST API to acquire data. I included foundational terminology I encountered in my own reading and research and some simple code examples. There are also lots of links to further reading and free APIs for more practice.
 ___
 ## Machine Learning
 
