@@ -109,9 +109,8 @@ ___
 Time Series Review Notebooks
 
 
-- [Acquire Data for Time Series](https://dardenreviews.github.io/)
+- [Acquire Data for Time Series](https://dardenreviews.github.io/ts_acquire)
 
-Coming Soon!
 
 >This notebook acquires data using an API for further use in the Time Series module.
 
