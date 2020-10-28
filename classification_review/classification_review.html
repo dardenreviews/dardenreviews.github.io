@@ -13084,7 +13084,7 @@ div#notebook {
 <script>
 $( document ).ready(function(){
 
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": true, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": false, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
 
             // fire the main function with these parameters
             require(['nbextensions/toc2/toc2'], function (toc2) {
@@ -13096,14 +13096,6 @@ $( document ).ready(function(){
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h1>Table of Contents<span class="tocSkip"></span></h1></p>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Classification" data-toc-modified-id="Classification-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Classification</a></span><ul class="toc-item"><li><span><a href="#What-is-Classification?" data-toc-modified-id="What-is-Classification?-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span><font color="red">What is Classification?</font></a></span></li><li><span><a href="#So-What-Are-the-Types-of-Classification?" data-toc-modified-id="So-What-Are-the-Types-of-Classification?-1.2"><span class="toc-item-num">1.2&nbsp;&nbsp;</span><font color="orange">So What Are the Types of Classification?</font></a></span></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-1.3"><span class="toc-item-num">1.3&nbsp;&nbsp;</span><font color="green">Now What?</font></a></span></li></ul></li><li><span><a href="#Acquire" data-toc-modified-id="Acquire-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Acquire</a></span><ul class="toc-item"><li><span><a href="#Create-your-DataFrame-using-a-SQL-query-to-access-a-database." data-toc-modified-id="Create-your-DataFrame-using-a-SQL-query-to-access-a-database.-2.1"><span class="toc-item-num">2.1&nbsp;&nbsp;</span>Create your DataFrame using a SQL query to access a database.</a></span></li><li><span><a href="#Create-your-DataFrame-using-a-csv-file,-a-Google-sheet,-or-from-AWS-S3" data-toc-modified-id="Create-your-DataFrame-using-a-csv-file,-a-Google-sheet,-or-from-AWS-S3-2.2"><span class="toc-item-num">2.2&nbsp;&nbsp;</span>Create your DataFrame using a csv file, a Google sheet, or from AWS S3</a></span></li><li><span><a href="#Create-your-DataFrame-using-copy-pasted-tabular-data" data-toc-modified-id="Create-your-DataFrame-using-copy-pasted-tabular-data-2.3"><span class="toc-item-num">2.3&nbsp;&nbsp;</span><strong>Create your DataFrame using copy-pasted tabular data</strong></a></span></li><li><span><a href="#Create-your-DataFrame-using-an-Excel-sheet" data-toc-modified-id="Create-your-DataFrame-using-an-Excel-sheet-2.4"><span class="toc-item-num">2.4&nbsp;&nbsp;</span><strong>Create your DataFrame using an Excel sheet</strong></a></span></li><li><span><a href="#Create-your-DataFrame-using-Pydata-sets-and-Read-the-Doc." data-toc-modified-id="Create-your-DataFrame-using-Pydata-sets-and-Read-the-Doc.-2.5"><span class="toc-item-num">2.5&nbsp;&nbsp;</span>Create your DataFrame using Pydata sets and Read the Doc.</a></span></li><li><span><a href="#Create-your-DataFrame-using-Sklearn-Datasets." data-toc-modified-id="Create-your-DataFrame-using-Sklearn-Datasets.-2.6"><span class="toc-item-num">2.6&nbsp;&nbsp;</span>Create your DataFrame using Sklearn Datasets.</a></span></li></ul></li><li><span><a href="#Preparation---Imputing-and-Encoding-Focus" data-toc-modified-id="Preparation---Imputing-and-Encoding-Focus-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Preparation - Imputing and Encoding Focus</a></span><ul class="toc-item"><li><span><a href="#What-are-Imputing-and-Encoding?" data-toc-modified-id="What-are-Imputing-and-Encoding?-3.1"><span class="toc-item-num">3.1&nbsp;&nbsp;</span><strong><font color="red">What are Imputing and Encoding?</font></strong></a></span></li><li><span><a href="#So-What-Are-They-For?" data-toc-modified-id="So-What-Are-They-For?-3.2"><span class="toc-item-num">3.2&nbsp;&nbsp;</span><strong><font color="orange">So What Are They For?</font></strong></a></span></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-3.3"><span class="toc-item-num">3.3&nbsp;&nbsp;</span><strong><font color="green">Now What?</font></strong></a></span><ul class="toc-item"><li><span><a href="#.map()-to-Create-Column" data-toc-modified-id=".map()-to-Create-Column-3.3.1"><span class="toc-item-num">3.3.1&nbsp;&nbsp;</span><code>.map()</code> to Create Column</a></span></li><li><span><a href="#.isna()-and-.isnull()" data-toc-modified-id=".isna()-and-.isnull()-3.3.2"><span class="toc-item-num">3.3.2&nbsp;&nbsp;</span><code>.isna()</code> and <code>.isnull()</code></a></span></li></ul></li><li><span><a href="#Encoding-Technique-Before-Splitting" data-toc-modified-id="Encoding-Technique-Before-Splitting-3.4"><span class="toc-item-num">3.4&nbsp;&nbsp;</span>Encoding Technique Before Splitting</a></span><ul class="toc-item"><li><span><a href="#pd.get_dummies()" data-toc-modified-id="pd.get_dummies()-3.4.1"><span class="toc-item-num">3.4.1&nbsp;&nbsp;</span><code>pd.get_dummies()</code></a></span></li><li><span><a href="#.drop()" data-toc-modified-id=".drop()-3.4.2"><span class="toc-item-num">3.4.2&nbsp;&nbsp;</span><code>.drop()</code></a></span></li></ul></li><li><span><a href="#Split-Your-Data" data-toc-modified-id="Split-Your-Data-3.5"><span class="toc-item-num">3.5&nbsp;&nbsp;</span>Split Your Data</a></span></li><li><span><a href="#Imputing-Techniques" data-toc-modified-id="Imputing-Techniques-3.6"><span class="toc-item-num">3.6&nbsp;&nbsp;</span>Imputing Techniques</a></span><ul class="toc-item"><li><span><a href="#.fillna()" data-toc-modified-id=".fillna()-3.6.1"><span class="toc-item-num">3.6.1&nbsp;&nbsp;</span><code>.fillna()</code></a></span></li><li><span><a href="#.SimpleImputer()" data-toc-modified-id=".SimpleImputer()-3.6.2"><span class="toc-item-num">3.6.2&nbsp;&nbsp;</span><code>.SimpleImputer()</code></a></span></li><li><span><a href="#What-if-our-missing-values-are-in-a-categorical-column?" data-toc-modified-id="What-if-our-missing-values-are-in-a-categorical-column?-3.6.3"><span class="toc-item-num">3.6.3&nbsp;&nbsp;</span>What if our missing values are in a categorical column?</a></span></li></ul></li><li><span><a href="#Encoding-Techniques-AFTER-Splitting" data-toc-modified-id="Encoding-Techniques-AFTER-Splitting-3.7"><span class="toc-item-num">3.7&nbsp;&nbsp;</span>Encoding Techniques AFTER Splitting</a></span><ul class="toc-item"><li><span><a href="#LabelEncoder()" data-toc-modified-id="LabelEncoder()-3.7.1"><span class="toc-item-num">3.7.1&nbsp;&nbsp;</span><code>LabelEncoder()</code></a></span></li><li><span><a href="#OneHotEncoder()" data-toc-modified-id="OneHotEncoder()-3.7.2"><span class="toc-item-num">3.7.2&nbsp;&nbsp;</span><code>OneHotEncoder()</code></a></span></li></ul></li></ul></li><li><span><a href="#Exploring" data-toc-modified-id="Exploring-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Exploring</a></span><ul class="toc-item"><li><span><a href="#What-is-EDA-(Exploratory-Data-Analysis)?" data-toc-modified-id="What-is-EDA-(Exploratory-Data-Analysis)?-4.1"><span class="toc-item-num">4.1&nbsp;&nbsp;</span><strong><font color="red">What is EDA (Exploratory Data Analysis)?</font></strong></a></span></li><li><span><a href="#So-What-Types-of-Viz-are-best-for-exploring-categorical-vs-continuous-data?" data-toc-modified-id="So-What-Types-of-Viz-are-best-for-exploring-categorical-vs-continuous-data?-4.2"><span class="toc-item-num">4.2&nbsp;&nbsp;</span><strong><font color="orange">So What Types of Viz are best for exploring categorical vs continuous data?</font></strong></a></span></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-4.3"><span class="toc-item-num">4.3&nbsp;&nbsp;</span><font color="green">Now What?</font></a></span><ul class="toc-item"><li><span><a href="#plt.rc()" data-toc-modified-id="plt.rc()-4.3.1"><span class="toc-item-num">4.3.1&nbsp;&nbsp;</span><code>plt.rc()</code></a></span></li><li><span><a href="#sns.countplot()-subplots" data-toc-modified-id="sns.countplot()-subplots-4.3.2"><span class="toc-item-num">4.3.2&nbsp;&nbsp;</span><code>sns.countplot()</code> subplots</a></span></li><li><span><a href="#sns.boxplot()" data-toc-modified-id="sns.boxplot()-4.3.3"><span class="toc-item-num">4.3.3&nbsp;&nbsp;</span><code>sns.boxplot()</code></a></span></li><li><span><a href="#sns.swarmplot()" data-toc-modified-id="sns.swarmplot()-4.3.4"><span class="toc-item-num">4.3.4&nbsp;&nbsp;</span><code>sns.swarmplot()</code></a></span></li><li><span><a href="#sns.violinplot()" data-toc-modified-id="sns.violinplot()-4.3.5"><span class="toc-item-num">4.3.5&nbsp;&nbsp;</span><code>sns.violinplot()</code></a></span></li><li><span><a href="#.hist()-subplots" data-toc-modified-id=".hist()-subplots-4.3.6"><span class="toc-item-num">4.3.6&nbsp;&nbsp;</span><code>.hist()</code> subplots</a></span></li><li><span><a href="#pd.crosstab-with-sns.heatmap()" data-toc-modified-id="pd.crosstab-with-sns.heatmap()-4.3.7"><span class="toc-item-num">4.3.7&nbsp;&nbsp;</span><code>pd.crosstab</code> with <code>sns.heatmap()</code></a></span></li></ul></li><li><span><a href="#.groupby()" data-toc-modified-id=".groupby()-4.4"><span class="toc-item-num">4.4&nbsp;&nbsp;</span><code>.groupby()</code></a></span></li><li><span><a href="#pd.crosstab()-and-pd.pivot_table()-with-sns.heatmap()" data-toc-modified-id="pd.crosstab()-and-pd.pivot_table()-with-sns.heatmap()-4.5"><span class="toc-item-num">4.5&nbsp;&nbsp;</span><code>pd.crosstab()</code> and <code>pd.pivot_table()</code> with <code>sns.heatmap()</code></a></span><ul class="toc-item"><li><span><a href="#pd.cut()-and-pd.qcut()" data-toc-modified-id="pd.cut()-and-pd.qcut()-4.5.1"><span class="toc-item-num">4.5.1&nbsp;&nbsp;</span><code>pd.cut()</code> and <code>pd.qcut()</code></a></span></li><li><span><a href="#Subplots-Using-Simple-pyplot-Code" data-toc-modified-id="Subplots-Using-Simple-pyplot-Code-4.5.2"><span class="toc-item-num">4.5.2&nbsp;&nbsp;</span>Subplots Using Simple pyplot Code</a></span></li><li><span><a href="#Subplots-Using-Matplotlib-Object-Oriented-API" data-toc-modified-id="Subplots-Using-Matplotlib-Object-Oriented-API-4.5.3"><span class="toc-item-num">4.5.3&nbsp;&nbsp;</span>Subplots Using Matplotlib Object-Oriented API</a></span></li></ul></li></ul></li><li><span><a href="#Modeling" data-toc-modified-id="Modeling-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Modeling</a></span><ul class="toc-item"><li><span><a href="#What-is-a-Logistic-Regression-Model?" data-toc-modified-id="What-is-a-Logistic-Regression-Model?-5.1"><span class="toc-item-num">5.1&nbsp;&nbsp;</span><font color="red">What is a Logistic Regression Model?</font></a></span></li><li><span><a href="#So-What?" data-toc-modified-id="So-What?-5.2"><span class="toc-item-num">5.2&nbsp;&nbsp;</span><font color="orange">So What?</font></a></span></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-5.3"><span class="toc-item-num">5.3&nbsp;&nbsp;</span><font color="green">Now What?</font></a></span></li><li><span><a href="#Baseline" data-toc-modified-id="Baseline-5.4"><span class="toc-item-num">5.4&nbsp;&nbsp;</span>Baseline</a></span><ul class="toc-item"><li><span><a href="#Define-X-and-y" data-toc-modified-id="Define-X-and-y-5.4.1"><span class="toc-item-num">5.4.1&nbsp;&nbsp;</span>Define X and y</a></span></li></ul></li><li><span><a href="#Create-Logistic-Regression-Model" data-toc-modified-id="Create-Logistic-Regression-Model-5.5"><span class="toc-item-num">5.5&nbsp;&nbsp;</span>Create Logistic Regression Model</a></span><ul class="toc-item"><li><ul class="toc-item"><li><span><a href="#Fit-the-Logistic-Regression-Model" data-toc-modified-id="Fit-the-Logistic-Regression-Model-5.5.0.1"><span class="toc-item-num">5.5.0.1&nbsp;&nbsp;</span>Fit the Logistic Regression Model</a></span></li><li><span><a href="#Print-the-coefficients-and-intercept-of-the-model" data-toc-modified-id="Print-the-coefficients-and-intercept-of-the-model-5.5.0.2"><span class="toc-item-num">5.5.0.2&nbsp;&nbsp;</span>Print the coefficients and intercept of the model</a></span></li></ul></li></ul></li></ul></li><li><span><a href="#Evaluating" data-toc-modified-id="Evaluating-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Evaluating</a></span><ul class="toc-item"><li><span><a href="#What-Are-Evaluation-Metrics-for-Classification-Models?" data-toc-modified-id="What-Are-Evaluation-Metrics-for-Classification-Models?-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span><strong><font color="red">What Are Evaluation Metrics for Classification Models?</font></strong></a></span></li><li><span><a href="#So-What-If...?" data-toc-modified-id="So-What-If...?-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span><font color="orange">So What If...?</font></a></span><ul class="toc-item"><li><span><a href="#Recall-in-Context" data-toc-modified-id="Recall-in-Context-6.2.1"><span class="toc-item-num">6.2.1&nbsp;&nbsp;</span>Recall in Context</a></span></li><li><span><a href="#Precision-in-Context" data-toc-modified-id="Precision-in-Context-6.2.2"><span class="toc-item-num">6.2.2&nbsp;&nbsp;</span>Precision in Context</a></span></li></ul></li><li><span><a href="#Now-What?" data-toc-modified-id="Now-What?-6.3"><span class="toc-item-num">6.3&nbsp;&nbsp;</span><font color="green">Now What?</font></a></span><ul class="toc-item"><li><span><a href="#Create-Evaluation-DataFrame" data-toc-modified-id="Create-Evaluation-DataFrame-6.3.1"><span class="toc-item-num">6.3.1&nbsp;&nbsp;</span>Create Evaluation DataFrame</a></span></li><li><span><a href="#Create-evaluation-DataFrame-for-validate-dataset" data-toc-modified-id="Create-evaluation-DataFrame-for-validate-dataset-6.3.2"><span class="toc-item-num">6.3.2&nbsp;&nbsp;</span>Create evaluation DataFrame for validate dataset</a></span></li><li><span><a href="#Accuracy-Score" data-toc-modified-id="Accuracy-Score-6.3.3"><span class="toc-item-num">6.3.3&nbsp;&nbsp;</span>Accuracy Score</a></span></li><li><span><a href="#Recall-Score" data-toc-modified-id="Recall-Score-6.3.4"><span class="toc-item-num">6.3.4&nbsp;&nbsp;</span>Recall Score</a></span></li><li><span><a href="#Precision-Score" data-toc-modified-id="Precision-Score-6.3.5"><span class="toc-item-num">6.3.5&nbsp;&nbsp;</span>Precision Score</a></span></li><li><span><a href="#Confusion-Matrix" data-toc-modified-id="Confusion-Matrix-6.3.6"><span class="toc-item-num">6.3.6&nbsp;&nbsp;</span>Confusion Matrix</a></span></li><li><span><a href="#Classification-Report" data-toc-modified-id="Classification-Report-6.3.7"><span class="toc-item-num">6.3.7&nbsp;&nbsp;</span>Classification Report</a></span></li></ul></li><li><span><a href="#Takeaways-from-MVP-Logistic-Regression-Model-Evaluation" data-toc-modified-id="Takeaways-from-MVP-Logistic-Regression-Model-Evaluation-6.4"><span class="toc-item-num">6.4&nbsp;&nbsp;</span>Takeaways from MVP Logistic Regression Model Evaluation</a></span></li></ul></li><li><span><a href="#Conclusions" data-toc-modified-id="Conclusions-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Conclusions</a></span></li></ul></div>
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
@@ -13115,8 +13107,6 @@ $( document ).ready(function(){
 <span class="c1"># visualizing</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="o">%</span><span class="k">matplotlib</span> inline
-
 <span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;figure&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
 
@@ -13130,7 +13120,6 @@ $( document ).ready(function(){
 <span class="c1"># modeling and evaluating</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">accuracy_score</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
 
 <span class="c1"># turn off warnings</span>
 <span class="kn">import</span> <span class="nn">warnings</span>
@@ -14431,7 +14420,7 @@ $( document ).ready(function(){
 
 
 <div class="output_png output_subarea ">
-<img src="output_50_0.png"
+<img src="output_49_0.png"
 >
 </div>
 
@@ -15441,7 +15430,7 @@ test -&gt; (179, 13)
 
 
 <div class="output_png output_subarea ">
-<img src="output_80_0.png"
+<img src="output_79_0.png"
 >
 </div>
 
@@ -15741,7 +15730,7 @@ test -&gt; (179, 13)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://eazybi.com/static/img/blog_page/posts/2016_03_01/tufte-wallpaper.png" alt="image.png"></p>
+<p><img src="https://www.cambridgemaths.org/Images/E29-exploratory-data-analysis.jpg" alt="image.png"></p>
 <h3><strong><font color=red>What is EDA (Exploratory Data Analysis)?</font></strong></h3>
 <p>Exploratory Data Analysis involves learning more about the data you're working with. One reason to perform EDA is to visualize parts of the data to better understand the correlation between the features and the target.</p>
 <p><strong>The preparation for your dataset for exploration may not be the same as the prepartion of your dataset for modeling.</strong> The requirements of Machine Learning algorithms do not always overlap with the requirements for good data visualization or exploration.</p>
@@ -15770,7 +15759,7 @@ test -&gt; (179, 13)
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>How do you decide what chart to use? Should you aggregate your data to get a better view? Are you making a comparison or showing a relationship between variables? Do you want to display the distribution or composition of your dataset? These are important questions to ask yourself when deciding on types of chart to use and data aggregations for exploration.</p>
 <p>Read more about how to choose a chart <a href="https://eazybi.com/blog/data_visualization_and_chart_types/">here</a>.</p>
-<p><img src="https://eazybi.com/static/img/blog_page/posts/2016_03_01/chart-selection-diagram.png" alt="image"></p>
+<p><img src="https://www.mymarketresearchmethods.com/wp-content/uploads/2013/01/chart-types-choosing-the-right-one.png" alt="image"></p>
 
 </div>
 </div>
@@ -15952,7 +15941,7 @@ test -&gt; (179, 13)
 
 
 <div class="output_png output_subarea ">
-<img src="output_109_0.png"
+<img src="output_108_0.png"
 >
 </div>
 
@@ -16008,7 +15997,7 @@ test -&gt; (179, 13)
 
 
 <div class="output_png output_subarea ">
-<img src="output_112_0.png"
+<img src="output_111_0.png"
 >
 </div>
 
@@ -16064,7 +16053,7 @@ test -&gt; (179, 13)
 
 
 <div class="output_png output_subarea ">
-<img src="output_115_0.png"
+<img src="output_114_0.png"
 >
 </div>
 
@@ -16122,7 +16111,7 @@ test -&gt; (179, 13)
 
 
 <div class="output_png output_subarea ">
-<img src="output_118_0.png"
+<img src="output_117_0.png"
 >
 </div>
 
@@ -16187,7 +16176,7 @@ test -&gt; (179, 13)
 
 
 <div class="output_png output_subarea ">
-<img src="output_121_0.png"
+<img src="output_120_0.png"
 >
 </div>
 
@@ -16250,7 +16239,7 @@ test -&gt; (179, 13)
 
 
 <div class="output_png output_subarea ">
-<img src="output_124_0.png"
+<img src="output_123_0.png"
 >
 </div>
 
@@ -16306,7 +16295,7 @@ test -&gt; (179, 13)
 
 
 <div class="output_png output_subarea ">
-<img src="output_126_0.png"
+<img src="output_125_0.png"
 >
 </div>
 
@@ -16413,7 +16402,7 @@ Name: fare, dtype: float64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_131_0.png"
+<img src="output_130_0.png"
 >
 </div>
 
@@ -16484,7 +16473,7 @@ Name: fare, dtype: float64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_134_0.png"
+<img src="output_133_0.png"
 >
 </div>
 
@@ -16537,7 +16526,7 @@ Name: fare, dtype: float64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_136_0.png"
+<img src="output_135_0.png"
 >
 </div>
 
@@ -16595,7 +16584,7 @@ Name: fare, dtype: float64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_139_0.png"
+<img src="output_138_0.png"
 >
 </div>
 
@@ -16722,7 +16711,7 @@ Name: fare, dtype: float64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_142_0.png"
+<img src="output_141_0.png"
 >
 </div>
 
@@ -16982,7 +16971,7 @@ Name: survived, dtype: float64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_147_0.png"
+<img src="output_146_0.png"
 >
 </div>
 
@@ -17129,7 +17118,7 @@ Name: survived, dtype: float64</pre>
 
 
 <div class="output_png output_subarea ">
-<img src="output_157_0.png"
+<img src="output_156_0.png"
 >
 </div>
 
@@ -18314,7 +18303,7 @@ Intercept: [2.79501842]
 
 
 <div class="output_png output_subarea ">
-<img src="output_219_0.png"
+<img src="output_218_0.png"
 >
 </div>
 
