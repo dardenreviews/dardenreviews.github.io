@@ -41,3 +41,9 @@ ___
 [![Ryan McCall's Lunch 'n' Learn - Faster Project Setup with Cookiecutter](https://res.cloudinary.com/marcomontalbano/image/upload/v1602006825/video_to_markdown/images/youtube--TdFysz043zk-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/TdFysz043zk "Ryan McCall's Lunch 'n' Learn - Faster Project Setup with Cookiecutter")
 
 [Ryan's Data Science MVP Github Repo](https://github.com/RyanMcCall/ryans_codeup_data_science_mvp)
+
+### <font color="orange">Canva 101 with Beth Thompson</font>
+
+
+
+[Beth's Canva 101 Repo](https://github.com/ThompsonBethany01/Canva_101)
