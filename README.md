@@ -119,3 +119,9 @@ Time Series Review Notebooks
 Coming Soon!
 
 >This notebook prepares data with a DateTimeIndex.
+
+NLP Review Notebooks
+
+- [Acquire Data Using Beautiful Soup](https://dardenreviews.github.io/nlp_acquire)
+
+>This notebook walks you through the curriculum exercises that create functions for an acquire.py file by scraping data using the BeautifulSoup and requests libraries.
