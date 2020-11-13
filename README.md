@@ -126,6 +126,6 @@ NLP Review Notebooks
 
 >This notebook walks you through the curriculum exercises that create functions for an acquire.py file by scraping data using the BeautifulSoup and requests libraries.
 
-- [acquire.py file](https://dardenreviews.github.io/nlp_acquire.py)
+- [acquire.py file]()
 
 >Here is an example of your end product.
